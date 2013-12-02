@@ -29,7 +29,8 @@ int main(int argc, const char * argv[]) {
     char binary[digits];
     
     for (int i = 0; i < exp2(digits); i++) {
-        convertBaseVersion(i, 2, binary, digits);
+        // convertBaseVersion(i, 2, binary, digits);
+        sprintf(binary, "%02u", i);
         
         if (strnstr(binary, "11", digits) == NULL) {
             printf("%d -> %s\n", i, binary);

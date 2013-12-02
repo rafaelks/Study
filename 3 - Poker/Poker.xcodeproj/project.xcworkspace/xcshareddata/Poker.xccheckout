@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>39DB10C6-64C0-4710-887B-00CBF3488D4B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Poker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C298DF09-00F5-44CE-9503-4514B46EE4BB</key>
+		<string>ssh://github.com/rafaelks/BEPiD.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Poker/Poker.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C298DF09-00F5-44CE-9503-4514B46EE4BB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/rafaelks/BEPiD.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C298DF09-00F5-44CE-9503-4514B46EE4BB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C298DF09-00F5-44CE-9503-4514B46EE4BB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BEPiD</string>
+		</dict>
+	</array>
+</dict>
+</plist>
