@@ -10,10 +10,19 @@
 
 @interface User : NSObject
 
+- (void)setActive:(BOOL)active;
 - (void)setId:(NSString *)id;
 - (void)setName:(NSString *)name;
+- (void)setPassword:(NSString *)password;
+- (void)setPhone:(NSString *)phone;
+- (void)setBirthday:(NSDate *)birthday;
+- (void)setCreatedAt:(NSDate *)date;
 
 - (NSString *)getId;
 - (NSString *)getName;
+- (NSString *)getPassword;
+- (NSString *)getPhone;
+- (NSDate *)getBirthday;
+- (BOOL)isActive;
 
 @end
