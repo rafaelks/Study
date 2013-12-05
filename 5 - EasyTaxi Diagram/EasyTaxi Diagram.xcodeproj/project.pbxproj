@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		417DC9B01850A46D00063C93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417DC9AF1850A46D00063C93 /* Foundation.framework */; };
+		417DC9B21850A46D00063C93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417DC9B11850A46D00063C93 /* CoreGraphics.framework */; };
+		417DC9B41850A46D00063C93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417DC9B31850A46D00063C93 /* UIKit.framework */; };
+		417DC9BA1850A46D00063C93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 417DC9B81850A46D00063C93 /* InfoPlist.strings */; };
+		417DC9BC1850A46D00063C93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 417DC9BB1850A46D00063C93 /* main.m */; };
+		417DC9C01850A46D00063C93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 417DC9BF1850A46D00063C93 /* AppDelegate.m */; };
+		417DC9C31850A46D00063C93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 417DC9C11850A46D00063C93 /* Main.storyboard */; };
+		417DC9CB1850A46D00063C93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 417DC9CA1850A46D00063C93 /* Images.xcassets */; };
+		417DC9D21850A46D00063C93 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417DC9D11850A46D00063C93 /* XCTest.framework */; };
+		417DC9D31850A46D00063C93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417DC9AF1850A46D00063C93 /* Foundation.framework */; };
+		417DC9D41850A46D00063C93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417DC9B31850A46D00063C93 /* UIKit.framework */; };
+		417DC9DC1850A46D00063C93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 417DC9DA1850A46D00063C93 /* InfoPlist.strings */; };
+		417DC9DE1850A46D00063C93 /* EasyTaxi_DiagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 417DC9DD1850A46D00063C93 /* EasyTaxi_DiagramTests.m */; };
+		417DC9E81850A47900063C93 /* Diagram.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 417DC9E71850A47900063C93 /* Diagram.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		417DC9D51850A46D00063C93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 417DC9A41850A46D00063C93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 417DC9AB1850A46D00063C93;
+			remoteInfo = "EasyTaxi Diagram";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		417DC9AC1850A46D00063C93 /* EasyTaxi Diagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyTaxi Diagram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		417DC9AF1850A46D00063C93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		417DC9B11850A46D00063C93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		417DC9B31850A46D00063C93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		417DC9B71850A46D00063C93 /* EasyTaxi Diagram-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EasyTaxi Diagram-Info.plist"; sourceTree = "<group>"; };
+		417DC9B91850A46D00063C93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		417DC9BB1850A46D00063C93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		417DC9BD1850A46D00063C93 /* EasyTaxi Diagram-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EasyTaxi Diagram-Prefix.pch"; sourceTree = "<group>"; };
+		417DC9BE1850A46D00063C93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		417DC9BF1850A46D00063C93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		417DC9C21850A46D00063C93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		417DC9CA1850A46D00063C93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		417DC9D01850A46D00063C93 /* EasyTaxi DiagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "EasyTaxi DiagramTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		417DC9D11850A46D00063C93 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		417DC9D91850A46D00063C93 /* EasyTaxi DiagramTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EasyTaxi DiagramTests-Info.plist"; sourceTree = "<group>"; };
+		417DC9DB1850A46D00063C93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		417DC9DD1850A46D00063C93 /* EasyTaxi_DiagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyTaxi_DiagramTests.m; sourceTree = "<group>"; };
+		417DC9E71850A47900063C93 /* Diagram.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Diagram.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		417DC9A91850A46D00063C93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417DC9B21850A46D00063C93 /* CoreGraphics.framework in Frameworks */,
+				417DC9B41850A46D00063C93 /* UIKit.framework in Frameworks */,
+				417DC9B01850A46D00063C93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		417DC9CD1850A46D00063C93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417DC9D21850A46D00063C93 /* XCTest.framework in Frameworks */,
+				417DC9D41850A46D00063C93 /* UIKit.framework in Frameworks */,
+				417DC9D31850A46D00063C93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		417DC9A31850A46D00063C93 = {
+			isa = PBXGroup;
+			children = (
+				417DC9E71850A47900063C93 /* Diagram.jpg */,
+				417DC9B51850A46D00063C93 /* EasyTaxi Diagram */,
+				417DC9D71850A46D00063C93 /* EasyTaxi DiagramTests */,
+				417DC9AE1850A46D00063C93 /* Frameworks */,
+				417DC9AD1850A46D00063C93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		417DC9AD1850A46D00063C93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				417DC9AC1850A46D00063C93 /* EasyTaxi Diagram.app */,
+				417DC9D01850A46D00063C93 /* EasyTaxi DiagramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		417DC9AE1850A46D00063C93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				417DC9AF1850A46D00063C93 /* Foundation.framework */,
+				417DC9B11850A46D00063C93 /* CoreGraphics.framework */,
+				417DC9B31850A46D00063C93 /* UIKit.framework */,
+				417DC9D11850A46D00063C93 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		417DC9B51850A46D00063C93 /* EasyTaxi Diagram */ = {
+			isa = PBXGroup;
+			children = (
+				417DC9EA1850A4A300063C93 /* Model */,
+				417DC9E91850A49B00063C93 /* View */,
+				417DC9BE1850A46D00063C93 /* AppDelegate.h */,
+				417DC9BF1850A46D00063C93 /* AppDelegate.m */,
+				417DC9C11850A46D00063C93 /* Main.storyboard */,
+				417DC9CA1850A46D00063C93 /* Images.xcassets */,
+				417DC9B61850A46D00063C93 /* Supporting Files */,
+			);
+			path = "EasyTaxi Diagram";
+			sourceTree = "<group>";
+		};
+		417DC9B61850A46D00063C93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				417DC9B71850A46D00063C93 /* EasyTaxi Diagram-Info.plist */,
+				417DC9B81850A46D00063C93 /* InfoPlist.strings */,
+				417DC9BB1850A46D00063C93 /* main.m */,
+				417DC9BD1850A46D00063C93 /* EasyTaxi Diagram-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		417DC9D71850A46D00063C93 /* EasyTaxi DiagramTests */ = {
+			isa = PBXGroup;
+			children = (
+				417DC9DD1850A46D00063C93 /* EasyTaxi_DiagramTests.m */,
+				417DC9D81850A46D00063C93 /* Supporting Files */,
+			);
+			path = "EasyTaxi DiagramTests";
+			sourceTree = "<group>";
+		};
+		417DC9D81850A46D00063C93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				417DC9D91850A46D00063C93 /* EasyTaxi DiagramTests-Info.plist */,
+				417DC9DA1850A46D00063C93 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		417DC9E91850A49B00063C93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		417DC9EA1850A4A300063C93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		417DC9AB1850A46D00063C93 /* EasyTaxi Diagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 417DC9E11850A46D00063C93 /* Build configuration list for PBXNativeTarget "EasyTaxi Diagram" */;
+			buildPhases = (
+				417DC9A81850A46D00063C93 /* Sources */,
+				417DC9A91850A46D00063C93 /* Frameworks */,
+				417DC9AA1850A46D00063C93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EasyTaxi Diagram";
+			productName = "EasyTaxi Diagram";
+			productReference = 417DC9AC1850A46D00063C93 /* EasyTaxi Diagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		417DC9CF1850A46D00063C93 /* EasyTaxi DiagramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 417DC9E41850A46D00063C93 /* Build configuration list for PBXNativeTarget "EasyTaxi DiagramTests" */;
+			buildPhases = (
+				417DC9CC1850A46D00063C93 /* Sources */,
+				417DC9CD1850A46D00063C93 /* Frameworks */,
+				417DC9CE1850A46D00063C93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				417DC9D61850A46D00063C93 /* PBXTargetDependency */,
+			);
+			name = "EasyTaxi DiagramTests";
+			productName = "EasyTaxi DiagramTests";
+			productReference = 417DC9D01850A46D00063C93 /* EasyTaxi DiagramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		417DC9A41850A46D00063C93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Rafael Kellermann Streit";
+				TargetAttributes = {
+					417DC9CF1850A46D00063C93 = {
+						TestTargetID = 417DC9AB1850A46D00063C93;
+					};
+				};
+			};
+			buildConfigurationList = 417DC9A71850A46D00063C93 /* Build configuration list for PBXProject "EasyTaxi Diagram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 417DC9A31850A46D00063C93;
+			productRefGroup = 417DC9AD1850A46D00063C93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				417DC9AB1850A46D00063C93 /* EasyTaxi Diagram */,
+				417DC9CF1850A46D00063C93 /* EasyTaxi DiagramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		417DC9AA1850A46D00063C93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417DC9CB1850A46D00063C93 /* Images.xcassets in Resources */,
+				417DC9BA1850A46D00063C93 /* InfoPlist.strings in Resources */,
+				417DC9C31850A46D00063C93 /* Main.storyboard in Resources */,
+				417DC9E81850A47900063C93 /* Diagram.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		417DC9CE1850A46D00063C93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417DC9DC1850A46D00063C93 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		417DC9A81850A46D00063C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417DC9C01850A46D00063C93 /* AppDelegate.m in Sources */,
+				417DC9BC1850A46D00063C93 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		417DC9CC1850A46D00063C93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				417DC9DE1850A46D00063C93 /* EasyTaxi_DiagramTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		417DC9D61850A46D00063C93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 417DC9AB1850A46D00063C93 /* EasyTaxi Diagram */;
+			targetProxy = 417DC9D51850A46D00063C93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		417DC9B81850A46D00063C93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				417DC9B91850A46D00063C93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		417DC9C11850A46D00063C93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				417DC9C21850A46D00063C93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		417DC9DA1850A46D00063C93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				417DC9DB1850A46D00063C93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		417DC9DF1850A46D00063C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		417DC9E01850A46D00063C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		417DC9E21850A46D00063C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyTaxi Diagram/EasyTaxi Diagram-Prefix.pch";
+				INFOPLIST_FILE = "EasyTaxi Diagram/EasyTaxi Diagram-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		417DC9E31850A46D00063C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyTaxi Diagram/EasyTaxi Diagram-Prefix.pch";
+				INFOPLIST_FILE = "EasyTaxi Diagram/EasyTaxi Diagram-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		417DC9E51850A46D00063C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EasyTaxi Diagram.app/EasyTaxi Diagram";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyTaxi Diagram/EasyTaxi Diagram-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EasyTaxi DiagramTests/EasyTaxi DiagramTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		417DC9E61850A46D00063C93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EasyTaxi Diagram.app/EasyTaxi Diagram";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EasyTaxi Diagram/EasyTaxi Diagram-Prefix.pch";
+				INFOPLIST_FILE = "EasyTaxi DiagramTests/EasyTaxi DiagramTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		417DC9A71850A46D00063C93 /* Build configuration list for PBXProject "EasyTaxi Diagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417DC9DF1850A46D00063C93 /* Debug */,
+				417DC9E01850A46D00063C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		417DC9E11850A46D00063C93 /* Build configuration list for PBXNativeTarget "EasyTaxi Diagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417DC9E21850A46D00063C93 /* Debug */,
+				417DC9E31850A46D00063C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		417DC9E41850A46D00063C93 /* Build configuration list for PBXNativeTarget "EasyTaxi DiagramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				417DC9E51850A46D00063C93 /* Debug */,
+				417DC9E61850A46D00063C93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 417DC9A41850A46D00063C93 /* Project object */;
+}
