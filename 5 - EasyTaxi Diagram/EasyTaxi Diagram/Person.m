@@ -7,7 +7,12 @@
 //
 
 #import "Person.h"
+#import "Point.h"
+#import "Driver.h"
 
 @implementation Person
-
+{
+    Point* _position;
+    Driver
+}
 @end
