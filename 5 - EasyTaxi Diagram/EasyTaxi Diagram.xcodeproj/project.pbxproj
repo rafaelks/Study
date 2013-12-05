@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411F0BD51850A72200931F36 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 411F0BD41850A72200931F36 /* User.m */; };
 		417DC9B01850A46D00063C93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417DC9AF1850A46D00063C93 /* Foundation.framework */; };
 		417DC9B21850A46D00063C93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417DC9B11850A46D00063C93 /* CoreGraphics.framework */; };
 		417DC9B41850A46D00063C93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417DC9B31850A46D00063C93 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		411F0BD31850A72200931F36 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		411F0BD41850A72200931F36 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		417DC9AC1850A46D00063C93 /* EasyTaxi Diagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyTaxi Diagram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		417DC9AF1850A46D00063C93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		417DC9B11850A46D00063C93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -162,6 +165,8 @@
 		417DC9EA1850A4A300063C93 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				411F0BD31850A72200931F36 /* User.h */,
+				411F0BD41850A72200931F36 /* User.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			files = (
 				417DC9C01850A46D00063C93 /* AppDelegate.m in Sources */,
 				417DC9BC1850A46D00063C93 /* main.m in Sources */,
+				411F0BD51850A72200931F36 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +480,7 @@
 				417DC9E31850A46D00063C93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		417DC9E41850A46D00063C93 /* Build configuration list for PBXNativeTarget "EasyTaxi DiagramTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +489,7 @@
 				417DC9E61850A46D00063C93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
