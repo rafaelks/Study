@@ -20,7 +20,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        
     }
     return self;
 }
@@ -29,17 +29,25 @@
 {
     [super viewDidLoad];
     
+    annotations = [[NSMutableArray alloc] init];
+    
     [mapView setDelegate: self];
 
-    CLLocationCoordinate2D userLocation;
-    userLocation.latitude = 40.831685;
-    userLocation.longitude = -73.477453;
+    [annotations addObject:@{@"title": @"Rafael K. Streit", @"latitude": @40.831685, @"longitude": @-73.477453}];
+    [annotations addObject:@{@"title": @"Foobar", @"latitude": @40.835685, @"longitude": @-73.477453}];
+    
+    for (int i = 0; i < annotations.count; i++) {
+        NSDictionary *obj = [annotations objectAtIndex:i];
 
-    MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
-    [annotation setCoordinate:userLocation];
-    [annotation setTitle:@"Entrance"];
-    [annotation setSubtitle:@"Main"];
-    [mapView addAnnotation:annotation];
+        CLLocationCoordinate2D userLocation;
+        userLocation.latitude = [[obj valueForKey:@"latitude"] doubleValue];
+        userLocation.longitude = [[obj valueForKey:@"longitude"] doubleValue];
+        
+        MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+        [annotation setCoordinate:userLocation];
+        [annotation setTitle:[obj valueForKey:@"title"]];
+        [mapView addAnnotation:annotation];
+    }
 }
 
 - (void)didReceiveMemoryWarning
