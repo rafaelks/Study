@@ -7,7 +7,17 @@
 //
 
 #import "User.h"
+#import "Driver.h"
+#import "PositionPoint.h"
 
 @interface Person : User
+
+- (void)setPosition:(PositionPoint*)position;
+
+- (void)addFavorites:(Driver*)favorite;
+
+- (NSMutableArray*)getFavorites;
+
+- (PositionPoint*)getPosition;
 
 @end
