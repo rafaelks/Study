@@ -44,6 +44,7 @@
         userLocation.longitude = [[obj valueForKey:@"longitude"] doubleValue];
         
         MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
+        
         [annotation setCoordinate:userLocation];
         [annotation setTitle:[obj valueForKey:@"title"]];
         [mapView addAnnotation:annotation];
@@ -69,10 +70,11 @@
                           action:@selector(showDetailsButtonPressed:)
                 forControlEvents:UIControlEventTouchUpInside];
 
-    [buttonShowDetails setFrame: CGRectMake(0, 0, 23, 23)];
-    [buttonShowDetails setContentVerticalAlignment: UIControlContentVerticalAlignmentCenter];
-    [buttonShowDetails setContentHorizontalAlignment: UIControlContentHorizontalAlignmentCenter];
-    
+    [buttonShowDetails setFrame:CGRectMake(0, 0, 23, 23)];
+    [buttonShowDetails setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
+    [buttonShowDetails setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
+    [buttonShowDetails setTag:1];
+
     [annotationView setRightCalloutAccessoryView:buttonShowDetails];
     [annotationView setPinColor:MKPinAnnotationColorGreen];
     [annotationView setAnimatesDrop:true];

@@ -19,7 +19,7 @@
 
 - (void)setPosition:(PositionPoint*)position
 {
-    _position = position;
+    _position = _position;
 }
 
 - (void)addFavorites:(Driver*)favorite
@@ -36,4 +36,5 @@
 {
     return _position;
 }
+
 @end
