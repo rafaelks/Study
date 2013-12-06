@@ -13,8 +13,14 @@
 @implementation Person
 {
     Point* _position;
-    Driver _favorites;
+    NSARRAY _favorites;
+    
 }
 
-- (void)setPosicion
+- (void)setPosition:(Point*)position
+{
+    _position = position;
+}
+
+- (void) Add
 @end
