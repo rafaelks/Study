@@ -76,7 +76,7 @@
     // Primeiro Taxista
     
     Driver *taxista1 = [[Driver alloc] init];
-    [taxista1 setName:@"Fábio Schneider"];
+    [taxista1 setName:@"Taxista 1"];
     
     // Primeiro Carro
     
@@ -90,7 +90,30 @@
     
     [carro1 setPosition:ponto4];
     [carro1 setBigTrunk:TRUE];
-    [carro1 ]
+    [carro1 setLicence:@"56X669S0G"];
+    
+    
+    // Segundo Taxista
+    
+    Driver *taxista2 = [[Driver alloc] init];
+    [taxista2 setName:@"Taxista 2"];
+    
+    // Segundo Carro
+    
+    PositionPoint *ponto5 = [[PositionPoint alloc] init];
+    [ponto5 setLatitude: 40.831060];
+    [ponto5 setLongitude: -73.475400];
+    
+    Car *carro2;
+    carro2 = [[Car alloc] init];
+    
+    
+    [carro2 setPosition:ponto5];
+    [carro2 setBigTrunk:FALSE];
+    [carro2 setLicence:@"5838400G"];
+    
+    
+    
     
     
     for (int i = 0; i < annotations.count; i++) {
