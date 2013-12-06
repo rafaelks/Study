@@ -8,7 +8,7 @@
 
 #import "Car.h"
 #import "Payment.h"
-#imoport "PositionPoint"
+#import "PositionPoint.h"
 
 @implementation Car
 {    

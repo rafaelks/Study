@@ -7,20 +7,19 @@
 //
 
 #import "Person.h"
-#import "Point.h"
+#import "PositionPoint.h"
 #import "Driver.h"
 
 @implementation Person
 {
-    Point* _position;
-    NSARRAY _favorites;
+    PositionPoint *_position;
+    NSArray *_favorites;
     
 }
 
 - (void)setPosition:(Point*)position
 {
-    _position = position;
+
 }
 
-- (void) Add
 @end

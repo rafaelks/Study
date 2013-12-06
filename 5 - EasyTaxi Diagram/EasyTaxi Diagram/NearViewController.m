@@ -73,7 +73,7 @@
     [buttonShowDetails setFrame:CGRectMake(0, 0, 23, 23)];
     [buttonShowDetails setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
     [buttonShowDetails setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
-    [buttonShowDetails setTag:]
+    [buttonShowDetails setTag:1];
 
     [annotationView setRightCalloutAccessoryView:buttonShowDetails];
     [annotationView setPinColor:MKPinAnnotationColorGreen];
