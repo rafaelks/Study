@@ -25,6 +25,12 @@
 		417DC9DC1850A46D00063C93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 417DC9DA1850A46D00063C93 /* InfoPlist.strings */; };
 		417DC9DE1850A46D00063C93 /* EasyTaxi_DiagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 417DC9DD1850A46D00063C93 /* EasyTaxi_DiagramTests.m */; };
 		417DC9E81850A47900063C93 /* Diagram.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 417DC9E71850A47900063C93 /* Diagram.jpg */; };
+		41B130D61851DD1700147424 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B130D51851DD1700147424 /* MapKit.framework */; };
+		41B130D91851DE5E00147424 /* NearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B130D81851DE5E00147424 /* NearViewController.m */; };
+		E922C7151851EDE9009CC992 /* Driver.m in Sources */ = {isa = PBXBuildFile; fileRef = E922C70E1851EDE9009CC992 /* Driver.m */; };
+		E922C7161851EDE9009CC992 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E922C7101851EDE9009CC992 /* Person.m */; };
+		E922C7171851EDE9009CC992 /* Point.m in Sources */ = {isa = PBXBuildFile; fileRef = E922C7121851EDE9009CC992 /* Point.m */; };
+		E922C7181851EDE9009CC992 /* PositionPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E922C7141851EDE9009CC992 /* PositionPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +70,17 @@
 		417DC9DB1850A46D00063C93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		417DC9DD1850A46D00063C93 /* EasyTaxi_DiagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyTaxi_DiagramTests.m; sourceTree = "<group>"; };
 		417DC9E71850A47900063C93 /* Diagram.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Diagram.jpg; sourceTree = "<group>"; };
+		41B130D51851DD1700147424 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		41B130D71851DE5E00147424 /* NearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearViewController.h; sourceTree = "<group>"; };
+		41B130D81851DE5E00147424 /* NearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearViewController.m; sourceTree = "<group>"; };
+		E922C70D1851EDE9009CC992 /* Driver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Driver.h; sourceTree = "<group>"; };
+		E922C70E1851EDE9009CC992 /* Driver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Driver.m; sourceTree = "<group>"; };
+		E922C70F1851EDE9009CC992 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		E922C7101851EDE9009CC992 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		E922C7111851EDE9009CC992 /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
+		E922C7121851EDE9009CC992 /* Point.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Point.m; sourceTree = "<group>"; };
+		E922C7131851EDE9009CC992 /* PositionPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionPoint.h; sourceTree = "<group>"; };
+		E922C7141851EDE9009CC992 /* PositionPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +90,7 @@
 			files = (
 				417DC9B21850A46D00063C93 /* CoreGraphics.framework in Frameworks */,
 				417DC9B41850A46D00063C93 /* UIKit.framework in Frameworks */,
+				41B130D61851DD1700147424 /* MapKit.framework in Frameworks */,
 				417DC9B01850A46D00063C93 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,6 +131,7 @@
 		417DC9AE1850A46D00063C93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41B130D51851DD1700147424 /* MapKit.framework */,
 				417DC9AF1850A46D00063C93 /* Foundation.framework */,
 				417DC9B11850A46D00063C93 /* CoreGraphics.framework */,
 				417DC9B31850A46D00063C93 /* UIKit.framework */,
@@ -167,6 +186,8 @@
 		417DC9E91850A49B00063C93 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				41B130D71851DE5E00147424 /* NearViewController.h */,
+				41B130D81851DE5E00147424 /* NearViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -182,6 +203,14 @@
 				37E1708E1851E6BE00ACCA03 /* Payment.h */,
 				37E1708F1851E6BE00ACCA03 /* Payment.m */,
 				37E170891851DF2C00ACCA03 /* Car.m */,
+				E922C70D1851EDE9009CC992 /* Driver.h */,
+				E922C70E1851EDE9009CC992 /* Driver.m */,
+				E922C70F1851EDE9009CC992 /* Person.h */,
+				E922C7101851EDE9009CC992 /* Person.m */,
+				E922C7111851EDE9009CC992 /* Point.h */,
+				E922C7121851EDE9009CC992 /* Point.m */,
+				E922C7131851EDE9009CC992 /* PositionPoint.h */,
+				E922C7141851EDE9009CC992 /* PositionPoint.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -233,6 +262,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Rafael Kellermann Streit";
 				TargetAttributes = {
+					417DC9AB1850A46D00063C93 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					417DC9CF1850A46D00063C93 = {
 						TestTargetID = 417DC9AB1850A46D00063C93;
 					};
@@ -285,11 +321,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E170901851E6BE00ACCA03 /* Payment.m in Sources */,
+				E922C7171851EDE9009CC992 /* Point.m in Sources */,
+				E922C7181851EDE9009CC992 /* PositionPoint.m in Sources */,
+				E922C7161851EDE9009CC992 /* Person.m in Sources */,
+				41B130D91851DE5E00147424 /* NearViewController.m in Sources */,
 				417DC9C01850A46D00063C93 /* AppDelegate.m in Sources */,
 				417DC9BC1850A46D00063C93 /* main.m in Sources */,
 				37E1708D1851E68900ACCA03 /* Run.m in Sources */,
 				37E1708A1851DF2C00ACCA03 /* Car.m in Sources */,
 				411F0BD51850A72200931F36 /* User.m in Sources */,
+				E922C7151851EDE9009CC992 /* Driver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
