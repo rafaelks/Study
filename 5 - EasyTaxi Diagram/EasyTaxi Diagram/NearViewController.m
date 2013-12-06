@@ -44,7 +44,6 @@
         userLocation.longitude = [[obj valueForKey:@"longitude"] doubleValue];
         
         MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
-        
         [annotation setCoordinate:userLocation];
         [annotation setTitle:[obj valueForKey:@"title"]];
         [mapView addAnnotation:annotation];
@@ -73,7 +72,7 @@
     [buttonShowDetails setFrame:CGRectMake(0, 0, 23, 23)];
     [buttonShowDetails setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
     [buttonShowDetails setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
-    [buttonShowDetails setTag:1];
+    NSLog(@"annotation: %@", annotation);
 
     [annotationView setRightCalloutAccessoryView:buttonShowDetails];
     [annotationView setPinColor:MKPinAnnotationColorGreen];
@@ -85,7 +84,7 @@
 
 - (void)showDetailsButtonPressed:(UIButton *)sender
 {
-    NSLog(@"Clique");
+    NSLog(@"123");
 }
 
 @end
