@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37E1708A1851DF2C00ACCA03 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E170891851DF2C00ACCA03 /* Car.m */; };
+		37E1708D1851E68900ACCA03 /* Run.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1708C1851E68900ACCA03 /* Run.m */; };
+		37E170901851E6BE00ACCA03 /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1708F1851E6BE00ACCA03 /* Payment.m */; };
 		411F0BD51850A72200931F36 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 411F0BD41850A72200931F36 /* User.m */; };
 		417DC9B01850A46D00063C93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417DC9AF1850A46D00063C93 /* Foundation.framework */; };
 		417DC9B21850A46D00063C93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 417DC9B11850A46D00063C93 /* CoreGraphics.framework */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37E170881851DF2C00ACCA03 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		37E170891851DF2C00ACCA03 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		37E1708B1851E68900ACCA03 /* Run.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Run.h; sourceTree = "<group>"; };
+		37E1708C1851E68900ACCA03 /* Run.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Run.m; sourceTree = "<group>"; };
+		37E1708E1851E6BE00ACCA03 /* Payment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Payment.h; sourceTree = "<group>"; };
+		37E1708F1851E6BE00ACCA03 /* Payment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Payment.m; sourceTree = "<group>"; };
 		411F0BD31850A72200931F36 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		411F0BD41850A72200931F36 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		417DC9AC1850A46D00063C93 /* EasyTaxi Diagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EasyTaxi Diagram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +176,12 @@
 			children = (
 				411F0BD31850A72200931F36 /* User.h */,
 				411F0BD41850A72200931F36 /* User.m */,
+				37E170881851DF2C00ACCA03 /* Car.h */,
+				37E1708B1851E68900ACCA03 /* Run.h */,
+				37E1708C1851E68900ACCA03 /* Run.m */,
+				37E1708E1851E6BE00ACCA03 /* Payment.h */,
+				37E1708F1851E6BE00ACCA03 /* Payment.m */,
+				37E170891851DF2C00ACCA03 /* Car.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -269,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E170901851E6BE00ACCA03 /* Payment.m in Sources */,
 				417DC9C01850A46D00063C93 /* AppDelegate.m in Sources */,
 				417DC9BC1850A46D00063C93 /* main.m in Sources */,
+				37E1708D1851E68900ACCA03 /* Run.m in Sources */,
+				37E1708A1851DF2C00ACCA03 /* Car.m in Sources */,
 				411F0BD51850A72200931F36 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
