@@ -1,0 +1,37 @@
+//
+//  Point.m
+//  EasyTaxi Diagram
+//
+//  Created by Txai Wieser on 05/12/13.
+//  Copyright (c) 2013 Rafael Kellermann Streit. All rights reserved.
+//
+
+#import "Point.h"
+
+@implementation Point
+{
+    double _latitude;
+    double _longitude;
+}
+
+- (void)setLatitude:(double)latitude
+{
+    _latitude = latitude;
+}
+
+- (void)setLongitude:(double)longitude
+{
+    _longitude = longitude;
+}
+
+- (double)getLongitude
+{
+    return _longitude;
+}
+
+- (double)getLatitude
+{
+    return _latitude;
+}
+
+@end
