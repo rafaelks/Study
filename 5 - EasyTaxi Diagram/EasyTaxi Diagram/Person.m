@@ -19,7 +19,7 @@
 
 - (void)setPosition:(PositionPoint*)position
 {
-    _position = _position;
+    _position = position;
 }
 
 - (void)addFavorites:(Driver*)favorite
