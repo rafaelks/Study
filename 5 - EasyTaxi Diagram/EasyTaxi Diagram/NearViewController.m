@@ -9,6 +9,9 @@
 #import <MapKit/MapKit.h>
 #import "NearViewController.h"
 #import "User.h"
+#import "Person.h"
+#import "Driver.h"
+#import "Car.h"
 
 @interface NearViewController ()
 
@@ -35,6 +38,60 @@
 
     [annotations addObject:@{@"title": @"Rafael K. Streit", @"latitude": @40.831685, @"longitude": @-73.477453}];
     [annotations addObject:@{@"title": @"Foobar", @"latitude": @40.835685, @"longitude": @-73.477453}];
+    
+    
+    // Primeira Pessoa
+    
+    PositionPoint *ponto1 = [[PositionPoint alloc] init];
+    [ponto1 setLatitude: 40.831685];
+    [ponto1 setLongitude: -73.477453];
+    
+    Person *pessoa1 = [[Person alloc] init];
+    [pessoa1 setName:@"Txai Wieser"];
+    [pessoa1 setPosition: ponto1];
+    
+    
+    // Segunda Pessoa
+    
+    PositionPoint *ponto2 = [[PositionPoint alloc] init];
+    [ponto2 setLatitude: 40.831085];
+    [ponto2 setLongitude: -73.475453];
+    
+    Person *pessoa2 = [[Person alloc] init];
+    [pessoa2 setName:@"Rafael Streit"];
+    [pessoa2 setPosition: ponto2];
+
+    
+    // Terceira Pessoa
+    
+    PositionPoint *ponto3 = [[PositionPoint alloc] init];
+    [ponto3 setLatitude: 40.831000];
+    [ponto3 setLongitude: -73.475499];
+    
+    Person *pessoa3 = [[Person alloc] init];
+    [pessoa3 setName:@"Fábio Schneider"];
+    [pessoa3 setPosition: ponto3];
+    
+    
+    // Primeiro Taxista
+    
+    Driver *taxista1 = [[Driver alloc] init];
+    [taxista1 setName:@"Fábio Schneider"];
+    
+    // Primeiro Carro
+    
+    PositionPoint *ponto4 = [[PositionPoint alloc] init];
+    [ponto4 setLatitude: 40.831000];
+    [ponto4 setLongitude: -73.475499];
+
+    Car *carro1;
+    carro1 = [[Car alloc] init];
+    
+    
+    [carro1 setPosition:ponto4];
+    [carro1 setBigTrunk:TRUE];
+    [carro1 ]
+    
     
     for (int i = 0; i < annotations.count; i++) {
         NSDictionary *obj = [annotations objectAtIndex:i];
