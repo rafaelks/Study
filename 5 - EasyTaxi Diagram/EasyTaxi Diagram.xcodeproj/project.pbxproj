@@ -29,7 +29,6 @@
 		41B130D91851DE5E00147424 /* NearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41B130D81851DE5E00147424 /* NearViewController.m */; };
 		E922C7151851EDE9009CC992 /* Driver.m in Sources */ = {isa = PBXBuildFile; fileRef = E922C70E1851EDE9009CC992 /* Driver.m */; };
 		E922C7161851EDE9009CC992 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E922C7101851EDE9009CC992 /* Person.m */; };
-		E922C7171851EDE9009CC992 /* Point.m in Sources */ = {isa = PBXBuildFile; fileRef = E922C7121851EDE9009CC992 /* Point.m */; };
 		E922C7181851EDE9009CC992 /* PositionPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = E922C7141851EDE9009CC992 /* PositionPoint.m */; };
 /* End PBXBuildFile section */
 
@@ -77,8 +76,6 @@
 		E922C70E1851EDE9009CC992 /* Driver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Driver.m; sourceTree = "<group>"; };
 		E922C70F1851EDE9009CC992 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		E922C7101851EDE9009CC992 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		E922C7111851EDE9009CC992 /* Point.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
-		E922C7121851EDE9009CC992 /* Point.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Point.m; sourceTree = "<group>"; };
 		E922C7131851EDE9009CC992 /* PositionPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PositionPoint.h; sourceTree = "<group>"; };
 		E922C7141851EDE9009CC992 /* PositionPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PositionPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,8 +204,6 @@
 				E922C70E1851EDE9009CC992 /* Driver.m */,
 				E922C70F1851EDE9009CC992 /* Person.h */,
 				E922C7101851EDE9009CC992 /* Person.m */,
-				E922C7111851EDE9009CC992 /* Point.h */,
-				E922C7121851EDE9009CC992 /* Point.m */,
 				E922C7131851EDE9009CC992 /* PositionPoint.h */,
 				E922C7141851EDE9009CC992 /* PositionPoint.m */,
 			);
@@ -321,7 +316,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37E170901851E6BE00ACCA03 /* Payment.m in Sources */,
-				E922C7171851EDE9009CC992 /* Point.m in Sources */,
 				E922C7181851EDE9009CC992 /* PositionPoint.m in Sources */,
 				E922C7161851EDE9009CC992 /* Person.m in Sources */,
 				41B130D91851DE5E00147424 /* NearViewController.m in Sources */,

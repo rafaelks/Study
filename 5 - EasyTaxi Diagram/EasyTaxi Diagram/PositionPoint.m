@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Rafael Kellermann Streit. All rights reserved.
 //
 
-#import "Point.h"
+#import "PositionPoint.h"
 
-@implementation Point
+@implementation PositionPoint
 {
     double _latitude;
     double _longitude;
