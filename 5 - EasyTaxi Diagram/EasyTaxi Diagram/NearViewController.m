@@ -33,6 +33,7 @@
     [super viewDidLoad];
     
     annotations = [[NSMutableArray alloc] init];
+	counter = 0;
     
     [mapView setDelegate: self];
 
@@ -112,10 +113,6 @@
     [carro2 setBigTrunk:FALSE];
     [carro2 setLicence:@"5838400G"];
     
-    
-    
-    
-    
     for (int i = 0; i < annotations.count; i++) {
         NSDictionary *obj = [annotations objectAtIndex:i];
 
@@ -148,23 +145,26 @@
     [buttonShowDetails addTarget:self
                           action:@selector(showDetailsButtonPressed:)
                 forControlEvents:UIControlEventTouchUpInside];
-
+	
     [buttonShowDetails setFrame:CGRectMake(0, 0, 23, 23)];
     [buttonShowDetails setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
     [buttonShowDetails setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
-    NSLog(@"annotation: %@", annotation);
+	[buttonShowDetails setTag:[[[NSNumber alloc] initWithInteger:counter] integerValue]];
 
     [annotationView setRightCalloutAccessoryView:buttonShowDetails];
-    [annotationView setPinColor:MKPinAnnotationColorGreen];
-    [annotationView setAnimatesDrop:true];
-    [annotationView setCanShowCallout:true];
+    [annotationView setPinColor:MKPinAnnotationColorRed];
+    [annotationView setAnimatesDrop:YES];
+    [annotationView setCanShowCallout:YES];
+	
+	counter++;
 
     return annotationView;
 }
 
 - (void)showDetailsButtonPressed:(UIButton *)sender
 {
-    NSLog(@"123");
+    NSInteger idx = [sender tag];
+	NSLog(@"%@", [annotations objectAtIndex:idx]);
 }
 
 @end

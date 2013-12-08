@@ -12,6 +12,7 @@
 {
     IBOutlet MKMapView *mapView;
     NSMutableArray *annotations;
+	NSInteger counter;
 }
 
 @end
