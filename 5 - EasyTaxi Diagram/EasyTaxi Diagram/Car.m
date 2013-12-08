@@ -6,9 +6,10 @@
 //  Copyright (c) 2013 Rafael Kellermann Streit. All rights reserved.
 //
 
+
 #import "Car.h"
 #import "Payment.h"
-#import "PositionPoint.h"
+
 
 @implementation Car
 {    
@@ -17,7 +18,7 @@
     BOOL _bigtrunk;
     BOOL _active;
     Payment  *_payment;
-    PositionPoint *_position;
+    CLLocationCoordinate2D *_position;
 }
 
 - (void)setLicence:(NSString *)licence
@@ -45,7 +46,7 @@
     _payment = payment;
 }
 
-- (void)setPosition:(PositionPoint *)position
+- (void)setPosition:(CLLocationCoordinate2D *)position
 {
     _position = position;
 }
@@ -75,7 +76,7 @@
     return _payment;
 }
 
-- (PositionPoint *)getPosition
+- (CLLocationCoordinate2D *)getPosition
 {
     return _position;
 }

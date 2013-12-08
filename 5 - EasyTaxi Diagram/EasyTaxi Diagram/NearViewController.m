@@ -33,48 +33,52 @@
     [super viewDidLoad];
     
     annotations = [[NSMutableArray alloc] init];
+    NSMutableArray *usersarray = [[NSMutableArray alloc] init];
 	counter = 0;
     
     [mapView setDelegate: self];
 
-    [annotations addObject:@{@"title": @"Rafael K. Streit", @"latitude": @40.831685, @"longitude": @-73.477453}];
-    [annotations addObject:@{@"title": @"Foobar", @"latitude": @40.835685, @"longitude": @-73.477453}];
-    
+
     // Primeira Pessoa
-    PositionPoint *ponto1 = [[PositionPoint alloc] init];
-    [ponto1 setLatitude: 40.831685];
-    [ponto1 setLongitude: -73.477453];
+    CLLocationCoordinate2D ponto1;
+    ponto1.latitude = 40.831685;
+    ponto1.longitude = -73.477453;
+    
     Person *pessoa1 = [[Person alloc] init];
     [pessoa1 setName:@"Txai Wieser"];
-    [pessoa1 setPosition: ponto1];
+    [pessoa1 setPosition: &ponto1];
     
+    [usersarray addObject:pessoa1];
     
     // Segunda Pessoa
-    PositionPoint *ponto2 = [[PositionPoint alloc] init];
-    [ponto2 setLatitude: 40.831085];
-    [ponto2 setLongitude: -73.475453];
+    CLLocationCoordinate2D ponto2;
+    ponto2.latitude = 40.831085;
+    ponto2.longitude = -73.535453;
+    
     Person *pessoa2 = [[Person alloc] init];
     [pessoa2 setName:@"Rafael K. Streit"];
-    [pessoa2 setPosition: ponto2];
+    [pessoa2 setPosition: &ponto2];
 
+    [usersarray addObject:pessoa2];
     
     // Terceira Pessoa
-    PositionPoint *ponto3 = [[PositionPoint alloc] init];
-    [ponto3 setLatitude: 40.831000];
-    [ponto3 setLongitude: -73.475499];
+    CLLocationCoordinate2D ponto3;
+    ponto3.latitude = 40.931099;
+    ponto3.longitude = -73.471499;
     Person *pessoa3 = [[Person alloc] init];
     [pessoa3 setName:@"Fábio Schneider"];
-    [pessoa3 setPosition: ponto3];
+    [pessoa3 setPosition: &ponto3];
 
+    [usersarray addObject:pessoa3];
     
     // Primeiro Carro
-    PositionPoint *ponto4 = [[PositionPoint alloc] init];
-    [ponto4 setLatitude: 40.831000];
-    [ponto4 setLongitude: -73.475499];
+    CLLocationCoordinate2D ponto4;
+    ponto4.latitude = 40.831090;
+    ponto4.longitude = -73.465499;
 
     Car *carro1;
     carro1 = [[Car alloc] init];
-    [carro1 setPosition:ponto4];
+    [carro1 setPosition: &ponto4];
     [carro1 setBigTrunk:TRUE];
     [carro1 setLicence:@"56X669S0G"];
 	
@@ -83,16 +87,17 @@
     Driver *taxista1 = [[Driver alloc] init];
     [taxista1 setName:@"Taxista 01"];
 	[taxista1 setCar:carro1];
-    
+
+    [usersarray addObject:taxista1];
 
     // Segundo Carro
-    PositionPoint *ponto5 = [[PositionPoint alloc] init];
-    [ponto5 setLatitude: 40.831060];
-    [ponto5 setLongitude: -73.475400];
+    CLLocationCoordinate2D ponto5;
+    ponto5.latitude = 40.838060;
+    ponto5.longitude = -73.410400;
     
     Car *carro2;
     carro2 = [[Car alloc] init];
-    [carro2 setPosition:ponto5];
+    [carro2 setPosition: &ponto5];
     [carro2 setBigTrunk:FALSE];
     [carro2 setLicence:@"5838400G"];
 	
@@ -101,17 +106,26 @@
     [taxista2 setName:@"Taxista 02"];
 	[taxista2 setCar:carro2];
 
+    [usersarray addObject:taxista2];
     
-    for (int i = 0; i < annotations.count; i++) {
-        NSDictionary *obj = [annotations objectAtIndex:i];
+    //[annotations addObject:@{@"title": @"Rafael K. Streit", @"latitude": @40.831685, @"longitude": @-73.477453}];
+    //[annotations addObject:@{@"title": @"Foobar", @"latitude": @40.835685, @"longitude": @-73.477453}];
+    
+    
+    for (int i = 0; i < usersarray.count; i++) {
+        //NSDictionary *obj = [usersarray objectAtIndex:i];
 
-        CLLocationCoordinate2D userLocation;
-        userLocation.latitude = [[obj valueForKey:@"latitude"] doubleValue];
-        userLocation.longitude = [[obj valueForKey:@"longitude"] doubleValue];
+        CLLocationCoordinate2D *userLocation;
+        
+        if ([[usersarray objectAtIndex:i] class] == [Driver class]) {
+            userLocation = [[[usersarray objectAtIndex:i] getCar] getPosition];
+        }else{
+            userLocation = [[usersarray objectAtIndex:i] getPosition];
+        }
         
         MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
-        [annotation setCoordinate:userLocation];
-        [annotation setTitle:[obj valueForKey:@"title"]];
+        [annotation setCoordinate:*userLocation];
+        [annotation setTitle:[[usersarray objectAtIndex:i] getName]];
         [mapView addAnnotation:annotation];
     }
 }
