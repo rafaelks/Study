@@ -7,7 +7,24 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Payment.h"
+#import "Driver.h"
+#import "Person.h"
 
 @interface Run : NSObject
+
+- (void)setDriver:(Driver *)driver;
+- (void)setPerson:(Person *)person;
+- (void)setDistance:(float)distance;
+- (void)setDate:(NSDate *)date;
+- (void)setRate:(NSInteger *)rate;
+- (void)setPayment:(Payment *)payment;
+
+- (Driver *)getDriver;
+- (Person *)getPerson;
+- (float)getDistance;
+- (NSDate *)getDate;
+- (NSInteger *)getRate;
+- (Payment *)getPayment;
 
 @end
