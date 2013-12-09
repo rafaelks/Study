@@ -7,11 +7,12 @@
 //
 
 #import "Driver.h"
+#import "Car.h"
 
 @implementation Driver
 {
     NSString *_licence;
-    NSString *_car;
+    Car *_car;
 }
 
 - (void)setLicence:(NSString *)licence
@@ -19,7 +20,7 @@
     _licence = licence;
 }
 
-- (void)setCar:(NSString *)car
+- (void)setCar:(Car *)car
 {
     _car = car;
 }
@@ -30,7 +31,7 @@
     return _licence;
 }
 
--(NSString *)getCar
+-(Car *)getCar
 {
     return _car;
 }

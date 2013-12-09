@@ -8,16 +8,16 @@
 
 #import "User.h"
 #import "Driver.h"
-#import "PositionPoint.h"
+#import <MapKit/MapKit.h>
 
 @interface Person : User
 
-- (void)setPosition:(PositionPoint*)position;
+- (void)setPosition:(CLLocationCoordinate2D*)position;
 
 - (void)addFavorites:(Driver*)favorite;
 
 - (NSMutableArray*)getFavorites;
 
-- (PositionPoint*)getPosition;
+- (CLLocationCoordinate2D*)getPosition;
 
 @end

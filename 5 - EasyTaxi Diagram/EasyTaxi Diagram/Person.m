@@ -7,17 +7,17 @@
 //
 
 #import "Person.h"
-#import "PositionPoint.h"
 #import "Driver.h"
+#import <MapKit/MapKit.h>
 
 @implementation Person
 {
-    PositionPoint* _position;
-    NSMutableArray* _favorites;
+    CLLocationCoordinate2D *_position;
+    NSMutableArray *_favorites;
     
 }
 
-- (void)setPosition:(PositionPoint*)position
+- (void)setPosition:(CLLocationCoordinate2D *)position
 {
     _position = position;
 }
@@ -32,7 +32,7 @@
     return _favorites;
 }
 
-- (PositionPoint*)getPosition
+- (CLLocationCoordinate2D *)getPosition
 {
     return _position;
 }

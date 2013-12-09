@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Payment.h"
-#import "PositionPoint.h"
+#import <MapKit/MapKit.h>
 
 @interface Car : NSObject
 
@@ -17,7 +17,7 @@
 - (void)setPayment:(Payment *)payment;
 - (void)setActive:(BOOL)active;
 - (void)setBigTrunk:(BOOL)bigtrunk;
-- (void)setPosition:(PositionPoint *)position;
+- (void)setPosition:(CLLocationCoordinate2D *)position;
 
 
 - (NSString *)getLicence;
@@ -25,6 +25,6 @@
 - (Payment *)getPayment;
 - (BOOL)getActive;
 - (BOOL)getBigTrunk;
-- (PositionPoint *)getPosition;
+- (CLLocationCoordinate2D *)getPosition;
 
 @end

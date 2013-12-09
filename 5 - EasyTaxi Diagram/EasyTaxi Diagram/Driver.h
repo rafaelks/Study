@@ -7,14 +7,15 @@
 //
 
 #import "User.h"
+#import "Car.h"
 
 @interface Driver : User
 
 - (void)setLicence:(NSString *)licence;
-- (void)setCar:(NSString *)car;
+- (void)setCar:(Car *)car;
 
 - (NSString *)getLicence;
-- (NSString *)getCar;
+- (Car *)getCar;
 
 
 @end
