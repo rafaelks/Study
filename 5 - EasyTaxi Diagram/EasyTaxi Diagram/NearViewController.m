@@ -165,8 +165,8 @@
     MKCoordinateRegion region;
     region.center.latitude = -30.057338;
     region.center.longitude = -51.174896;
-    region.span.latitudeDelta = 0.5;
-    region.span.longitudeDelta = 0.5;
+    region.span.latitudeDelta = 0.04;
+    region.span.longitudeDelta = 0.04;
     
     region = [mapView regionThatFits:region];
     [mapView setRegion:region animated:YES];

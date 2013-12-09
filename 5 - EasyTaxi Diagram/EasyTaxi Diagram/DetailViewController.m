@@ -42,9 +42,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"view loaded");
-    NSLog(@"%@", _labelType);
-	// Do any additional setup after loading the view.
     
     if ([_obj isKindOfClass:[Driver class]]) {
         [_labelType setText:@"Taxista"];
@@ -54,7 +51,6 @@
     
     [_labelName setText:[_obj getName]];
     
-    // Hide button when is User
     if ([_obj isKindOfClass:[Person class]]) {
         [_buttonAskDriver setHidden:YES];
     }
