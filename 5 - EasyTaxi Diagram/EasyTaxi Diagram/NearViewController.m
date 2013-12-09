@@ -42,8 +42,8 @@
 
     // Primeira Pessoa
     CLLocationCoordinate2D ponto1;
-    ponto1.latitude = 40.831685;
-    ponto1.longitude = -73.476453;
+    ponto1.latitude = -30.057338;
+    ponto1.longitude = -51.174896;
     
     Person *pessoa1 = [[Person alloc] init];
     [pessoa1 setName:@"Txai Wieser"];
@@ -53,8 +53,8 @@
     
     // Segunda Pessoa
     CLLocationCoordinate2D ponto2;
-    ponto2.latitude = 40.831085;
-    ponto2.longitude = -73.535453;
+    ponto2.latitude = -30.053884;
+    ponto2.longitude = -51.182063;
     
     Person *pessoa2 = [[Person alloc] init];
     [pessoa2 setName:@"Rafael K. Streit"];
@@ -64,8 +64,8 @@
     
     // Terceira Pessoa
     CLLocationCoordinate2D ponto3;
-    ponto3.latitude = 40.931099;
-    ponto3.longitude = -73.471499;
+    ponto3.latitude = -30.062761;
+    ponto3.longitude = -51.186504;
     Person *pessoa3 = [[Person alloc] init];
     [pessoa3 setName:@"Fábio Schneider"];
     [pessoa3 setPosition: &ponto3];
@@ -74,8 +74,8 @@
     
     // Primeiro Carro
     CLLocationCoordinate2D ponto4;
-    ponto4.latitude = 40.831090;
-    ponto4.longitude = -73.475499;
+    ponto4.latitude = -30.058397;
+    ponto4.longitude = -51.183822;
 
     Car *carro1;
     carro1 = [[Car alloc] init];
@@ -93,8 +93,8 @@
 
     // Segundo Carro
     CLLocationCoordinate2D ponto5;
-    ponto5.latitude = 40.838060;
-    ponto5.longitude = -73.410400;
+    ponto5.latitude = -30.043984;
+    ponto5.longitude = -51.175947;
     
     Car *carro2;
     carro2 = [[Car alloc] init];
@@ -112,8 +112,8 @@
     
     // Terceiro Carro
     CLLocationCoordinate2D ponto6;
-    ponto6.latitude = 40.831170;
-    ponto6.longitude = -73.475499;
+    ponto6.latitude = -30.049705;
+    ponto6.longitude = -51.203499;
     
     Car *carro3;
     carro3 = [[Car alloc] init];
@@ -163,8 +163,8 @@
     }
     
     MKCoordinateRegion region;
-    region.center.latitude = 40.818060;
-    region.center.longitude = -73.400400;
+    region.center.latitude = -30.057338;
+    region.center.longitude = -51.174896;
     region.span.latitudeDelta = 0.5;
     region.span.longitudeDelta = 0.5;
     
