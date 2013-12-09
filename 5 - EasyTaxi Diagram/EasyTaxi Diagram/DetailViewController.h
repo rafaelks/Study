@@ -15,6 +15,9 @@
 
 @property (nonatomic, retain) IBOutlet UILabel *labelType;
 @property (strong, nonatomic) IBOutlet UILabel *labelName;
+@property (strong, nonatomic) IBOutlet UIButton *buttonAskDriver;
+
+- (IBAction)buttonAskDriverPressed:(id)sender;
 
 - (void)setObject:(id)obj;
 

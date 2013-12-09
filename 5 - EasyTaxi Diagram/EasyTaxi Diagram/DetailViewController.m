@@ -24,6 +24,16 @@
     return self;
 }
 
+- (IBAction)buttonAskDriverPressed:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Solicitação enviada!"
+                                                    message:[NSString stringWithFormat:@"Enviamos a solicitação para o Taxista de placa: %@", [[_obj getCar] getLicence]]
+                                                   delegate:self
+                                          cancelButtonTitle:nil
+                                          otherButtonTitles:@"OK", nil];
+    
+    [alert show];
+}
+
 - (void)setObject:(id)obj
 {
     _obj = obj;
@@ -43,6 +53,11 @@
     }
     
     [_labelName setText:[_obj getName]];
+    
+    // Hide button when is User
+    if ([_obj isKindOfClass:[Person class]]) {
+        [_buttonAskDriver setHidden:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning
