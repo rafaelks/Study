@@ -37,7 +37,7 @@
 	counter = 0;
     
     [mapView setZoomEnabled:YES];
-    [mapView setDelegate: self];
+    [mapView setDelegate:self];
 
 
     // Primeira Pessoa
