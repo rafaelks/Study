@@ -7,9 +7,10 @@
 //
 
 #import "DetailViewController.h"
+#import "Person.h"
+#import "Driver.h"
 
 @interface DetailViewController ()
-
 @end
 
 @implementation DetailViewController
@@ -23,10 +24,25 @@
     return self;
 }
 
+- (void)setObject:(id)obj
+{
+    _obj = obj;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"view loaded");
+    NSLog(@"%@", _labelType);
 	// Do any additional setup after loading the view.
+    
+    if ([_obj isKindOfClass:[Driver class]]) {
+        [_labelType setText:@"Taxista"];
+    } else {
+        [_labelType setText:@"Usuário"];
+    }
+    
+    [_labelName setText:[_obj getName]];
 }
 
 - (void)didReceiveMemoryWarning

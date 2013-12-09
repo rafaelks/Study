@@ -36,13 +36,14 @@
     annotations = [[NSMutableArray alloc] init];
 	counter = 0;
     
+    [mapView setZoomEnabled:YES];
     [mapView setDelegate: self];
 
 
     // Primeira Pessoa
     CLLocationCoordinate2D ponto1;
     ponto1.latitude = 40.831685;
-    ponto1.longitude = -73.477453;
+    ponto1.longitude = -73.476453;
     
     Person *pessoa1 = [[Person alloc] init];
     [pessoa1 setName:@"Txai Wieser"];
@@ -74,7 +75,7 @@
     // Primeiro Carro
     CLLocationCoordinate2D ponto4;
     ponto4.latitude = 40.831090;
-    ponto4.longitude = -73.465499;
+    ponto4.longitude = -73.475499;
 
     Car *carro1;
     carro1 = [[Car alloc] init];
@@ -103,10 +104,48 @@
 	
 	// Segundo Taxista
     Driver *taxista2 = [[Driver alloc] init];
-    [taxista2 setName:@"Taxista 02"];
+    [taxista2 setName:@"Taxista 03"];
 	[taxista2 setCar:carro2];
 
     [annotations addObject:taxista2];
+    
+    
+    // Terceiro Carro
+    CLLocationCoordinate2D ponto6;
+    ponto6.latitude = 40.831170;
+    ponto6.longitude = -73.475499;
+    
+    Car *carro3;
+    carro3 = [[Car alloc] init];
+    [carro3 setPosition: &ponto6];
+    [carro3 setBigTrunk:TRUE];
+    [carro3 setLicence:@"56X669S0G"];
+	
+    
+	// Terceiro Taxista
+    Driver *taxista3 = [[Driver alloc] init];
+    [taxista3 setName:@"Taxista 04"];
+	[taxista3 setCar:carro3];
+    
+    [annotations addObject:taxista3];
+    
+    // Segundo Carro
+    CLLocationCoordinate2D ponto7;
+    ponto7.latitude = 40.831360;
+    ponto7.longitude = -73.415400;
+    
+    Car *carro4;
+    carro4 = [[Car alloc] init];
+    [carro4 setPosition: &ponto4];
+    [carro4 setBigTrunk:FALSE];
+    [carro4 setLicence:@"5838400G"];
+	
+	// Quarto Taxista
+    Driver *taxista4 = [[Driver alloc] init];
+    [taxista4 setName:@"Taxista 04"];
+	[taxista4 setCar:carro4];
+    
+    [annotations addObject:taxista4];
     
     for (int i = 0; i < annotations.count; i++) {
         CLLocationCoordinate2D *userLocation;
@@ -122,6 +161,15 @@
         [annotation setTitle:[[annotations objectAtIndex:i] getName]];
         [mapView addAnnotation:annotation];
     }
+    
+    MKCoordinateRegion region;
+    region.center.latitude = 40.818060;
+    region.center.longitude = -73.400400;
+    region.span.latitudeDelta = 0.5;
+    region.span.longitudeDelta = 0.5;
+    
+    region = [mapView regionThatFits:region];
+    [mapView setRegion:region animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -146,8 +194,8 @@
     [buttonShowDetails setFrame:CGRectMake(0, 0, 23, 23)];
     [buttonShowDetails setContentVerticalAlignment:UIControlContentVerticalAlignmentCenter];
     [buttonShowDetails setContentHorizontalAlignment:UIControlContentHorizontalAlignmentCenter];
-	[buttonShowDetails setTag:[[[NSNumber alloc] initWithInteger:counter] integerValue]];
-
+	[buttonShowDetails setTag:counter];
+    
     [annotationView setRightCalloutAccessoryView:buttonShowDetails];
 
 	if ([[annotations objectAtIndex:counter] isKindOfClass:[Driver class]]) {
@@ -169,8 +217,10 @@
     NSInteger idx = [sender tag];
 	NSLog(@"%ld - %@", idx, [annotations objectAtIndex:idx]);
 	
-	DetailViewController *detailView = [[DetailViewController alloc] init];
-	[[self navigationController] addChildViewController:detailView];
+	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    DetailViewController *detail = [storyboard instantiateViewControllerWithIdentifier:@"Detail"];
+    [detail setObject:[annotations objectAtIndex:idx]];
+    [self.navigationController pushViewController:detail animated:YES];
 }
 
 @end

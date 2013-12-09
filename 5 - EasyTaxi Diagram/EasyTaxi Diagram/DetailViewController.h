@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController
+{
+    id _obj;
+}
+
+@property (nonatomic, retain) IBOutlet UILabel *labelType;
+@property (strong, nonatomic) IBOutlet UILabel *labelName;
+
+- (void)setObject:(id)obj;
 
 @end
