@@ -8,6 +8,7 @@
 
 #import <MapKit/MapKit.h>
 #import "NearViewController.h"
+#import "DetailViewController.h"
 #import "User.h"
 #import "Person.h"
 #import "Driver.h"
@@ -33,7 +34,6 @@
     [super viewDidLoad];
     
     annotations = [[NSMutableArray alloc] init];
-    NSMutableArray *usersarray = [[NSMutableArray alloc] init];
 	counter = 0;
     
     [mapView setDelegate: self];
@@ -48,7 +48,7 @@
     [pessoa1 setName:@"Txai Wieser"];
     [pessoa1 setPosition: &ponto1];
     
-    [usersarray addObject:pessoa1];
+    [annotations addObject:pessoa1];
     
     // Segunda Pessoa
     CLLocationCoordinate2D ponto2;
@@ -59,7 +59,7 @@
     [pessoa2 setName:@"Rafael K. Streit"];
     [pessoa2 setPosition: &ponto2];
 
-    [usersarray addObject:pessoa2];
+    [annotations addObject:pessoa2];
     
     // Terceira Pessoa
     CLLocationCoordinate2D ponto3;
@@ -69,7 +69,7 @@
     [pessoa3 setName:@"Fábio Schneider"];
     [pessoa3 setPosition: &ponto3];
 
-    [usersarray addObject:pessoa3];
+    [annotations addObject:pessoa3];
     
     // Primeiro Carro
     CLLocationCoordinate2D ponto4;
@@ -88,7 +88,7 @@
     [taxista1 setName:@"Taxista 01"];
 	[taxista1 setCar:carro1];
 
-    [usersarray addObject:taxista1];
+    [annotations addObject:taxista1];
 
     // Segundo Carro
     CLLocationCoordinate2D ponto5;
@@ -106,26 +106,20 @@
     [taxista2 setName:@"Taxista 02"];
 	[taxista2 setCar:carro2];
 
-    [usersarray addObject:taxista2];
+    [annotations addObject:taxista2];
     
-    //[annotations addObject:@{@"title": @"Rafael K. Streit", @"latitude": @40.831685, @"longitude": @-73.477453}];
-    //[annotations addObject:@{@"title": @"Foobar", @"latitude": @40.835685, @"longitude": @-73.477453}];
-    
-    
-    for (int i = 0; i < usersarray.count; i++) {
-        //NSDictionary *obj = [usersarray objectAtIndex:i];
-
+    for (int i = 0; i < annotations.count; i++) {
         CLLocationCoordinate2D *userLocation;
-        
-        if ([[usersarray objectAtIndex:i] class] == [Driver class]) {
-            userLocation = [[[usersarray objectAtIndex:i] getCar] getPosition];
-        }else{
-            userLocation = [[usersarray objectAtIndex:i] getPosition];
+		
+        if ([[annotations objectAtIndex:i] isKindOfClass:[Driver class]]) {
+            userLocation = [[[annotations objectAtIndex:i] getCar] getPosition];
+        } else {
+            userLocation = [[annotations objectAtIndex:i] getPosition];
         }
         
         MKPointAnnotation *annotation = [[MKPointAnnotation alloc] init];
         [annotation setCoordinate:*userLocation];
-        [annotation setTitle:[[usersarray objectAtIndex:i] getName]];
+        [annotation setTitle:[[annotations objectAtIndex:i] getName]];
         [mapView addAnnotation:annotation];
     }
 }
@@ -155,7 +149,13 @@
 	[buttonShowDetails setTag:[[[NSNumber alloc] initWithInteger:counter] integerValue]];
 
     [annotationView setRightCalloutAccessoryView:buttonShowDetails];
-    [annotationView setPinColor:MKPinAnnotationColorRed];
+
+	if ([[annotations objectAtIndex:counter] isKindOfClass:[Driver class]]) {
+		[annotationView setPinColor:MKPinAnnotationColorRed];
+	} else {
+		[annotationView setPinColor:MKPinAnnotationColorGreen];
+	}
+
     [annotationView setAnimatesDrop:YES];
     [annotationView setCanShowCallout:YES];
 	
@@ -167,7 +167,10 @@
 - (void)showDetailsButtonPressed:(UIButton *)sender
 {
     NSInteger idx = [sender tag];
-	NSLog(@"%@", [annotations objectAtIndex:idx]);
+	NSLog(@"%ld - %@", idx, [annotations objectAtIndex:idx]);
+	
+	DetailViewController *detailView = [[DetailViewController alloc] init];
+	[[self navigationController] addChildViewController:detailView];
 }
 
 @end
