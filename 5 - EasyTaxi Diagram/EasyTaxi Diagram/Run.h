@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Payment.h"
+#import "Driver.h"
+#import "Person.h"
 
 @interface Run : NSObject
 

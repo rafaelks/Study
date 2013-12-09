@@ -89,7 +89,7 @@
 
 - (NSDate *)getDate
 {
-    retuen _date;
+    return _date;
 }
 
 @end
