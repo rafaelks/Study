@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8018C324-B1C4-4CB2-9F81-4BD6A14CA99A</string>
+	<string>4BCABBA8-9C46-43E7-9949-A90DBF1C7C92</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Airline Tickets</string>
+	<string>CRPA</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>37EDC88D-8CB3-43AD-A9BB-37DEC1DCFE54</key>
+		<key>11AADB34-6B49-4393-9766-885861A337A4</key>
 		<string>ssh://github.com/rafaelks/BEPiD.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Airline Tickets/Airline Tickets.xcodeproj/project.xcworkspace</string>
+	<string>CRPA/CRPA.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>37EDC88D-8CB3-43AD-A9BB-37DEC1DCFE54</key>
+		<key>11AADB34-6B49-4393-9766-885861A337A4</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>37EDC88D-8CB3-43AD-A9BB-37DEC1DCFE54</string>
+	<string>11AADB34-6B49-4393-9766-885861A337A4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>37EDC88D-8CB3-43AD-A9BB-37DEC1DCFE54</string>
+			<string>11AADB34-6B49-4393-9766-885861A337A4</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BEPiD</string>
 		</dict>

@@ -1,6 +1,6 @@
 //
-//  Airline_TicketsTests.m
-//  Airline TicketsTests
+//  CRPATests.m
+//  CRPATests
 //
 //  Created by Rafael Kellermann Streit on 12/10/13.
 //  Copyright (c) 2013 Rafael Kellermann Streit. All rights reserved.
@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface Airline_TicketsTests : XCTestCase
+@interface CRPATests : XCTestCase
 
 @end
 
-@implementation Airline_TicketsTests
+@implementation CRPATests
 
 - (void)setUp
 {
