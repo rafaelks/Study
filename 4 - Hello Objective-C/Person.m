@@ -9,34 +9,11 @@
 #import "Person.h"
 
 @implementation Person
-{
-    NSInteger idPerson;
-    NSString *namePerson;
-}
 
-- (instancetype)init
+- (id)initWithLive:(BOOL)live
 {
+    _live = live;
     return self;
-}
-
-- (NSInteger)getId
-{
-    return idPerson;
-}
-
-- (NSString *)getName
-{
-    return namePerson;
-}
-
-- (void)setId:(NSInteger)id;
-{
-    idPerson = id;
-}
-
-- (void)setName:(NSString *)name
-{
-    namePerson = name;
 }
 
 @end

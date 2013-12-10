@@ -10,9 +10,11 @@
 
 @interface Person : NSObject
 
-- (void)setId:(NSInteger)id;
-- (void)setName:(NSString *)name;
-- (NSInteger)getId;
-- (NSString *)getName;
+@property NSInteger idPerson;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, assign) int foo;
+@property (nonatomic, readonly, getter = isLive) BOOL live;
+
+- (id)initWithLive:(BOOL)live;
 
 @end

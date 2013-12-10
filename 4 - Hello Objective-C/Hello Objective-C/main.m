@@ -25,20 +25,22 @@ int main(int argc, const char * argv[])
         
         
         // Person
-        Person *rafael = [[Person alloc] init];
+        Person *rafael = [[Person alloc] initWithLive:YES];
         [rafael setName:@"Rafael Kellermann Streit"];
-        [rafael setId:30];
-        NSLog(@"Nome da pessoa (%ld): %@", [rafael getId], [rafael getName]);
+        [rafael setIdPerson:30];
+        NSLog(@"Nome da pessoa (%ld): %@", [rafael idPerson], [rafael name]);
         
         
         // NSArray
-        NSArray *array = @[@"Rafael", @"Kellermann", @"Streit", @30, @{@"foo": @"bar"}, [NSNull null]];
+        NSArray *array = @[@"Rafael", @"Kellermann", @"Streit", @30, @{@"foo": @"bar"}];
         NSLog(@"%@", array);
         
         
         // NSDictionary
         NSDictionary *foo = @{@"foo": @"bar"};
         NSLog(@"%@", foo);
+        
+        [rafael isLive];
     }
 
     return 0;
