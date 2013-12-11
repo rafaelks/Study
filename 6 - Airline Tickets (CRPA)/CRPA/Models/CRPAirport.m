@@ -14,7 +14,7 @@
 {
     if (self) {
         if (code.length != 3) {
-            NSLog(@"O tamanho é %ld inválido para nome do Aeroporto. Deve ser exatamente 3 caracteres.", name.length);
+            NSLog(@"O tamanho é %d inválido para nome do Aeroporto. Deve ser exatamente 3 caracteres.", name.length);
             return nil;
         }
         
