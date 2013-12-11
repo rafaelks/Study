@@ -7,6 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CRPAirline.h"
+#import "CRPAirport.h"
+#import "CRPFlight.h"
 
 @interface CRPSystemManager : NSObject
 

@@ -8,14 +8,32 @@
 
 #import <Foundation/Foundation.h>
 #import "CRPSeatClass.h"
+#import "CRPAirline.h"
+#import "CRPAirport.h"
 
 @interface CRPFlight : NSObject{
-    NSString *code;
+
 }
 
-@property (nonatomic, strong) NSString *code;
 @property NSMutableArray *seatClasses;
 
+@property CRPAirline *airLine;
+@property CRPAirport *origin;
+@property CRPAirport *destiny;
+@property int year;
+@property int month;
+@property int day;
+@property NSString *code;
+
 - (id)initWithSeatClasses:(NSArray *)seatClasses;
+
+- (id)initWithAirline:(CRPAirline *)airLine
+           withOrigin:(CRPAirport *)origin
+          withDestiny:(CRPAirport *)destiny
+             withYear:(int)year
+            withMonth:(int)month
+              withDay:(int)day
+             withCode:(NSString *)code;
+
 
 @end
