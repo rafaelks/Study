@@ -22,13 +22,16 @@
 }
 
 - (id)init {
-    if (self = [super init]) {
+    self = [super init];
+
+    if (self) {
         classes = @{
             @"first-class": @"Primeira Classe",
             @"executive": @"Executiva",
             @"economic": @"Econômica"
         };
     }
+
     return self;
 }
 

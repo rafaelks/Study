@@ -12,6 +12,8 @@
 
 - (id)initWithId:(NSString *)seatId
 {
+    self = [super init];
+
     if (self) {
         _seatId = seatId;
         _seatStatus = true;

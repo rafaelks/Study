@@ -12,6 +12,8 @@
 
 - (id)initWithCode:(NSString *)code andName:(NSString *)name
 {
+    self = [super init];
+
     if (self) {
         if (code.length != 3) {
             NSLog(@"O tamanho %i é inválido para nome do Aeroporto. Deve ser exatamente 3 caracteres.", (int) [code length]);
