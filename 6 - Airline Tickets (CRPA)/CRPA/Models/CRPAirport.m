@@ -10,14 +10,15 @@
 
 @implementation CRPAirport
 
-- (id)initWithName:(NSString *)name
+- (id)initWithCode:(NSString *)code andName:(NSString *)name
 {
-    if (self == nil) {
-        if (name.length != 3) {
+    if (self) {
+        if (code.length != 3) {
             NSLog(@"O tamanho é %ld inválido para nome do Aeroporto. Deve ser exatamente 3 caracteres.", name.length);
             return nil;
         }
         
+        _code = code;
         _name = name;
         
         return self;

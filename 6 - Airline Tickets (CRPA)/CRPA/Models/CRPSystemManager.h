@@ -10,6 +10,6 @@
 
 @interface CRPSystemManager : NSObject
 
-- (void)addAirport:(NSString *)name;
+- (void)addAirportWithCode:(NSString *)code andName:(NSString *)name;
 
 @end
