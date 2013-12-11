@@ -12,4 +12,6 @@
 
 - (void)addAirportWithCode:(NSString *)code andName:(NSString *)name;
 
+- (NSMutableArray *)getAllAirports;
+
 @end

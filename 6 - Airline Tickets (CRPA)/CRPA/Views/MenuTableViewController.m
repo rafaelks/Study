@@ -7,6 +7,7 @@
 //
 
 #import "MenuTableViewController.h"
+#import "CRPSystemManager.h"
 
 @interface MenuTableViewController ()
 
@@ -26,6 +27,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    CRPSystemManager *manager = [[CRPSystemManager alloc] init];
+    
+    [manager addAirportWithCode:@"POA" andName:@"Porto Alegre"];
+    NSLog(@"Airports: %@", [manager getAllAirports]);
 }
 
 - (void)didReceiveMemoryWarning

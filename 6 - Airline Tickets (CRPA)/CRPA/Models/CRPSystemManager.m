@@ -13,12 +13,19 @@
     NSMutableArray *airports;
 }
 
+# pragma Airport
+
 - (void)addAirportWithCode:(NSString *)code andName:(NSString *)name {
     CRPAirport *airport = [[CRPAirport alloc] initWithCode:code andName:name];
     
     if (airport != nil) {
         [airports addObject:airport];
     }
+}
+
+- (NSMutableArray *)getAllAirports
+{
+    return airports;
 }
 
 @end
