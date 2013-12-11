@@ -24,10 +24,10 @@
 - (id)init {
     if (self = [super init]) {
         classes = @{
-                    @"first-class": @"Primeira Classe",
-                    @"executive": @"Executiva",
-                    @"economic": @"Econoômica"
-                    };
+            @"first-class": @"Primeira Classe",
+            @"executive": @"Executiva",
+            @"economic": @"Econoômica"
+        };
     }
     return self;
 }
