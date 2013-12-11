@@ -31,7 +31,8 @@
     CRPSystemManager *manager = [[CRPSystemManager alloc] init];
     
     [manager addAirportWithCode:@"POA" andName:@"Porto Alegre"];
-    NSLog(@"Airports: %@", [manager getAllAirports]);
+    [manager addAirportWithCode:@"FLR" andName:@"Florianópolis"];
+    [manager addAirportWithCode:@"FOOO" andName:@"Florianópolis"];
 }
 
 - (void)didReceiveMemoryWarning
