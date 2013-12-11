@@ -10,8 +10,6 @@
 
 @interface CRPSeatClass : NSObject
 
-- (NSDictionary *)getClasses;
-
-+ (id)sharedManager;
++ (NSDictionary *)getClasses;
 
 @end
