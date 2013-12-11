@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BECFE671858760500BF49E1 /* CRPSeatClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE661858760500BF49E1 /* CRPSeatClass.m */; };
 		41309D1118586EE300D0A0BF /* CRPAirport.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1018586EE300D0A0BF /* CRPAirport.m */; };
 		41309D1418586F1400D0A0BF /* CRPAirline.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1318586F1400D0A0BF /* CRPAirline.m */; };
 		41309D1718586F2500D0A0BF /* CRPFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1618586F2500D0A0BF /* CRPFlight.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BECFE651858760500BF49E1 /* CRPSeatClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPSeatClass.h; sourceTree = "<group>"; };
+		0BECFE661858760500BF49E1 /* CRPSeatClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPSeatClass.m; sourceTree = "<group>"; };
 		41309D0F18586EE300D0A0BF /* CRPAirport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRPAirport.h; path = Models/CRPAirport.h; sourceTree = "<group>"; };
 		41309D1018586EE300D0A0BF /* CRPAirport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRPAirport.m; path = Models/CRPAirport.m; sourceTree = "<group>"; };
 		41309D1218586F1400D0A0BF /* CRPAirline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRPAirline.h; path = Models/CRPAirline.h; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				41309D1618586F2500D0A0BF /* CRPFlight.m */,
 				41309D1B185873C400D0A0BF /* CRPSeat.h */,
 				41309D1C185873C400D0A0BF /* CRPSeat.m */,
+				0BECFE651858760500BF49E1 /* CRPSeatClass.h */,
+				0BECFE661858760500BF49E1 /* CRPSeatClass.m */,
 				41309D18185870B300D0A0BF /* CRPSystemManager.h */,
 				41309D19185870B300D0A0BF /* CRPSystemManager.m */,
 			);
@@ -298,6 +303,7 @@
 				41309D21185875FB00D0A0BF /* MenuTableViewController.m in Sources */,
 				B18E37C618587A490095B2D3 /* CRPASection.m in Sources */,
 				41309D1D185873C400D0A0BF /* CRPSeat.m in Sources */,
+				0BECFE671858760500BF49E1 /* CRPSeatClass.m in Sources */,
 				41309D1418586F1400D0A0BF /* CRPAirline.m in Sources */,
 				41F6BF61185741EA0025DF46 /* AppDelegate.m in Sources */,
 				41309D1A185870B300D0A0BF /* CRPSystemManager.m in Sources */,

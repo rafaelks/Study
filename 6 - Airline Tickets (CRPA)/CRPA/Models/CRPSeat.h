@@ -10,4 +10,9 @@
 
 @interface CRPSeat : NSObject
 
+@property (nonatomic, strong) NSString *seatId;
+@property (nonatomic, getter = isFree) bool seatStatus;
+
+- (id)initWithId:(NSString *)seatId;
+
 @end
