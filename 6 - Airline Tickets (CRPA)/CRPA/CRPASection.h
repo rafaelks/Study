@@ -15,6 +15,6 @@
 @property (nonatomic) NSInteger rows;
 @property (nonatomic) NSInteger cols;
 
--(id)initWithAirline:(CRPAirline *)airline withFlight(CRPAFlight *)flight withRows(NSInteger int)rows withCols(NSInteger int)cols;
+-(id)initWithAirline:(CRPAirline *)airline withFlight(CRPAFlight *)code withRows(NSInteger int)rows withCols(NSInteger int)cols;
 
 @end
