@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CRPSeatClass.h"
 
 @interface CRPFlight : NSObject
+
+@property NSMutableArray *seatClasses;
+
+- (id)initWithSeatClasses:(NSArray *)seatClasses;
 
 @end
