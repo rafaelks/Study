@@ -9,15 +9,18 @@
 #import "CRPAirline.h"
 
 @implementation CRPAirline
-{
-    NSString *name;
-}
 
-- (void)addAirline:(NSString *)name {
-    CRPAirline *airline = [[CRPAirline alloc] initWithNane:name];
+- (id)initWithName:(NSString *)name {
 
-    if (airline != nil)
-        [airline = ]
+    if (self == nil){
+        if (name.length > 6){
+            NSLog(@"Nome inválido. O nome deve ter no máximo 6 caracteres!");
+            return nil;
+        }
+        _name = name;
+        return self;
+    }
+    return nil;
 }
 
 @end

@@ -8,10 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CRPAirline : NSObject{
-    
-}
+@interface CRPAirline : NSObject
 
-@property NSString *name;
+@property (nonatomic, strong) NSString *name;
+
+- (id)initWithName:(NSString *)name;
 
 @end
