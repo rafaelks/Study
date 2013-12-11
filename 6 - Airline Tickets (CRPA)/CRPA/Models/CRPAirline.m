@@ -9,5 +9,15 @@
 #import "CRPAirline.h"
 
 @implementation CRPAirline
+{
+    NSString *name;
+}
+
+- (void)addAirline:(NSString *)name {
+    CRPAirline *airline = [[CRPAirline alloc] initWithNane:name];
+
+    if (airline != nil)
+        [airline = ]
+}
 
 @end

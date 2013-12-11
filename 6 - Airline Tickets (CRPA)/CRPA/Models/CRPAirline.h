@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CRPAirline : NSObject
+@interface CRPAirline : NSObject{
+    
+}
+
+@property NSString *name;
 
 @end
