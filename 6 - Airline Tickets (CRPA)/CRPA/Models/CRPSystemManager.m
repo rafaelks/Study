@@ -13,6 +13,13 @@
     NSMutableArray *airports;
 }
 
+- (instancetype)init
+{
+    airports = [[NSMutableArray alloc] init];
+
+    return self;
+}
+
 # pragma Airport
 
 - (void)addAirportWithCode:(NSString *)code andName:(NSString *)name {
