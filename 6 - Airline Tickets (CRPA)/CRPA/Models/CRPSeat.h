@@ -1,5 +1,5 @@
 //
-//  CRPAirport.h
+//  CRPSeat.h
 //  CRPA
 //
 //  Created by Rafael Kellermann Streit on 12/11/13.
@@ -8,10 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CRPAirport : NSObject
-
-@property (nonatomic, strong) NSString *name;
-
-- (id)initWithName:(NSString *)name;
+@interface CRPSeat : NSObject
 
 @end

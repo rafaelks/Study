@@ -1,5 +1,5 @@
 //
-//  CRPAirport.h
+//  CRPSystemManager.h
 //  CRPA
 //
 //  Created by Rafael Kellermann Streit on 12/11/13.
@@ -8,10 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CRPAirport : NSObject
+@interface CRPSystemManager : NSObject
 
-@property (nonatomic, strong) NSString *name;
-
-- (id)initWithName:(NSString *)name;
+- (void)addAirport:(NSString *)name;
 
 @end
