@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "CRPSeatClass.h"
 
-@interface CRPFlight : NSObject
+@interface CRPFlight : NSObject{
+    NSString *code;
+}
 
+@property (nonatomic, strong) NSString *code;
 @property NSMutableArray *seatClasses;
 
 - (id)initWithSeatClasses:(NSArray *)seatClasses;
