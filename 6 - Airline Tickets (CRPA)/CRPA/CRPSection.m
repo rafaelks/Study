@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Rafael Kellermann Streit. All rights reserved.
 //
 
-#import "CRPASection.h"
+#import "CRPSection.h"
 
-@implementation CRPASection
+@implementation CRPSection
 
 @end

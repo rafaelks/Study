@@ -10,7 +10,7 @@
 #import "CRPAirline.h"
 #import "CRPFlight.h"
 
-@interface CRPASection : NSObject
+@interface CRPSection : NSObject
 
 @property (nonatomic) NSInteger rows;
 @property (nonatomic) NSInteger cols;

@@ -27,7 +27,7 @@
 		41F6BF75185741EA0025DF46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F6BF54185741EA0025DF46 /* UIKit.framework */; };
 		41F6BF7D185741EA0025DF46 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41F6BF7B185741EA0025DF46 /* InfoPlist.strings */; };
 		41F6BF7F185741EA0025DF46 /* CRPATests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F6BF7E185741EA0025DF46 /* CRPATests.m */; };
-		B18E37C618587A490095B2D3 /* CRPASection.m in Sources */ = {isa = PBXBuildFile; fileRef = B18E37C518587A490095B2D3 /* CRPASection.m */; };
+		B18E37C618587A490095B2D3 /* CRPSection.m in Sources */ = {isa = PBXBuildFile; fileRef = B18E37C518587A490095B2D3 /* CRPSection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +72,8 @@
 		41F6BF7A185741EA0025DF46 /* CRPATests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CRPATests-Info.plist"; sourceTree = "<group>"; };
 		41F6BF7C185741EA0025DF46 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41F6BF7E185741EA0025DF46 /* CRPATests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPATests.m; sourceTree = "<group>"; };
-		B18E37C418587A490095B2D3 /* CRPASection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPASection.h; sourceTree = "<group>"; };
-		B18E37C518587A490095B2D3 /* CRPASection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPASection.m; sourceTree = "<group>"; };
+		B18E37C418587A490095B2D3 /* CRPSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPSection.h; sourceTree = "<group>"; };
+		B18E37C518587A490095B2D3 /* CRPSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPSection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,8 @@
 				41309D1018586EE300D0A0BF /* CRPAirport.m */,
 				41309D1218586F1400D0A0BF /* CRPAirline.h */,
 				41309D1318586F1400D0A0BF /* CRPAirline.m */,
-				B18E37C418587A490095B2D3 /* CRPASection.h */,
-				B18E37C518587A490095B2D3 /* CRPASection.m */,
+				B18E37C418587A490095B2D3 /* CRPSection.h */,
+				B18E37C518587A490095B2D3 /* CRPSection.m */,
 				41309D1518586F2500D0A0BF /* CRPFlight.h */,
 				41309D1618586F2500D0A0BF /* CRPFlight.m */,
 				41309D1B185873C400D0A0BF /* CRPSeat.h */,
@@ -301,7 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41309D21185875FB00D0A0BF /* MenuTableViewController.m in Sources */,
-				B18E37C618587A490095B2D3 /* CRPASection.m in Sources */,
+				B18E37C618587A490095B2D3 /* CRPSection.m in Sources */,
 				41309D1D185873C400D0A0BF /* CRPSeat.m in Sources */,
 				0BECFE671858760500BF49E1 /* CRPSeatClass.m in Sources */,
 				41309D1418586F1400D0A0BF /* CRPAirline.m in Sources */,
