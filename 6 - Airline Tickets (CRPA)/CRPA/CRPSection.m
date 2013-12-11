@@ -10,4 +10,25 @@
 
 @implementation CRPSection
 
+-(id)initWithAirline:(CRPAirline *)airline withFlight:(CRPFlight *)flID withRows:(NSInteger)rows withCols:(NSInteger)cols
+{
+    NSString *columns = @"ABCDEF";
+
+    _seats = [[ NSMutableArray alloc] init];
+
+    for (int i=0; i < rows; i++) {
+        for (int j = 0 ; j < cols; j++) {
+            NSString *seatName = [NSString stringWithFormat:@"%d%hu", i, [columns characterAtIndex:j]];
+            CRPSeat *seat = [[CRPSeat alloc] initWithId:seatName];
+            
+            [_seats addObject:seat];
+        }
+    }
+    
+    NSLog(@"%@", _seats);
+    
+    return self;
+}
+
+
 @end
