@@ -26,7 +26,7 @@
         classes = @{
             @"first-class": @"Primeira Classe",
             @"executive": @"Executiva",
-            @"economic": @"Econoômica"
+            @"economic": @"Econômica"
         };
     }
     return self;
