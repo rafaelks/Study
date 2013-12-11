@@ -10,8 +10,9 @@
 
 @interface CRPAirport : NSObject
 
+@property (nonatomic, strong) NSString *code;
 @property (nonatomic, strong) NSString *name;
 
-- (id)initWithName:(NSString *)name;
+- (id)initWithCode:(NSString *)code andName:(NSString *)name;
 
 @end

@@ -13,8 +13,8 @@
     NSMutableArray *airports;
 }
 
-- (void)addAirport:(NSString *)name {
-    CRPAirport *airport = [[CRPAirport alloc] initWithName:name];
+- (void)addAirportWithCode:(NSString *)code andName:(NSString *)name {
+    CRPAirport *airport = [[CRPAirport alloc] initWithCode:code andName:name];
     
     if (airport != nil) {
         [airports addObject:airport];
