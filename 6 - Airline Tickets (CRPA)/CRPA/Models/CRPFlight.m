@@ -28,4 +28,27 @@
     return nil;
 }
 
+- (id)initWithAirline:(CRPAirline *)airLine
+           withOrigin:(CRPAirport *)origin
+          withDestiny:(CRPAirport *)destiny
+             withYear:(int)year
+            withMonth:(int)month
+              withDay:(int)day
+             withCode:(NSString *)code
+{
+    self = [super init];
+
+    if (self) {
+        self.airLine = airLine;
+        self.origin = origin;
+        self.destiny = destiny;
+        self.year = year;
+        self.month = month;
+        self.day = day;
+        self.code = code;
+    }
+    
+    return self;
+}
+
 @end
