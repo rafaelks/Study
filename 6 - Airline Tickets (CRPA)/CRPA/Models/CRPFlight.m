@@ -19,7 +19,7 @@
         id existsClass = [[CRPSeatClass getClasses] objectForKey:seatClass];
         
         if (existsClass != nil && [self.seatClasses indexOfObject:seatClass] == NSNotFound) {
-            [self.seatClasses addObject:seatClass];
+            [_seatClasses addObject:seatClass];
         }
     }
     

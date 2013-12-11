@@ -10,15 +10,11 @@
 
 @implementation CRPSeat
 
-#warning ADICIONAR VALIDAÇÃO ALFANUMERICA PARA IDENTIFICADOR DE ASSENTO.
 - (id)initWithId:(NSString *)seatId
 {
-    if (self == nil) {
-        if (seatId.length != 2) {
-            NSLog(@"O tamanho é %ld inválido para nome do Aeroporto. Deve ser exatamente 2 caracteres.", seatId.length);
-            return nil;
-        }
-        
+    self = [super init];
+
+    if (self) {
         _seatId = seatId;
         _seatStatus = true;
         
