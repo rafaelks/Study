@@ -12,6 +12,7 @@
 		41309D1718586F2500D0A0BF /* CRPFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1618586F2500D0A0BF /* CRPFlight.m */; };
 		41309D1A185870B300D0A0BF /* CRPSystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D19185870B300D0A0BF /* CRPSystemManager.m */; };
 		41309D1D185873C400D0A0BF /* CRPSeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1C185873C400D0A0BF /* CRPSeat.m */; };
+		41309D21185875FB00D0A0BF /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D20185875FB00D0A0BF /* MenuTableViewController.m */; };
 		41F6BF51185741EA0025DF46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F6BF50185741EA0025DF46 /* Foundation.framework */; };
 		41F6BF53185741EA0025DF46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F6BF52185741EA0025DF46 /* CoreGraphics.framework */; };
 		41F6BF55185741EA0025DF46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F6BF54185741EA0025DF46 /* UIKit.framework */; };
@@ -48,6 +49,8 @@
 		41309D19185870B300D0A0BF /* CRPSystemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRPSystemManager.m; path = Models/CRPSystemManager.m; sourceTree = "<group>"; };
 		41309D1B185873C400D0A0BF /* CRPSeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRPSeat.h; path = Models/CRPSeat.h; sourceTree = "<group>"; };
 		41309D1C185873C400D0A0BF /* CRPSeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRPSeat.m; path = Models/CRPSeat.m; sourceTree = "<group>"; };
+		41309D1F185875FB00D0A0BF /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuTableViewController.h; path = Views/MenuTableViewController.h; sourceTree = "<group>"; };
+		41309D20185875FB00D0A0BF /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuTableViewController.m; path = Views/MenuTableViewController.m; sourceTree = "<group>"; };
 		41F6BF4D185741EA0025DF46 /* CRPA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRPA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F6BF50185741EA0025DF46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41F6BF52185741EA0025DF46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -108,6 +111,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		41309D1E185875DA00D0A0BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41309D1F185875FB00D0A0BF /* MenuTableViewController.h */,
+				41309D20185875FB00D0A0BF /* MenuTableViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		41F6BF44185741EA0025DF46 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +153,7 @@
 		41F6BF56185741EA0025DF46 /* CRPA */ = {
 			isa = PBXGroup;
 			children = (
+				41309D1E185875DA00D0A0BF /* Views */,
 				41309D0E18586E9100D0A0BF /* Models */,
 				41F6BF5F185741EA0025DF46 /* AppDelegate.h */,
 				41F6BF60185741EA0025DF46 /* AppDelegate.m */,
@@ -277,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41309D21185875FB00D0A0BF /* MenuTableViewController.m in Sources */,
 				41309D1D185873C400D0A0BF /* CRPSeat.m in Sources */,
 				41309D1418586F1400D0A0BF /* CRPAirline.m in Sources */,
 				41F6BF61185741EA0025DF46 /* AppDelegate.m in Sources */,
