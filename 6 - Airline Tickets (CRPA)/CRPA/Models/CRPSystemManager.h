@@ -13,8 +13,24 @@
 
 @interface CRPSystemManager : NSObject
 
-- (void)addAirportWithCode:(NSString *)code andName:(NSString *)name;
+- (CRPAirport *)addAirportWithCode:(NSString *)code andName:(NSString *)name;
 
 - (NSMutableArray *)getAllAirports;
+
+
+- (CRPAirline *)addAirlineWithName:(NSString *)name;
+
+- (NSMutableArray *)getAllAirlines;
+
+
+- (void)createFlightWithAirline:(CRPAirline *)airLine
+                     withOrigin:(CRPAirport *)origin
+                    withDestiny:(CRPAirport *)destiny
+                       withYear:(int)year
+                      withMonth:(int)month
+                        withDay:(int)day
+                       withCode:(NSString *)code;
+
+- (NSMutableArray *)getAllFlights;
 
 @end

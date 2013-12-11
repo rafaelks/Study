@@ -11,16 +11,16 @@
 @implementation CRPAirline
 
 - (id)initWithName:(NSString *)name {
-
-    if (self == nil){
+    self = [super init];
+    
+    if (self) {
         if (name.length > 6){
             NSLog(@"Nome inválido. O nome deve ter no máximo 6 caracteres!");
             return nil;
         }
         _name = name;
-        return self;
     }
-    return nil;
+    return self;
 }
 
 @end

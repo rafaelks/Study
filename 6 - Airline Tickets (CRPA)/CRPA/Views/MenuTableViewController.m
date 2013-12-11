@@ -30,9 +30,27 @@
     
     CRPSystemManager *manager = [[CRPSystemManager alloc] init];
     
-    [manager addAirportWithCode:@"POA" andName:@"Porto Alegre"];
-    [manager addAirportWithCode:@"FLR" andName:@"Florianópolis"];
+    CRPAirport *airportPOA = [manager addAirportWithCode:@"POA" andName:@"Porto Alegre"];
+    CRPAirport *airportFLR = [manager addAirportWithCode:@"FLR" andName:@"Florianópolis"];
     [manager addAirportWithCode:@"FOOO" andName:@"Florianópolis"];
+    
+    NSLog(@"Airports: %@", manager.getAllAirports);
+    
+    
+    CRPAirline *airline = [manager addAirlineWithName:@"AZUL"];
+    
+    NSLog(@"Airlines: %@", manager.getAllAirlines);
+    
+    
+    [manager createFlightWithAirline:airline
+                          withOrigin:airportPOA
+                         withDestiny:airportFLR
+                            withYear:2013
+                           withMonth:12
+                             withDay:20
+                            withCode:@"AZ123"];
+    
+    NSLog(@"Flights: %@", manager.getAllFlights);
 }
 
 - (void)didReceiveMemoryWarning

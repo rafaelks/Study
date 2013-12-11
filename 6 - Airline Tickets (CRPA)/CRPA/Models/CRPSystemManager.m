@@ -11,12 +11,14 @@
 
 @implementation CRPSystemManager {
     NSMutableArray *airports;
+    NSMutableArray *airlines;
     NSMutableArray *flights;
 }
 
 - (instancetype)init
 {
     airports = [[NSMutableArray alloc] init];
+    airlines = [[NSMutableArray alloc] init];
     flights = [[NSMutableArray alloc] init];
 
     return self;
@@ -24,18 +26,41 @@
 
 # pragma Airport
 
-- (void)addAirportWithCode:(NSString *)code andName:(NSString *)name {
+- (CRPAirport *)addAirportWithCode:(NSString *)code andName:(NSString *)name {
     CRPAirport *airport = [[CRPAirport alloc] initWithCode:code andName:name];
     
     if (airport != nil) {
         [airports addObject:airport];
     }
+    
+    return airport;
 }
 
 - (NSMutableArray *)getAllAirports
 {
     return airports;
 }
+
+
+# pragma Airline
+
+- (CRPAirline *)addAirlineWithName:(NSString *)name {
+    CRPAirline *airline = [[CRPAirline alloc] initWithName:name];
+    
+    if (airline != nil) {
+        [airlines addObject:airline];
+    }
+    
+    return airline;
+}
+
+- (NSMutableArray *)getAllAirlines
+{
+    return airlines;
+}
+
+
+# pragma Flight
 
 - (void)createFlightWithAirline:(CRPAirline *)airLine
                      withOrigin:(CRPAirport *)origin
