@@ -12,9 +12,9 @@
 
 @interface CRPASection : NSObject
 
-@property (nonatomic) NSInteger row;
-@property (nonatomic) NSInteger col;
+@property (nonatomic) NSInteger rows;
+@property (nonatomic) NSInteger cols;
 
--(id)initWithAirline:(CRPAirline *) flight(CRPAFlight *) rows(NSInteger int) Cols(NSInteger int);
+-(id)initWithAirline:(CRPAirline *)airline withFlight(CRPAFlight *)flight withRows(NSInteger int)rows withCols(NSInteger int)cols;
 
 @end
