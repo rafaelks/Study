@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41309D1118586EE300D0A0BF /* CRPAirport.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1018586EE300D0A0BF /* CRPAirport.m */; };
+		41309D1418586F1400D0A0BF /* CRPAirline.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1318586F1400D0A0BF /* CRPAirline.m */; };
+		41309D1718586F2500D0A0BF /* CRPFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1618586F2500D0A0BF /* CRPFlight.m */; };
 		41F6BF51185741EA0025DF46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F6BF50185741EA0025DF46 /* Foundation.framework */; };
 		41F6BF53185741EA0025DF46 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F6BF52185741EA0025DF46 /* CoreGraphics.framework */; };
 		41F6BF55185741EA0025DF46 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41F6BF54185741EA0025DF46 /* UIKit.framework */; };
@@ -33,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41309D0F18586EE300D0A0BF /* CRPAirport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRPAirport.h; path = Models/CRPAirport.h; sourceTree = "<group>"; };
+		41309D1018586EE300D0A0BF /* CRPAirport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRPAirport.m; path = Models/CRPAirport.m; sourceTree = "<group>"; };
+		41309D1218586F1400D0A0BF /* CRPAirline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRPAirline.h; path = Models/CRPAirline.h; sourceTree = "<group>"; };
+		41309D1318586F1400D0A0BF /* CRPAirline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRPAirline.m; path = Models/CRPAirline.m; sourceTree = "<group>"; };
+		41309D1518586F2500D0A0BF /* CRPFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRPFlight.h; path = Models/CRPFlight.h; sourceTree = "<group>"; };
+		41309D1618586F2500D0A0BF /* CRPFlight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRPFlight.m; path = Models/CRPFlight.m; sourceTree = "<group>"; };
 		41F6BF4D185741EA0025DF46 /* CRPA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CRPA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F6BF50185741EA0025DF46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41F6BF52185741EA0025DF46 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,6 +85,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41309D0E18586E9100D0A0BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41309D0F18586EE300D0A0BF /* CRPAirport.h */,
+				41309D1018586EE300D0A0BF /* CRPAirport.m */,
+				41309D1218586F1400D0A0BF /* CRPAirline.h */,
+				41309D1318586F1400D0A0BF /* CRPAirline.m */,
+				41309D1518586F2500D0A0BF /* CRPFlight.h */,
+				41309D1618586F2500D0A0BF /* CRPFlight.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		41F6BF44185741EA0025DF46 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +131,7 @@
 		41F6BF56185741EA0025DF46 /* CRPA */ = {
 			isa = PBXGroup;
 			children = (
+				41309D0E18586E9100D0A0BF /* Models */,
 				41F6BF5F185741EA0025DF46 /* AppDelegate.h */,
 				41F6BF60185741EA0025DF46 /* AppDelegate.m */,
 				41F6BF62185741EA0025DF46 /* Main.storyboard */,
@@ -244,8 +267,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41309D1418586F1400D0A0BF /* CRPAirline.m in Sources */,
 				41F6BF61185741EA0025DF46 /* AppDelegate.m in Sources */,
+				41309D1118586EE300D0A0BF /* CRPAirport.m in Sources */,
 				41F6BF5D185741EA0025DF46 /* main.m in Sources */,
+				41309D1718586F2500D0A0BF /* CRPFlight.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +480,7 @@
 				41F6BF84185741EA0025DF46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41F6BF85185741EA0025DF46 /* Build configuration list for PBXNativeTarget "CRPATests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +489,7 @@
 				41F6BF87185741EA0025DF46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
