@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BECFE671858760500BF49E1 /* CRPSeatClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE661858760500BF49E1 /* CRPSeatClass.m */; };
+		412A0A1B1859C61100A52F17 /* DetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 412A0A1A1859C61100A52F17 /* DetailsTableViewController.m */; };
 		41309D1118586EE300D0A0BF /* CRPAirport.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1018586EE300D0A0BF /* CRPAirport.m */; };
 		41309D1418586F1400D0A0BF /* CRPAirline.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1318586F1400D0A0BF /* CRPAirline.m */; };
 		41309D1718586F2500D0A0BF /* CRPFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1618586F2500D0A0BF /* CRPFlight.m */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		0BECFE651858760500BF49E1 /* CRPSeatClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRPSeatClass.h; sourceTree = "<group>"; };
 		0BECFE661858760500BF49E1 /* CRPSeatClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPSeatClass.m; sourceTree = "<group>"; };
+		412A0A191859C61100A52F17 /* DetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsTableViewController.h; path = Views/DetailsTableViewController.h; sourceTree = "<group>"; };
+		412A0A1A1859C61100A52F17 /* DetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsTableViewController.m; path = Views/DetailsTableViewController.m; sourceTree = "<group>"; };
 		41309D0F18586EE300D0A0BF /* CRPAirport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRPAirport.h; path = Models/CRPAirport.h; sourceTree = "<group>"; };
 		41309D1018586EE300D0A0BF /* CRPAirport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRPAirport.m; path = Models/CRPAirport.m; sourceTree = "<group>"; };
 		41309D1218586F1400D0A0BF /* CRPAirline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRPAirline.h; path = Models/CRPAirline.h; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 			children = (
 				41309D1F185875FB00D0A0BF /* MenuTableViewController.h */,
 				41309D20185875FB00D0A0BF /* MenuTableViewController.m */,
+				412A0A191859C61100A52F17 /* DetailsTableViewController.h */,
+				412A0A1A1859C61100A52F17 /* DetailsTableViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				41309D21185875FB00D0A0BF /* MenuTableViewController.m in Sources */,
 				B18E37C618587A490095B2D3 /* CRPSection.m in Sources */,
 				41309D1D185873C400D0A0BF /* CRPSeat.m in Sources */,
+				412A0A1B1859C61100A52F17 /* DetailsTableViewController.m in Sources */,
 				0BECFE671858760500BF49E1 /* CRPSeatClass.m in Sources */,
 				41309D1418586F1400D0A0BF /* CRPAirline.m in Sources */,
 				41F6BF61185741EA0025DF46 /* AppDelegate.m in Sources */,

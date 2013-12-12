@@ -7,6 +7,7 @@
 //
 
 #import "MenuTableViewController.h"
+#import "DetailsTableViewController.h"
 #import "CRPSystemManager.h"
 
 @interface MenuTableViewController ()
@@ -28,7 +29,7 @@
 {
     [super viewDidLoad];
     
-    CRPSystemManager *manager = [[CRPSystemManager alloc] init];
+    manager = [[CRPSystemManager alloc] init];
     
     CRPAirport *airportPOA = [manager addAirportWithCode:@"POA" andName:@"Porto Alegre"];
     CRPAirport *airportFLR = [manager addAirportWithCode:@"FLR" andName:@"Florianópolis"];
@@ -62,7 +63,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%ld", indexPath.row);
+    if (indexPath.row == 0) {
+        
+    }
+}
+
+
+#pragma mark - Storyboard delegates
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showAirports"]) {
+        DetailsTableViewController *details = segue.destinationViewController;
+        [details loadData:[manager getAllAirports] withType:@"Airport"];
+    }
 }
 
 
