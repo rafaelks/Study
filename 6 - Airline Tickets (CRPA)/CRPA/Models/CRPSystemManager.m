@@ -167,22 +167,32 @@
         }
         
     }
+    return availableFlights;
+}
 
-
-
-// vou finalizar em casa, podem deixar que eu faço
-// att Fábio.
-- (void)displaySystemDetails {
-    NSLog(@"Relatório de Objetos do Sistema \n");
+- (void)displaySystemDetails
+{
+    NSLog(@"\n\nRelatório de Objetos do Sistema \n");
     
     
-    NSLog(@"Aeroportos: \n");
+    NSLog(@"\n\nAeroportos: \n");
     for (CRPAirport *item in airports) {
         NSLog(@"%@ - %@", item.code, item.name);
     }
     
-    for (CRPFlight *item in flights) {
-        NSLog(@"aaaaaa %@", item.origin.name);
+    NSLog(@"\n\nCompanhias Aéreas: \n");
+    for (CRPAirline *item in airlines) {
+        NSLog(@"%@", item.name);
+    }
+    
+    NSLog(@"\n\nAeronaves");
+    for (CRPAirplane *item in airplanes) {
+        NSLog(@"%@ - %@", item.code, item.airline.name);
+        
+        // section
+        for (CRPSection *item in sections) {
+            NSLog(@"%@", item.seatClass);
+        }
     }
     
 }
@@ -204,8 +214,5 @@
     NSLog(@"O assento solicitado está indisponível!");
     return false;
 }
-
-
-
 
 @end
