@@ -24,6 +24,8 @@
 
 - (NSMutableArray *)getAllFlightsFromAirline:(CRPAirline *)airline;
 
+- (void)displaySystemDetails;
+
 - (CRPAirport *)addAirportWithCode:(NSString *)code andName:(NSString *)name;
 
 - (NSMutableArray *)getAllAirports;
@@ -46,5 +48,8 @@
 - (CRPSection *)createSectionWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(NSString *)seatClass;
 
 - (NSMutableArray *)getAllSections;
+
+- (Boolean) bookSeatWithFlight:(CRPFlight *) flight withSeatClass:(CRPSeatClass *) seatClass withRow:(NSInteger) row withCol:(char) col;
+
 
 @end

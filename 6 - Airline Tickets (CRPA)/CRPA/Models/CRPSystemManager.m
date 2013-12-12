@@ -167,7 +167,45 @@
         }
         
     }
-    return availableFlights;
+
+
+
+// vou finalizar em casa, podem deixar que eu faço
+// att Fábio.
+- (void)displaySystemDetails {
+    NSLog(@"Relatório de Objetos do Sistema \n");
+    
+    
+    NSLog(@"Aeroportos: \n");
+    for (CRPAirport *item in airports) {
+        NSLog(@"%@ - %@", item.code, item.name);
+    }
+    
+    for (CRPFlight *item in flights) {
+        NSLog(@"aaaaaa %@", item.origin.name);
+    }
+    
 }
-            
+
+- (Boolean) bookSeatWithFlight:(CRPFlight *) flight withSeatClass:(NSString *) seatClass withRow:(NSInteger) row withCol:(char) col{
+    
+    for (CRPSeat *seat in flight.classes[seatClass]) {
+        if (seat.seatId == [NSString stringWithFormat:@"%d%c", row, col]) {
+            if (seat.isFree){
+                seat.seatStatus = false;
+                return true;
+                NSLog(@"O assento foi reservado!");
+            }else{
+                NSLog(@"O assento solicitado não existe para esta classe de voo!");
+                return false;
+            }
+        }
+    }
+    NSLog(@"O assento solicitado está indisponível!");
+    return false;
+}
+
+
+
+
 @end
