@@ -50,7 +50,7 @@
     [manager createFlightWithAirline:airlineAZUL
                         withAirplane:airplane747
                           withOrigin:airportPOA
-                         withDestiny:airportPOA
+                         withDestiny:airportFLR
                             withDate:[[NSDate alloc] init]
                             withCode:@"AZ123"];
 
@@ -65,6 +65,12 @@
     
     
     NSLog(@"Flights: %@", manager.getAllFlights);
+    
+    
+    
+    [manager displaySystemDetails];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

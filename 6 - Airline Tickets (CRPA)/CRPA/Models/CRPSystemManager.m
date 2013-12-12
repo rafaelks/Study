@@ -146,4 +146,22 @@
         return sections;
     }
 
+
+
+// vou finalizar em casa, podem deixar que eu faço
+// att Fábio.
+- (void)displaySystemDetails {
+    NSLog(@"Relatório de Objetos do Sistema \n");
+    
+    
+    NSLog(@"Aeroportos: \n");
+    for (CRPAirport *item in airports) {
+        NSLog(@"%@ - %@", item.code, item.name);
+    }
+    
+    for (CRPFlight *item in flights) {
+        NSLog(@"aaaaaa %@", item.origin.name);
+    }
+    
+}
 @end
