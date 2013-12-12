@@ -31,8 +31,8 @@
 
 # pragma Airplane
 
-- (CRPAirplane *)addAirplanetWithCode:(NSString *)code withSections:(NSMutableArray *)sections andAirline:(CRPAirplane *)airline {
-    CRPAirplane *airplane = [[CRPAirplane alloc] initWithCode:code withSections:sections andAirline:airline];
+- (CRPAirplane *)addAirplanetWithCode:(NSString *)code withSections:(NSMutableArray *)_sections andAirline:(CRPAirline *)airline {
+    CRPAirplane *airplane = [[CRPAirplane alloc] initWithCode:code withSections:_sections andAirline:airline];
     
     if (airplane != nil) {
         [airplanes addObject:airplane];
