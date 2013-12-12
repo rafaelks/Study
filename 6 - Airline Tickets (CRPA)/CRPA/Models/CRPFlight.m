@@ -26,8 +26,7 @@
     return nil;
 }
 
-- (id)initWithAirline:(CRPAirline *)airline
-         withAirplane:(CRPAirplane *)airplane
+- (id)initWithAirplane:(CRPAirplane *)airplane
            withOrigin:(CRPAirport *)origin
           withDestiny:(CRPAirport *)destiny
              withDate:(NSDate     *)date
@@ -42,7 +41,6 @@
             return nil;
         }
         
-        self.airline  = airline;
         self.airplane = airplane;
         self.origin   = origin;
         self.destiny  = destiny;

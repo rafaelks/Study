@@ -102,12 +102,11 @@
                        withDate:(NSDate     *)date
                        withCode:(NSString   *)code
 {
-    CRPFlight *flight = [[CRPFlight alloc] initWithAirline:airline
-                                              withAirplane:airplane
-                                                withOrigin:origin
-                                               withDestiny:destiny
-                                                  withDate:date
-                                                  withCode:code];
+    CRPFlight *flight = [[CRPFlight alloc] initWithAirplane:airplane
+                                                 withOrigin:origin
+                                                withDestiny:destiny
+                                                   withDate:date
+                                                   withCode:code];
     
     if (flight != nil) {
         [flights addObject:flight];
