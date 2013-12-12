@@ -7,9 +7,9 @@
 //
 
 #import "CRPSystemManager.h"
-#import "CRPAirport.h"
 
 @implementation CRPSystemManager {
+    NSMutableArray *airplanes;
     NSMutableArray *airports;
     NSMutableArray *airlines;
     NSMutableArray *flights;
@@ -19,12 +19,30 @@
 {
     self = [super init];
     
+    airplanes = [[NSMutableArray alloc] init];
     airports = [[NSMutableArray alloc] init];
     airlines = [[NSMutableArray alloc] init];
     flights = [[NSMutableArray alloc] init];
 
     return self;
 }
+
+# pragma Airplane
+
+- (CRPAirplane *)addAirplanetWithCode:(NSString *)code andSections:(NSMutableArray *)sections {
+    CRPAirplane *airplane = [[CRPAirplane alloc] initWithCode:code andSections:sections];
+    
+    if (airplane != nil) {
+        [airplanes addObject:airplane];
+    }
+    
+    return airplane;
+}
+
+- (NSMutableArray *)getAllAirplanes {
+    return airplanes;
+}
+
 
 # pragma Airport
 

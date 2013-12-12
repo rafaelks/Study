@@ -7,11 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CRPAirline.h"
+#import "CRPAirplane.h"
 #import "CRPAirport.h"
 #import "CRPFlight.h"
 
 @interface CRPSystemManager : NSObject
+
+- (CRPAirplane *)addAirplanetWithCode:(NSString *)code andSections:(NSMutableArray *)sections;
+
+- (NSMutableArray *)getAllAirplanes;
+
 
 - (CRPAirport *)addAirportWithCode:(NSString *)code andName:(NSString *)name;
 
