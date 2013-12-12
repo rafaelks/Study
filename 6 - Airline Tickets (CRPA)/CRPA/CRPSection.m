@@ -10,24 +10,30 @@
 
 @implementation CRPSection
 
--(id)initWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols
+-(id)initWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(CRPSeatClass *)seatClass
 {
     self = [ super init];
     
-    NSString *columns = @"ABCDEF";
-
-    _seats = [[ NSMutableArray alloc] init];
-
-    for (int i=0; i < rows; i++) {
-        for (int j = 0 ; j < cols; j++) {
-            NSString *seatName = [NSString stringWithFormat:@"%d%hu", i, [columns characterAtIndex:j]];
-            CRPSeat *seat = [[CRPSeat alloc] initWithId:seatName];
-            
-            [_seats addObject:seat];
-        }
+    if (self) {
+        _rows = rows;
+        _cols = cols;
+        _seatClass = seatClass;
     }
     
-    NSLog(@"%@", _seats);
+//    NSString *columns = @"ABCDEF";
+//
+//    _seats = [[ NSMutableArray alloc] init];
+//
+//    for (int i=0; i < rows; i++) {
+//        for (int j = 0 ; j < cols; j++) {
+//            NSString *seatName = [NSString stringWithFormat:@"%d%hu", i, [columns characterAtIndex:j]];
+//            CRPSeat *seat = [[CRPSeat alloc] initWithId:seatName];
+//            
+//            [_seats addObject:seat];
+//        }
+//    }
+//    
+//    NSLog(@"%@", _seats);
     
     return self;
 }

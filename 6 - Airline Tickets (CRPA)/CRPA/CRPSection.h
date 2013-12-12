@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "CRPAirline.h"
-#import "CRPFlight.h"
-#import "CRPSeat.h"
+#import "CRPSeatClass.h"
 
 @interface CRPSection : NSObject
 
+@property (nonatomic) CRPSeatClass *seatClass;
 @property (nonatomic) NSInteger rows;
 @property (nonatomic) NSInteger cols;
 @property (nonatomic, strong) NSMutableArray *seats;
 
--(id)initWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols;
+-(id)initWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(CRPSeatClass *)seatClass;
 
 @end
