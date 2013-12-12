@@ -146,6 +146,23 @@
     return sections;
 }
 
+- (NSMutableArray *)findAvailableFlightFromAirport:(CRPAirport *)originAirport
+                                         toAirport:(CRPAirport *)destinyAirport
+                                           andDate:(NSDate *)flightDate
+{
+    NSMutableArray *availableFlights;
+    for (CRPFlight *flight in flights ) {
+        if (flight.origin == originAirport || flight.destiny == destinyAirport || [flight.date isEqualToDate:flightDate])
+        {
+            if ([flight countOfAvailableSeats] ) {
+                [availableFlights addObject:flight];
+            }
+        }
+        
+    }
+    return availableFlights;
+}
+
 - (Boolean) bookSeatWithFlight:(CRPFlight *) flight withSeatClass:(NSString *) seatClass withRow:(NSInteger) row withCol:(char) col{
     
     for (CRPSeat *seat in flight.classes[seatClass]) {
@@ -163,6 +180,8 @@
     NSLog(@"O assento solicitado está indisponível!");
     return false;
 }
+
+
 
 
 @end
