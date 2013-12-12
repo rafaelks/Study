@@ -44,4 +44,7 @@
 
 - (NSMutableArray *)getAllSections;
 
+- (Boolean) bookSeatWithFlight:(CRPFlight *) flight withSeatClass:(CRPSeatClass *) seatClass withRow:(NSInteger) row withCol:(char) col;
+
+
 @end
