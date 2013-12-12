@@ -150,8 +150,8 @@
             }
         }
     }
-    return false;
     NSLog(@"O assento solicitado está indisponível!");
+    return false;
 }
 
 
