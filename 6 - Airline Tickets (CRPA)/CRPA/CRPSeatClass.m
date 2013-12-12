@@ -8,32 +8,20 @@
 
 #import "CRPSeatClass.h"
 
-@implementation CRPSeatClass {
-    NSDictionary *classes;
-}
+static NSDictionary *classes;
 
-+ (id)sharedManager {
-    static CRPSeatClass *sharedCRPSeatClass = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedCRPSeatClass = [[self alloc] init];
-    });
-    return sharedCRPSeatClass;
-}
+@implementation CRPSeatClass;
 
-- (id)init {
-    if (self = [super init]) {
+
++ (NSDictionary *)getClasses {
+    if (classes == nil) {
         classes = @{
-            @"first-class": @"Primeira Classe",
-            @"executive": @"Executiva",
-            @"economic": @"Econômica"
-        };
+                @"first-class": @"Primeira Classe",
+                @"executive": @"Executiva",
+                @"economic": @"Econômica"
+                };
     }
-    return self;
-}
-
-
-- (NSDictionary *)getClasses {
+    
     return classes;
 }
 

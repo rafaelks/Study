@@ -12,16 +12,14 @@
 
 - (id)initWithSeatClasses:(NSArray *)seatClasses
 {
-    CRPSeatClass *sharedCRPSeatClass = [CRPSeatClass sharedManager];
-    
     self.seatClasses = [[NSMutableArray alloc] init];
     
     for (int i=0; i < [seatClasses count]; i++) {
         NSString *seatClass = [[seatClasses objectAtIndex:i] stringValue];
-        id existsClass = [[sharedCRPSeatClass getClasses] objectForKey:sharedCRPSeatClass];
+        id existsClass = [[CRPSeatClass getClasses] objectForKey:seatClass];
         
         if (existsClass != nil && [self.seatClasses indexOfObject:seatClass] == NSNotFound) {
-            [self.seatClasses addObject:seatClass];
+            [_seatClasses addObject:seatClass];
         }
     }
     

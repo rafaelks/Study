@@ -17,6 +17,8 @@
 
 - (instancetype)init
 {
+    self = [super init];
+    
     airports = [[NSMutableArray alloc] init];
     airlines = [[NSMutableArray alloc] init];
     flights = [[NSMutableArray alloc] init];
