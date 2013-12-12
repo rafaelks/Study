@@ -71,12 +71,8 @@
     } else if ([[self type] isEqualToString:@"Airline"]) {
         CRPAirline *obj = [_data objectAtIndex:indexPath.row];
         
-        UIImageView *imageView = (UIImageView *) [cell viewWithTag:100];
-        NSString *imageName = [NSString stringWithFormat:@"%@.jpg", [[obj name] lowercaseString]];
-        [imageView setImage:[UIImage imageNamed:imageName]];
-        
-//        UILabel *labelName = (UILabel *) [cell viewWithTag:200];
-//        [labelName setText:[obj name]];
+        UILabel *labelName = (UILabel *) [cell viewWithTag:100];
+        [labelName setText:[obj name]];
     }
     
     return cell;
@@ -105,8 +101,9 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    CRPAirline *obj = [_data objectAtIndex:[[[self tableView] indexPathForSelectedRow] row]];
     DetailsAirlineTableViewController *details = segue.destinationViewController;
-    [details setManager:_manager];
+    [details setManager:_manager forAirline:obj];
 }
 
 @end

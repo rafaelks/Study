@@ -34,5 +34,6 @@
               withDate:(NSDate     *)date
               withCode:(NSString   *)code;
 
+- (int) countOfAvailableSeats;
 
 @end

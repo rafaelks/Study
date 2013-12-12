@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     
-    manager = [[CRPSystemManager alloc] init];
+    manager = [CRPSystemManager sharedManager];
     
     
     CRPAirline *airlineGOL  = [manager addAirlineWithName:@"GOL"];
