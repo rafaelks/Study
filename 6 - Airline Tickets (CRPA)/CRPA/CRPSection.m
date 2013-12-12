@@ -10,7 +10,7 @@
 
 @implementation CRPSection
 
--(id)initWithAirline:(CRPAirline *)airline withFlight:(CRPFlight *)flID withRows:(NSInteger)rows withCols:(NSInteger)cols
+-(id)initWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols
 {
     NSString *columns = @"ABCDEF";
 

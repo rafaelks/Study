@@ -17,6 +17,6 @@
 @property (nonatomic) NSInteger cols;
 @property (nonatomic, strong) NSMutableArray *seats;
 
--(id)initWithAirline:(CRPAirline *)airline withFlight:(CRPFlight *)flID withRows:(NSInteger)rows withCols:(NSInteger)cols;
+-(id)initWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols;
 
 @end
