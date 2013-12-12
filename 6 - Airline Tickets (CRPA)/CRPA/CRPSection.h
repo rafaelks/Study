@@ -12,11 +12,10 @@
 
 @interface CRPSection : NSObject
 
-@property (nonatomic) CRPSeatClass *seatClass;
+@property (nonatomic) NSString *seatClass;
 @property (nonatomic) NSInteger rows;
 @property (nonatomic) NSInteger cols;
-@property (nonatomic, strong) NSMutableArray *seats;
 
--(id)initWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(CRPSeatClass *)seatClass;
+-(id)initWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(NSString *)seatClass;
 
 @end

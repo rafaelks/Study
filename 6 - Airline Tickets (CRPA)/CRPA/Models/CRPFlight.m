@@ -26,7 +26,8 @@
     return nil;
 }
 
-- (id)initWithAirline:(CRPAirline *)airLine
+- (id)initWithAirline:(CRPAirline *)airline
+         withAirplane:(CRPAirplane *)airplane
            withOrigin:(CRPAirport *)origin
           withDestiny:(CRPAirport *)destiny
              withDate:(NSDate     *)date
@@ -36,19 +37,45 @@
 
     
     if (self) {
-        if (origin == destiny){
+        if (origin == destiny) {
             NSLog(@"O destino não pode ser a origem!");
             return nil;
-        } else {
-            self.airLine = airLine;
-            self.origin  = origin;
-            self.destiny = destiny;
-            self.date    = date;
-            self.code    = code;
         }
+        
+        self.airline  = airline;
+        self.airplane = airplane;
+        self.origin   = origin;
+        self.destiny  = destiny;
+        self.date     = date;
+        self.code     = code;
     }
     
     return self;
+}
+
+- (void) setAirplane:(CRPAirplane *)airplane
+{
+    NSArray *sections = [airplane sections];
+    
+    _classes = [[NSMutableDictionary alloc] init];
+    
+    NSString *columns = @"ABCDEF";
+    
+    for (CRPSection *section in sections) {
+        
+        NSMutableArray *seats = [[NSMutableArray alloc] init];
+        
+        for (int i=0; i < section.rows; i++) {
+            for (int j = 0 ; j < section.cols; j++) {
+                NSString *seatName = [NSString stringWithFormat:@"%d%hu", i, [columns characterAtIndex:j]];
+                CRPSeat *seat = [[CRPSeat alloc] initWithId:seatName];
+                
+                [seats addObject:seat];
+            }
+        }
+        
+        [_classes setObject:seats forKey:[section seatClass]];
+    }
 }
 
 @end

@@ -12,9 +12,9 @@
 
 @interface CRPAirplane : NSObject
 
-@property NSString *code;
-@property NSMutableArray *sections;
-@property CRPAirline *airline;
+@property (nonatomic) NSString *code;
+@property (nonatomic) NSMutableArray *sections;
+@property (nonatomic) CRPAirline *airline;
 
 
 - (id)initWithCode:(NSString *)code withSections:(NSMutableArray *)sections andAirline:(CRPAirline *)airline;

@@ -44,8 +44,12 @@
     [manager addAirportWithCode:@"FOOO" andName:@"Florianópolis"];
     NSLog(@"Airports: %@", manager.getAllAirports);
     
+
+    CRPAirplane *airplane747 = [manager addAirplanetWithCode:@"747" withSections:[manager getAllSections] andAirline:airlineAZUL];
+    
     
     [manager createFlightWithAirline:airlineAZUL
+                        withAirplane:airplane747
                           withOrigin:airportPOA
                          withDestiny:airportPOA
                             withDate:[[NSDate alloc] init]
@@ -54,6 +58,7 @@
 
     
     [manager createFlightWithAirline:airlineGOL
+                        withAirplane:airplane747
                           withOrigin:airportFLR
                          withDestiny:airportPOA
                             withDate:[[NSDate alloc] init]
