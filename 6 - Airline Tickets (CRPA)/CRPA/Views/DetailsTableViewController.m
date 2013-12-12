@@ -58,11 +58,13 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self type] forIndexPath:indexPath];
     
     if ([[self type] isEqualToString:@"Airport"]) {
+        CRPAirport *obj = [_data objectAtIndex:indexPath.row];
+
         UILabel *labelCode = (UILabel *) [cell viewWithTag:100];
-        [labelCode setText:@"POA"];
+        [labelCode setText:[obj code]];
         
         UILabel *labelName = (UILabel *) [cell viewWithTag:200];
-        [labelName setText:@"Porto Alegre - Salgado Filho"];
+        [labelName setText:[obj name]];
     }
     
     return cell;
@@ -75,6 +77,10 @@
 {
     [self setType:type];
     [self setData:data];
+    
+    if ([[self type] isEqualToString:@"Airport"]) {
+        [self setTitle:@"Aeroportos"];
+    }
 }
 
 @end
