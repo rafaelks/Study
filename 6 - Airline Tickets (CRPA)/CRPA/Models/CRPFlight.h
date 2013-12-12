@@ -11,6 +11,7 @@
 #import "CRPAirline.h"
 #import "CRPAirport.h"
 #import "CRPAirplane.h"
+#import "CRPSeat.h"
 
 @interface CRPFlight : NSObject{
 
@@ -18,19 +19,20 @@
 
 @property NSMutableArray *seatClasses;
 
-@property CRPAirline *airLine;
-@property CRPAirport *origin;
-@property CRPAirport *destiny;
-@property NSDate     *date;
-@property NSString   *code;
+@property (nonatomic) CRPAirplane *airplane;
+@property (nonatomic) CRPAirport  *origin;
+@property (nonatomic) CRPAirport  *destiny;
+@property (nonatomic) NSDate      *date;
+@property (nonatomic) NSString    *code;
+@property (nonatomic) NSMutableDictionary *classes;
 
 - (id)initWithSeatClasses:(NSArray *)seatClasses;
 
-- (id)initWithAirline:(CRPAirline *)airLine
-           withOrigin:(CRPAirport *)origin
-          withDestiny:(CRPAirport *)destiny
-             withDate:(NSDate     *)date
-             withCode:(NSString   *)code;
+- (id)initWithAirplane:(CRPAirplane *)airplane
+            withOrigin:(CRPAirport *)origin
+           withDestiny:(CRPAirport *)destiny
+              withDate:(NSDate     *)date
+              withCode:(NSString   *)code;
 
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation CRPSection
 
--(id)initWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(CRPSeatClass *)seatClass
+-(id)initWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(NSString *)seatClass
 {
     self = [ super init];
     
@@ -20,23 +20,14 @@
         _seatClass = seatClass;
     }
     
-//    NSString *columns = @"ABCDEF";
-//
-//    _seats = [[ NSMutableArray alloc] init];
-//
-//    for (int i=0; i < rows; i++) {
-//        for (int j = 0 ; j < cols; j++) {
-//            NSString *seatName = [NSString stringWithFormat:@"%d%hu", i, [columns characterAtIndex:j]];
-//            CRPSeat *seat = [[CRPSeat alloc] initWithId:seatName];
-//            
-//            [_seats addObject:seat];
-//        }
-//    }
-//    
-//    NSLog(@"%@", _seats);
-    
     return self;
 }
 
+- (void) setSeatClass:(NSString *)seatClass
+{
+    if ([[CRPSeatClass getClasses] objectForKey:seatClass] != nil) {
+        _seatClass = seatClass;
+    }
+}
 
 @end

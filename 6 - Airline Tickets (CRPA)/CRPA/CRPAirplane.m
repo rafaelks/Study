@@ -36,9 +36,4 @@
     }
 }
 
-- (NSMutableArray *) sections
-{
-    return _sections;
-}
-
 @end

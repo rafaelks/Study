@@ -34,7 +34,6 @@
     
     CRPAirline *airlineGOL  = [manager addAirlineWithName:@"GOL"];
     CRPAirline *airlineAZUL = [manager addAirlineWithName:@"AZUL"];
-    CRPAirline *airlineTAM  = [manager addAirlineWithName:@"TAM"];
     NSLog(@"Airlines: %@", manager.getAllAirlines);
     
     
@@ -44,8 +43,12 @@
     [manager addAirportWithCode:@"FOOO" andName:@"Florianópolis"];
     NSLog(@"Airports: %@", manager.getAllAirports);
     
+
+    CRPAirplane *airplane747 = [manager addAirplanetWithCode:@"747" withSections:[manager getAllSections] andAirline:airlineAZUL];
+    
     
     [manager createFlightWithAirline:airlineAZUL
+                        withAirplane:airplane747
                           withOrigin:airportPOA
                          withDestiny:airportPOA
                             withDate:[[NSDate alloc] init]
@@ -54,6 +57,7 @@
 
     
     [manager createFlightWithAirline:airlineGOL
+                        withAirplane:airplane747
                           withOrigin:airportFLR
                          withDestiny:airportPOA
                             withDate:[[NSDate alloc] init]
@@ -73,6 +77,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     DetailsTableViewController *details = segue.destinationViewController;
+    [details setManager:manager];
     
     if ([[segue identifier] isEqualToString:@"showAirports"]) {
         [details loadData:[manager getAllAirports] withType:@"Airport"];
