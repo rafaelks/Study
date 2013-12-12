@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CRPSystemManager.h"
 
-@interface MenuTableViewController : UITableViewController <UITableViewDelegate>
+@interface MenuTableViewController : UITableViewController <UITableViewDelegate> {
+    CRPSystemManager *manager;
+}
 
 @end

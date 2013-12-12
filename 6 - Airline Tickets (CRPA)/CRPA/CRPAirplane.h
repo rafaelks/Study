@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CRPSection.h"
 
 @interface CRPAirplane : NSObject
 
