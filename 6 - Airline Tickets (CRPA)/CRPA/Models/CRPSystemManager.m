@@ -121,7 +121,7 @@
     NSMutableArray *fligthsOfAirline = [[NSMutableArray alloc] init];
     
     for (CRPFlight *item in flights) {
-        if (item.airLine == airline) {
+        if ([item.airplane airline] == airline) {
             [fligthsOfAirline addObject:item];
         }
     }
