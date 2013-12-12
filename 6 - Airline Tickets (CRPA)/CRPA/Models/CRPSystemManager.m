@@ -7,24 +7,44 @@
 //
 
 #import "CRPSystemManager.h"
-#import "CRPAirport.h"
 
 @implementation CRPSystemManager {
+    NSMutableArray *airplanes;
     NSMutableArray *airports;
     NSMutableArray *airlines;
     NSMutableArray *flights;
+    NSMutableArray *sections;
 }
 
 - (instancetype)init
 {
     self = [super init];
     
+    airplanes = [[NSMutableArray alloc] init];
     airports = [[NSMutableArray alloc] init];
     airlines = [[NSMutableArray alloc] init];
     flights = [[NSMutableArray alloc] init];
+    sections = [[ NSMutableArray alloc] init];
 
     return self;
 }
+
+# pragma Airplane
+
+- (CRPAirplane *)addAirplanetWithCode:(NSString *)code andSections:(NSMutableArray *)sections {
+    CRPAirplane *airplane = [[CRPAirplane alloc] initWithCode:code andSections:sections];
+    
+    if (airplane != nil) {
+        [airplanes addObject:airplane];
+    }
+    
+    return airplane;
+}
+
+- (NSMutableArray *)getAllAirplanes {
+    return airplanes;
+}
+
 
 # pragma Airport
 
@@ -89,5 +109,21 @@
 {
     return flights;
 }
+
+# pragma Section
+
+- (void)createSectionWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols
+{
+    CRPSection *section = [[CRPSection alloc] initWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols];
+    if (section != nil)
+    {
+        [sections addObject:section];
+    }
+}
+
+- (NSMutableArray *)getAllSections
+    {
+        return sections;
+    }
 
 @end
