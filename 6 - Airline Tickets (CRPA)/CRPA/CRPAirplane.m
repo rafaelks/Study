@@ -12,12 +12,13 @@
 
 @synthesize sections=_sections;
 
-- (id)initWithCode:(NSString *)code andSections:(NSMutableArray *)sections
+- (id)initWithCode:(NSString *)code withSections:(NSMutableArray *)sections andAirline:(CRPAirline *)airline
 {
     self = [super init];
     
     if (self) {
         _code = code;
+        _airline = airline;
         self.sections = sections;
     }
     return self;
