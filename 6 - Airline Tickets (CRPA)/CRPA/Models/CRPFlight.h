@@ -10,6 +10,7 @@
 #import "CRPSeatClass.h"
 #import "CRPAirline.h"
 #import "CRPAirport.h"
+#import "CRPAirplane.h"
 
 @interface CRPFlight : NSObject{
 

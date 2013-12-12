@@ -68,23 +68,20 @@
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark - UITableView delegates
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (indexPath.row == 0) {
-        
-    }
-}
-
-
 #pragma mark - Storyboard delegates
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    DetailsTableViewController *details = segue.destinationViewController;
+    
     if ([[segue identifier] isEqualToString:@"showAirports"]) {
-        DetailsTableViewController *details = segue.destinationViewController;
         [details loadData:[manager getAllAirports] withType:@"Airport"];
+        return;
+    }
+    
+    if ([[segue identifier] isEqualToString:@"showAirlines"]) {
+        [details loadData:[manager getAllAirlines] withType:@"Airline"];
+        return;
     }
 }
 

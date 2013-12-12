@@ -31,8 +31,8 @@
 
 # pragma Airplane
 
-- (CRPAirplane *)addAirplanetWithCode:(NSString *)code andSections:(NSMutableArray *)sections {
-    CRPAirplane *airplane = [[CRPAirplane alloc] initWithCode:code andSections:sections];
+- (CRPAirplane *)addAirplanetWithCode:(NSString *)code withSections:(NSMutableArray *)_sections andAirline:(CRPAirline *)airline {
+    CRPAirplane *airplane = [[CRPAirplane alloc] initWithCode:code withSections:_sections andAirline:airline];
     
     if (airplane != nil) {
         [airplanes addObject:airplane];
@@ -45,6 +45,17 @@
     return airplanes;
 }
 
+- (NSMutableArray *)getAllAirplanesFromAirline:(CRPAirline *)airline {
+    NSMutableArray *airplanesOfAirline = [[NSMutableArray alloc] init];
+    
+    for (CRPAirplane *item in airplanes) {
+        if (item.airline == airline) {
+            [airplanesOfAirline addObject:item];
+        }
+    }
+    
+    return airplanesOfAirline;
+}
 
 # pragma Airport
 
@@ -106,15 +117,16 @@
     return flights;
 }
 
-# pragma Section
+#pragma Section
 
-- (void)createSectionWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols
+- (CRPSection *)createSectionWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(CRPSeatClass *)seatClass
 {
-    CRPSection *section = [[CRPSection alloc] initWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols];
+    CRPSection *section = [[CRPSection alloc] initWithAirline:airline withRows:rows withCols:cols andSeatClass:seatClass];
     if (section != nil)
     {
         [sections addObject:section];
     }
+    return section;
 }
 
 - (NSMutableArray *)getAllSections
