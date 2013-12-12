@@ -31,8 +31,8 @@
     
     manager = [[CRPSystemManager alloc] init];
     
-    CRPAirport *airportPOA = [manager addAirportWithCode:@"POA" andName:@"Porto Alegre"];
-    CRPAirport *airportFLR = [manager addAirportWithCode:@"FLR" andName:@"Florianópolis"];
+    CRPAirport *airportPOA = [manager addAirportWithCode:@"POA" andName:@"Porto Alegre, Salgado Filho"];
+    CRPAirport *airportFLR = [manager addAirportWithCode:@"FLR" andName:@"Florianópolis, Foobar"];
     [manager addAirportWithCode:@"FOOO" andName:@"Florianópolis"];
     
     NSLog(@"Airports: %@", manager.getAllAirports);
