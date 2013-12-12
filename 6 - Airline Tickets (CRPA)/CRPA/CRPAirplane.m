@@ -25,11 +25,11 @@
 }
 
 //Only add CRPSection itens
-- (void) setSections:(NSMutableArray *)sections
+- (void)setSections:(NSMutableArray *)sections
 {
     _sections = [[NSMutableArray alloc] init];
     
-    for (int i=0; [sections count]; i++) {
+    for (int i = 0; [sections count]; i++) {
         if ([[sections objectAtIndex:i] isKindOfClass:[CRPSection class]]) {
             [_sections addObject:[sections objectAtIndex:i]];
         }

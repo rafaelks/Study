@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CRPSystemManager.h"
+#import "CRPFlight.h"
 
-@interface FlightSeatsTableViewController : UITableViewController
+@interface FlightSeatsTableViewController : UITableViewController {
+    CRPSystemManager *manager;
+}
+
+@property (nonatomic, strong) CRPFlight *flight;
 
 @end

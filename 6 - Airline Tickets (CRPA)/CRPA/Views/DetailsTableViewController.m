@@ -103,7 +103,7 @@
 {
     CRPAirline *obj = [_data objectAtIndex:[[[self tableView] indexPathForSelectedRow] row]];
     DetailsAirlineTableViewController *details = segue.destinationViewController;
-    [details setManager:_manager forAirline:obj];
+    [details setAirline:obj];
 }
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "DetailsAirlineTableViewController.h"
+#import "FlightSeatsTableViewController.h"
 
 @interface DetailsAirlineTableViewController ()
 
@@ -35,23 +36,21 @@
 }
 
 
-- (void)setManager:(CRPSystemManager *)manager forAirline:(CRPAirline *)airline
+- (void)setAirline:(CRPAirline *)airline
 {
     _airline = airline;
-    _manager = manager;
     
     [self setTitle:[_airline name]];
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+{    
+    CRPFlight *obj = (CRPFlight *) [[_manager getAllFlightsFromAirline:_airline] objectAtIndex:0];
+    FlightSeatsTableViewController *details = segue.destinationViewController;
+    [details setFlight:obj];
 }
-*/
 
 @end

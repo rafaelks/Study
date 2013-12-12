@@ -217,7 +217,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="Lwh-rq-uib" kind="push" id="JxZ-x1-WX9"/>
+                                            <segue destination="Lwh-rq-uib" kind="push" identifier="showFlight" id="JxZ-x1-WX9"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

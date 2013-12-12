@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    manager = [CRPSystemManager sharedManager];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,12 +39,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return [[_flight classes] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return [[[_flight classes] objectForKey:@"first-class"] count];
 }
 
 
@@ -55,6 +57,9 @@
 
     return cell;
 }
+
+
+
 
 
 @end
