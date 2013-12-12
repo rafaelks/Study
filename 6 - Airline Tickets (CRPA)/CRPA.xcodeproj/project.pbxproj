@@ -10,6 +10,8 @@
 		0BECFE671858760500BF49E1 /* CRPSeatClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE661858760500BF49E1 /* CRPSeatClass.m */; };
 		0BECFE801859C59900BF49E1 /* CRPAirplane.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BECFE7F1859C59900BF49E1 /* CRPAirplane.m */; };
 		412A0A1B1859C61100A52F17 /* DetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 412A0A1A1859C61100A52F17 /* DetailsTableViewController.m */; };
+		412A31C31859EB1900ACDF66 /* FlightSeatsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 412A31C21859EB1900ACDF66 /* FlightSeatsTableViewController.m */; };
+		412A31C51859EC4900ACDF66 /* Free@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 412A31C41859EC4900ACDF66 /* Free@2x.png */; };
 		41309D1118586EE300D0A0BF /* CRPAirport.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1018586EE300D0A0BF /* CRPAirport.m */; };
 		41309D1418586F1400D0A0BF /* CRPAirline.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1318586F1400D0A0BF /* CRPAirline.m */; };
 		41309D1718586F2500D0A0BF /* CRPFlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1618586F2500D0A0BF /* CRPFlight.m */; };
@@ -55,6 +57,9 @@
 		0BECFE7F1859C59900BF49E1 /* CRPAirplane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRPAirplane.m; sourceTree = "<group>"; };
 		412A0A191859C61100A52F17 /* DetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailsTableViewController.h; path = Views/DetailsTableViewController.h; sourceTree = "<group>"; };
 		412A0A1A1859C61100A52F17 /* DetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailsTableViewController.m; path = Views/DetailsTableViewController.m; sourceTree = "<group>"; };
+		412A31C11859EB1900ACDF66 /* FlightSeatsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlightSeatsTableViewController.h; path = Views/FlightSeatsTableViewController.h; sourceTree = "<group>"; };
+		412A31C21859EB1900ACDF66 /* FlightSeatsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlightSeatsTableViewController.m; path = Views/FlightSeatsTableViewController.m; sourceTree = "<group>"; };
+		412A31C41859EC4900ACDF66 /* Free@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Free@2x.png"; sourceTree = "<group>"; };
 		41309D0F18586EE300D0A0BF /* CRPAirport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRPAirport.h; path = Models/CRPAirport.h; sourceTree = "<group>"; };
 		41309D1018586EE300D0A0BF /* CRPAirport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRPAirport.m; path = Models/CRPAirport.m; sourceTree = "<group>"; };
 		41309D1218586F1400D0A0BF /* CRPAirline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRPAirline.h; path = Models/CRPAirline.h; sourceTree = "<group>"; };
@@ -151,6 +156,8 @@
 				412A0A1A1859C61100A52F17 /* DetailsTableViewController.m */,
 				41CB7B421859D850004747AF /* DetailsAirlineTableViewController.h */,
 				41CB7B431859D850004747AF /* DetailsAirlineTableViewController.m */,
+				412A31C11859EB1900ACDF66 /* FlightSeatsTableViewController.h */,
+				412A31C21859EB1900ACDF66 /* FlightSeatsTableViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -158,6 +165,7 @@
 		41CB7B371859D2D0004747AF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				412A31C41859EC4900ACDF66 /* Free@2x.png */,
 				41CB7B381859D30B004747AF /* azul@2x.jpg */,
 				41CB7B391859D30B004747AF /* gol@2x.jpg */,
 				41CB7B3A1859D30B004747AF /* tam@2x.jpg */,
@@ -317,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412A31C51859EC4900ACDF66 /* Free@2x.png in Resources */,
 				41CB7B411859D30B004747AF /* airplane@2x.png in Resources */,
 				41CB7B3D1859D30B004747AF /* azul@2x.jpg in Resources */,
 				41F6BF6C185741EA0025DF46 /* Images.xcassets in Resources */,
@@ -343,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412A31C31859EB1900ACDF66 /* FlightSeatsTableViewController.m in Sources */,
 				41309D21185875FB00D0A0BF /* MenuTableViewController.m in Sources */,
 				0BECFE801859C59900BF49E1 /* CRPAirplane.m in Sources */,
 				B18E37C618587A490095B2D3 /* CRPSection.m in Sources */,
@@ -485,7 +495,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CRPA/CRPA-Prefix.pch";
 				INFOPLIST_FILE = "CRPA/CRPA-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -498,7 +510,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CRPA/CRPA-Prefix.pch";
 				INFOPLIST_FILE = "CRPA/CRPA-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

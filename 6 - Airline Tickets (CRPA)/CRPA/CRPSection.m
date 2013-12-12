@@ -25,5 +25,4 @@
 
 # warning Implement setter of seatClass to validate type
 
-
 @end

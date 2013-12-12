@@ -20,6 +20,7 @@
 
 - (NSMutableArray *)getAllAirplanesFromAirline:(CRPAirline *)airline;
 
+- (NSMutableArray *)getAllFlightsFromAirline:(CRPAirline *)airline;
 
 - (CRPAirport *)addAirportWithCode:(NSString *)code andName:(NSString *)name;
 
