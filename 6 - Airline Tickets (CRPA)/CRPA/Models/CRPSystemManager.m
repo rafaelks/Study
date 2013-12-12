@@ -186,5 +186,26 @@
     }
     
 }
-            
+
+- (Boolean) bookSeatWithFlight:(CRPFlight *) flight withSeatClass:(NSString *) seatClass withRow:(NSInteger) row withCol:(char) col{
+    
+    for (CRPSeat *seat in flight.classes[seatClass]) {
+        if (seat.seatId == [NSString stringWithFormat:@"%d%c", row, col]) {
+            if (seat.isFree){
+                seat.seatStatus = false;
+                return true;
+                NSLog(@"O assento foi reservado!");
+            }else{
+                NSLog(@"O assento solicitado não existe para esta classe de voo!");
+                return false;
+            }
+        }
+    }
+    NSLog(@"O assento solicitado está indisponível!");
+    return false;
+}
+
+
+
+
 @end
