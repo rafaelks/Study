@@ -40,13 +40,5 @@
     
     return nil;
 }
-/*- (NSInteger) getRow{
-    NSString *rowAux;
-    for (int i = 0; i < (int) [_seatId length] -1; i++){
-        [rowAux stringByAppendingFormat:@"%c",[_seatId characterAtIndex:i]];
-    }
-    return (NSInteger) rowAux;
-}*/
-
 
 @end

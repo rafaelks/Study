@@ -34,7 +34,6 @@
     
     CRPAirline *airlineGOL  = [manager addAirlineWithName:@"GOL"];
     CRPAirline *airlineAZUL = [manager addAirlineWithName:@"AZUL"];
-    CRPAirline *airlineTAM  = [manager addAirlineWithName:@"TAM"];
     NSLog(@"Airlines: %@", manager.getAllAirlines);
     
     
