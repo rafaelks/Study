@@ -29,6 +29,13 @@
     return self;
 }
 
++ (id)sharedManager {
+    static CRPSystemManager *shared = nil;
+    shared = [[self alloc] init];
+    return shared;
+}
+
+
 # pragma Airplane
 
 - (CRPAirplane *)addAirplanetWithCode:(NSString *)code withSections:(NSMutableArray *)_sections andAirline:(CRPAirline *)airline {
