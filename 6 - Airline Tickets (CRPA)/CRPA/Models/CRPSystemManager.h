@@ -10,6 +10,7 @@
 #import "CRPAirline.h"
 #import "CRPAirport.h"
 #import "CRPFlight.h"
+#import "CRPSection.h"
 
 @interface CRPSystemManager : NSObject
 
