@@ -12,6 +12,8 @@
 
 -(id)initWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols
 {
+    self = [ super init];
+    
     NSString *columns = @"ABCDEF";
 
     _seats = [[ NSMutableArray alloc] init];

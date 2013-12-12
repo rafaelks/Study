@@ -13,6 +13,7 @@
     NSMutableArray *airports;
     NSMutableArray *airlines;
     NSMutableArray *flights;
+    NSMutableArray *sections;
 }
 
 - (instancetype)init
@@ -23,6 +24,7 @@
     airports = [[NSMutableArray alloc] init];
     airlines = [[NSMutableArray alloc] init];
     flights = [[NSMutableArray alloc] init];
+    sections = [[ NSMutableArray alloc] init];
 
     return self;
 }
@@ -107,5 +109,21 @@
 {
     return flights;
 }
+
+# pragma Section
+
+- (void)createSectionWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols
+{
+    CRPSection *section = [[CRPSection alloc] initWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols];
+    if (section != nil)
+    {
+        [sections addObject:section];
+    }
+}
+
+- (NSMutableArray *)getAllSections
+    {
+        return sections;
+    }
 
 @end
