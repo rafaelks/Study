@@ -34,7 +34,6 @@
     
     CRPAirline *airlineGOL  = [manager addAirlineWithName:@"GOL"];
     CRPAirline *airlineAZUL = [manager addAirlineWithName:@"AZUL"];
-    CRPAirline *airlineTAM  = [manager addAirlineWithName:@"TAM"];
     NSLog(@"Airlines: %@", manager.getAllAirlines);
     
     
@@ -78,6 +77,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     DetailsTableViewController *details = segue.destinationViewController;
+    [details setManager:manager];
     
     if ([[segue identifier] isEqualToString:@"showAirports"]) {
         [details loadData:[manager getAllAirports] withType:@"Airport"];
