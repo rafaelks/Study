@@ -153,6 +153,21 @@
     return sections;
 }
 
+- (NSMutableArray *)findAvailableFlightFromAirport:(CRPAirport *)originAirport
+                                         toAirport:(CRPAirport *)destinyAirport
+                                           andDate:(NSDate *)flightDate
+{
+    NSMutableArray *availableFlights;
+    for (CRPFlight *flight in flights ) {
+        if (flight.origin == originAirport || flight.destiny == destinyAirport || [flight.date isEqualToDate:flightDate])
+        {
+            if ([flight countOfAvailableSeats] ) {
+                [availableFlights addObject:flight];
+            }
+        }
+        
+    }
+
 
 
 // vou finalizar em casa, podem deixar que eu faço
@@ -171,4 +186,5 @@
     }
     
 }
+            
 @end
