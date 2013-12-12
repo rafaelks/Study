@@ -20,20 +20,16 @@
 @property CRPAirline *airLine;
 @property CRPAirport *origin;
 @property CRPAirport *destiny;
-@property int year;
-@property int month;
-@property int day;
-@property NSString *code;
+@property NSDate     *date;
+@property NSString   *code;
 
 - (id)initWithSeatClasses:(NSArray *)seatClasses;
 
 - (id)initWithAirline:(CRPAirline *)airLine
            withOrigin:(CRPAirport *)origin
           withDestiny:(CRPAirport *)destiny
-             withYear:(int)year
-            withMonth:(int)month
-              withDay:(int)day
-             withCode:(NSString *)code;
+             withDate:(NSDate     *)date
+             withCode:(NSString   *)code;
 
 
 @end

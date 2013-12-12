@@ -31,25 +31,34 @@
     
     manager = [[CRPSystemManager alloc] init];
     
-    CRPAirport *airportPOA = [manager addAirportWithCode:@"POA" andName:@"Porto Alegre"];
-    CRPAirport *airportFLR = [manager addAirportWithCode:@"FLR" andName:@"Florianópolis"];
-    [manager addAirportWithCode:@"FOOO" andName:@"Florianópolis"];
     
-    NSLog(@"Airports: %@", manager.getAllAirports);
-    
-    
-    CRPAirline *airline = [manager addAirlineWithName:@"AZUL"];
-    
+    CRPAirline *airlineGOL  = [manager addAirlineWithName:@"GOL"];
+    CRPAirline *airlineAZUL = [manager addAirlineWithName:@"AZUL"];
+    CRPAirline *airlineTAM  = [manager addAirlineWithName:@"TAM"];
     NSLog(@"Airlines: %@", manager.getAllAirlines);
     
     
-    [manager createFlightWithAirline:airline
+    
+    CRPAirport *airportPOA = [manager addAirportWithCode:@"POA" andName:@"Porto Alegre"];
+    CRPAirport *airportFLR = [manager addAirportWithCode:@"FLR" andName:@"Florianópolis"];
+    [manager addAirportWithCode:@"FOOO" andName:@"Florianópolis"];
+    NSLog(@"Airports: %@", manager.getAllAirports);
+    
+    
+    [manager createFlightWithAirline:airlineAZUL
                           withOrigin:airportPOA
-                         withDestiny:airportFLR
-                            withYear:2013
-                           withMonth:12
-                             withDay:20
+                         withDestiny:airportPOA
+                            withDate:[[NSDate alloc] init]
                             withCode:@"AZ123"];
+
+
+    
+    [manager createFlightWithAirline:airlineGOL
+                          withOrigin:airportFLR
+                         withDestiny:airportPOA
+                            withDate:[[NSDate alloc] init]
+                            withCode:@"GO812"];
+    
     
     NSLog(@"Flights: %@", manager.getAllFlights);
 }

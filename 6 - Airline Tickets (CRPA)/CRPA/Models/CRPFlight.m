@@ -29,21 +29,23 @@
 - (id)initWithAirline:(CRPAirline *)airLine
            withOrigin:(CRPAirport *)origin
           withDestiny:(CRPAirport *)destiny
-             withYear:(int)year
-            withMonth:(int)month
-              withDay:(int)day
-             withCode:(NSString *)code
+             withDate:(NSDate     *)date
+             withCode:(NSString   *)code
 {
     self = [super init];
 
+    
     if (self) {
-        self.airLine = airLine;
-        self.origin = origin;
-        self.destiny = destiny;
-        self.year = year;
-        self.month = month;
-        self.day = day;
-        self.code = code;
+        if (origin == destiny){
+            NSLog(@"O destino não pode ser a origem!");
+            return nil;
+        } else {
+            self.airLine = airLine;
+            self.origin  = origin;
+            self.destiny = destiny;
+            self.date    = date;
+            self.code    = code;
+        }
     }
     
     return self;

@@ -32,10 +32,8 @@
 - (void)createFlightWithAirline:(CRPAirline *)airLine
                      withOrigin:(CRPAirport *)origin
                     withDestiny:(CRPAirport *)destiny
-                       withYear:(int)year
-                      withMonth:(int)month
-                        withDay:(int)day
-                       withCode:(NSString *)code;
+                       withDate:(NSDate     *)date
+                       withCode:(NSString   *)code;
 
 - (NSMutableArray *)getAllFlights;
 
