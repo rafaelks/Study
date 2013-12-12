@@ -76,4 +76,21 @@
     }
 }
 
+- (int) countOfAvailableSeats
+{
+    int count = 0;
+    
+    for (NSString *class in self.classes) {
+        for (CRPSeat *seat in self.classes[class])
+        {
+            if (seat.isFree)
+            {
+                count++;
+            }
+        }
+    }
+    
+    return count;
+}
+
 @end

@@ -23,11 +23,6 @@
     return self;
 }
 
-- (void) setSeatClass:(NSString *)seatClass
-{
-    if ([[CRPSeatClass getClasses] objectForKey:seatClass] != nil) {
-        _seatClass = seatClass;
-    }
-}
+# warning Implement setter of seatClass to validate type
 
 @end

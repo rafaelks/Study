@@ -128,7 +128,7 @@
     NSMutableArray *fligthsOfAirline = [[NSMutableArray alloc] init];
     
     for (CRPFlight *item in flights) {
-        if (item.airLine == airline) {
+        if ([item.airplane airline] == airline) {
             [fligthsOfAirline addObject:item];
         }
     }
@@ -149,8 +149,25 @@
 }
 
 - (NSMutableArray *)getAllSections
-    {
-        return sections;
-    }
+{
+    return sections;
+}
 
+- (NSMutableArray *)findAvailableFlightFromAirport:(CRPAirport *)originAirport
+                                         toAirport:(CRPAirport *)destinyAirport
+                                           andDate:(NSDate *)flightDate
+{
+    NSMutableArray *availableFlights;
+    for (CRPFlight *flight in flights ) {
+        if (flight.origin == originAirport || flight.destiny == destinyAirport || [flight.date isEqualToDate:flightDate])
+        {
+            if ([flight countOfAvailableSeats] ) {
+                [availableFlights addObject:flight];
+            }
+        }
+        
+    }
+    return availableFlights;
+}
+            
 @end
