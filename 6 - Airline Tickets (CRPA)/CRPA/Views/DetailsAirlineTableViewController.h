@@ -11,6 +11,9 @@
 
 @interface DetailsAirlineTableViewController : UITableViewController
 
+@property (nonatomic, strong) CRPAirline *airline;
 @property (nonatomic, strong) CRPSystemManager *manager;
+
+- (void)setManager:(CRPSystemManager *)manager forAirline:(CRPAirline *)airline;
 
 @end
