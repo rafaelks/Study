@@ -16,10 +16,10 @@ static NSDictionary *classes;
 + (NSDictionary *)getClasses {
     if (classes == nil) {
         classes = @{
-                @"first-class": @"Primeira Classe",
-                @"executive": @"Executiva",
-                @"economic": @"Econômica"
-                };
+            @"first-class": @"Primeira Classe",
+            @"executive": @"Executiva",
+            @"economic": @"Econômica"
+        };
     }
     
     return classes;
