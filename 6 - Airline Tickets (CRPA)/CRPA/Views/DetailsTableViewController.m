@@ -7,7 +7,7 @@
 //
 
 #import "DetailsTableViewController.h"
-#import "CRPSystemManager.h"
+#import "DetailsAirlineTableViewController.h"
 
 @interface DetailsTableViewController ()
 
@@ -99,6 +99,14 @@
         [self setTitle:@"Companhias"];
         return;
     }
+}
+
+#pragma mark Storyboard
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    DetailsAirlineTableViewController *details = segue.destinationViewController;
+    [details setManager:_manager];
 }
 
 @end

@@ -64,6 +64,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     DetailsTableViewController *details = segue.destinationViewController;
+    [details setManager:manager];
     
     if ([[segue identifier] isEqualToString:@"showAirports"]) {
         [details loadData:[manager getAllAirports] withType:@"Airport"];
