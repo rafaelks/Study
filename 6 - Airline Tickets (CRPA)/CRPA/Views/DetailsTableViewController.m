@@ -75,8 +75,8 @@
         NSString *imageName = [NSString stringWithFormat:@"%@.jpg", [[obj name] lowercaseString]];
         [imageView setImage:[UIImage imageNamed:imageName]];
         
-        UILabel *labelName = (UILabel *) [cell viewWithTag:200];
-        [labelName setText:[obj name]];
+//        UILabel *labelName = (UILabel *) [cell viewWithTag:200];
+//        [labelName setText:[obj name]];
     }
     
     return cell;

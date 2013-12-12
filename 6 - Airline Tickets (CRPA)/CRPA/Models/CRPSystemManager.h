@@ -41,7 +41,7 @@
 
 - (NSMutableArray *)getAllFlights;
 
-- (CRPSection *)createSectionWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols;
+- (CRPSection *)createSectionWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(CRPSeatClass *)seatClass;
 
 - (NSMutableArray *)getAllSections;
 

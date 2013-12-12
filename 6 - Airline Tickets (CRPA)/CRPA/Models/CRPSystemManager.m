@@ -123,7 +123,7 @@
 
 #pragma Section
 
-- (CRPSection *)createSectionWithAirline:(CRPAirline *)airline andFlight:(CRPFlight *)flID andRows:(NSInteger)rows andCols:(NSInteger)cols
+- (CRPSection *)createSectionWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(CRPSeatClass *)seatClass
 {
     CRPSection *section = [[CRPSection alloc] initWithAirline:airline withRows:rows withCols:cols andSeatClass:seatClass];
     if (section != nil)
