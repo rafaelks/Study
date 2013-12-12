@@ -14,7 +14,7 @@
 
 @interface CRPSystemManager : NSObject
 
-- (CRPAirplane *)addAirplanetWithCode:(NSString *)code andSections:(NSMutableArray *)sections;
+- (CRPAirplane *)addAirplanetWithCode:(NSString *)code withSections:(NSMutableArray *)_sections andAirline:(CRPAirline *)airline;
 
 - (NSMutableArray *)getAllAirplanes;
 
@@ -34,11 +34,13 @@
 - (void)createFlightWithAirline:(CRPAirline *)airLine
                      withOrigin:(CRPAirport *)origin
                     withDestiny:(CRPAirport *)destiny
-                       withYear:(int)year
-                      withMonth:(int)month
-                        withDay:(int)day
-                       withCode:(NSString *)code;
+                       withDate:(NSDate     *)date
+                       withCode:(NSString   *)code;
 
 - (NSMutableArray *)getAllFlights;
+
+- (CRPSection *)createSectionWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(CRPSeatClass *)seatClass;
+
+- (NSMutableArray *)getAllSections;
 
 @end

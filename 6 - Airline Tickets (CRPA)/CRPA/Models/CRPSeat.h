@@ -14,5 +14,7 @@
 @property (nonatomic, getter = isFree) bool seatStatus;
 
 - (id)initWithId:(NSString *)seatId;
+- (NSInteger)getRow;
+- (NSInteger)getCol;
 
 @end
