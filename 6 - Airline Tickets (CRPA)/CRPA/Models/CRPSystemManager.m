@@ -74,7 +74,6 @@
     return airports;
 }
 
-
 # pragma Airline
 
 - (CRPAirline *)addAirlineWithName:(NSString *)name {
@@ -115,6 +114,18 @@
 - (NSMutableArray *)getAllFlights
 {
     return flights;
+}
+
+- (NSMutableArray *)getAllFlightsFromAirline:(CRPAirline *)airline {
+    NSMutableArray *fligthsOfAirline = [[NSMutableArray alloc] init];
+    
+    for (CRPFlight *item in flights) {
+        if (item.airLine == airline) {
+            [fligthsOfAirline addObject:item];
+        }
+    }
+    
+    return fligthsOfAirline;
 }
 
 #pragma Section
