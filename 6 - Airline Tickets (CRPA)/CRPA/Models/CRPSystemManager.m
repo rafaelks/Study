@@ -95,17 +95,19 @@
 
 # pragma Flight
 
-- (void)createFlightWithAirline:(CRPAirline *)airLine
+- (void)createFlightWithAirline:(CRPAirline *)airline
+                   withAirplane:(CRPAirplane *)airplane
                      withOrigin:(CRPAirport *)origin
                     withDestiny:(CRPAirport *)destiny
                        withDate:(NSDate     *)date
                        withCode:(NSString   *)code
 {
-    CRPFlight *flight = [[CRPFlight alloc] initWithAirline:(CRPAirline *)airLine
-                                                withOrigin:(CRPAirport *)origin
-                                               withDestiny:(CRPAirport *)destiny
-                                                  withDate:(NSDate     *)date
-                                                  withCode:(NSString   *)code];
+    CRPFlight *flight = [[CRPFlight alloc] initWithAirline:airline
+                                              withAirplane:airplane
+                                                withOrigin:origin
+                                               withDestiny:destiny
+                                                  withDate:date
+                                                  withCode:code];
     
     if (flight != nil) {
         [flights addObject:flight];
@@ -119,7 +121,7 @@
 
 #pragma Section
 
-- (CRPSection *)createSectionWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(CRPSeatClass *)seatClass
+- (CRPSection *)createSectionWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(NSString *)seatClass
 {
     CRPSection *section = [[CRPSection alloc] initWithAirline:airline withRows:rows withCols:cols andSeatClass:seatClass];
     if (section != nil)

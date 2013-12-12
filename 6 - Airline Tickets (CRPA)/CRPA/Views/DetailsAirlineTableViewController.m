@@ -40,10 +40,7 @@
     _airline = airline;
     _manager = manager;
     
-//    NSString *imageName = [NSString stringWithFormat:@"%@.jpg", [[_airline name] lowercaseString]];
-//    UIImage *image = [UIImage imageNamed:imageName];
-//    UIImageView *imageView = (UIImageView *) [[[[self tableView] headerViewForSection:0] contentView] viewWithTag:100];
-//    [imageView setImage:image];
+    [self setTitle:[_airline name]];
 }
 
 /*

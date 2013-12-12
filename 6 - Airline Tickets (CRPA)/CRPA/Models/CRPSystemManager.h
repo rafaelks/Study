@@ -31,7 +31,8 @@
 - (NSMutableArray *)getAllAirlines;
 
 
-- (void)createFlightWithAirline:(CRPAirline *)airLine
+- (void)createFlightWithAirline:(CRPAirline *)airline
+                   withAirplane:(CRPAirplane *)airplane
                      withOrigin:(CRPAirport *)origin
                     withDestiny:(CRPAirport *)destiny
                        withDate:(NSDate     *)date
@@ -39,7 +40,7 @@
 
 - (NSMutableArray *)getAllFlights;
 
-- (CRPSection *)createSectionWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(CRPSeatClass *)seatClass;
+- (CRPSection *)createSectionWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(NSString *)seatClass;
 
 - (NSMutableArray *)getAllSections;
 
