@@ -57,11 +57,23 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self type] forIndexPath:indexPath];
     
+    // Airports
     if ([[self type] isEqualToString:@"Airport"]) {
         CRPAirport *obj = [_data objectAtIndex:indexPath.row];
 
         UILabel *labelCode = (UILabel *) [cell viewWithTag:100];
         [labelCode setText:[obj code]];
+        
+        UILabel *labelName = (UILabel *) [cell viewWithTag:200];
+        [labelName setText:[obj name]];
+
+    // Airlines
+    } else if ([[self type] isEqualToString:@"Airline"]) {
+        CRPAirline *obj = [_data objectAtIndex:indexPath.row];
+        
+        UIImageView *imageView = (UIImageView *) [cell viewWithTag:100];
+        NSString *imageName = [NSString stringWithFormat:@"%@.jpg", [[obj name] lowercaseString]];
+        [imageView setImage:[UIImage imageNamed:imageName]];
         
         UILabel *labelName = (UILabel *) [cell viewWithTag:200];
         [labelName setText:[obj name]];
@@ -80,6 +92,12 @@
     
     if ([[self type] isEqualToString:@"Airport"]) {
         [self setTitle:@"Aeroportos"];
+        return;
+    }
+    
+    if ([[self type] isEqualToString:@"Airline"]) {
+        [self setTitle:@"Companhias"];
+        return;
     }
 }
 

@@ -14,9 +14,11 @@
 
 @interface CRPSystemManager : NSObject
 
-- (CRPAirplane *)addAirplanetWithCode:(NSString *)code andSections:(NSMutableArray *)sections;
+- (CRPAirplane *)addAirplanetWithCode:(NSString *)code withSections:(NSMutableArray *)_sections andAirline:(CRPAirline *)airline;
 
 - (NSMutableArray *)getAllAirplanes;
+
+- (NSMutableArray *)getAllAirplanesFromAirline:(CRPAirline *)airline;
 
 
 - (CRPAirport *)addAirportWithCode:(NSString *)code andName:(NSString *)name;

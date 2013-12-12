@@ -8,13 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "CRPSection.h"
+#import "CRPAirline.h"
 
 @interface CRPAirplane : NSObject
 
 @property NSString *code;
 @property NSMutableArray *sections;
+@property CRPAirline *airline;
 
 
-- (id)initWithCode:(NSString *)code andSections:(NSMutableArray *)sections;
+- (id)initWithCode:(NSString *)code withSections:(NSMutableArray *)sections andAirline:(CRPAirline *)airline;
 
 @end
