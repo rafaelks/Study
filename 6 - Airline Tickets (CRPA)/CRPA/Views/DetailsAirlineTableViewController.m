@@ -35,9 +35,12 @@
 }
 
 
-- (void)setManager:(CRPSystemManager *)manager
+- (void)setManager:(CRPSystemManager *)manager forAirline:(CRPAirline *)airline
 {
+    _airline = airline;
     _manager = manager;
+    
+    [self setTitle:[_airline name]];
 }
 
 /*

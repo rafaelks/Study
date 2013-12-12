@@ -74,7 +74,6 @@
     return airports;
 }
 
-
 # pragma Airline
 
 - (CRPAirline *)addAirlineWithName:(NSString *)name {
@@ -102,12 +101,11 @@
                        withDate:(NSDate     *)date
                        withCode:(NSString   *)code
 {
-    CRPFlight *flight = [[CRPFlight alloc] initWithAirline:airline
-                                              withAirplane:airplane
-                                                withOrigin:origin
-                                               withDestiny:destiny
-                                                  withDate:date
-                                                  withCode:code];
+    CRPFlight *flight = [[CRPFlight alloc] initWithAirplane:airplane
+                                                 withOrigin:origin
+                                                withDestiny:destiny
+                                                   withDate:date
+                                                   withCode:code];
     
     if (flight != nil) {
         [flights addObject:flight];
@@ -117,6 +115,18 @@
 - (NSMutableArray *)getAllFlights
 {
     return flights;
+}
+
+- (NSMutableArray *)getAllFlightsFromAirline:(CRPAirline *)airline {
+    NSMutableArray *fligthsOfAirline = [[NSMutableArray alloc] init];
+    
+    for (CRPFlight *item in flights) {
+        if ([item.airplane airline] == airline) {
+            [fligthsOfAirline addObject:item];
+        }
+    }
+    
+    return fligthsOfAirline;
 }
 
 #pragma Section
