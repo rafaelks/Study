@@ -45,8 +45,11 @@
     CRPSection *section2Azul747 = [manager createSectionWithAirline:airlineAZUL withRows:20 withCols:6 andSeatClass:@"executive"];
     
     
+    CRPSection *sectionGol737 = [manager createSectionWithAirline:airlineGOL withRows:30 withCols:6 andSeatClass:@"executive"];
+    
     CRPAirplane *airplane747 = [manager addAirplanetWithCode:@"747" withSections:@[section1Azul747, section2Azul747] andAirline:airlineAZUL];
     
+    CRPAirplane *airplane737 = [manager addAirplanetWithCode:@"737" withSections:@[sectionGol737] andAirline:airlineGOL];
     
     [manager createFlightWithAirline:airlineAZUL
                         withAirplane:airplane747
