@@ -20,20 +20,19 @@
 @property NSMutableArray *seatClasses;
 
 @property (nonatomic) CRPAirplane *airplane;
-@property (nonatomic) CRPAirport  *origin;
-@property (nonatomic) CRPAirport  *destiny;
-@property (nonatomic) NSDate      *date;
-@property (nonatomic) NSString    *code;
+@property (nonatomic) CRPAirport *origin;
+@property (nonatomic) CRPAirport *destiny;
+@property (nonatomic) NSDate *date;
+@property (nonatomic) NSString *code;
 @property (nonatomic) NSMutableDictionary *classes;
 
 - (id)initWithAirplane:(CRPAirplane *)airplane
             withOrigin:(CRPAirport *)origin
            withDestiny:(CRPAirport *)destiny
-              withDate:(NSDate     *)date
-              withCode:(NSString   *)code;
+              withDate:(NSDate *)date
+              withCode:(NSString *)code;
 
-- (int) countOfAvailableSeats;
-
-- (int) count;
+- (NSInteger)countOfAvailableSeats;
+- (NSInteger)countAllFlights;
 
 @end
