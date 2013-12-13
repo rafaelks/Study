@@ -39,18 +39,31 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return [[_flight classes] count];
+    NSLog(@"Flight: %@", _flight);
+
+    if (_flight) {
+        return [[_flight classes] count];
+    }
+    
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return 15;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Free" forIndexPath:indexPath];
+    NSNumber *idx = [[NSNumber alloc] initWithInteger:indexPath.row];
+    UITableViewCell *cell;
+    
+    if ([idx intValue] < 7) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"Free" forIndexPath:indexPath];
+    } else {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"Busy" forIndexPath:indexPath];
+    }
     
     UILabel *labelCode = (UILabel *) [cell viewWithTag:100];
     [labelCode setText:@"123A"];
@@ -58,8 +71,16 @@
     return cell;
 }
 
-
-
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) {
+        return @"Econômica";
+    } else if (section == 1) {
+        return @"Executiva";
+    }
+    
+    return @"Primeira Classe";
+}
 
 
 @end

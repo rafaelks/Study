@@ -8,6 +8,8 @@
 
 #import "CRPSystemManager.h"
 
+static CRPSystemManager *shared = nil;
+
 @implementation CRPSystemManager {
     NSMutableArray *airplanes;
     NSMutableArray *airports;
@@ -30,8 +32,10 @@
 }
 
 + (id)sharedManager {
-    static CRPSystemManager *shared = nil;
-    shared = [[self alloc] init];
+    if (!shared) {
+        shared = [[self alloc] init];
+    }
+
     return shared;
 }
 
@@ -105,8 +109,8 @@
                    withAirplane:(CRPAirplane *)airplane
                      withOrigin:(CRPAirport *)origin
                     withDestiny:(CRPAirport *)destiny
-                       withDate:(NSDate     *)date
-                       withCode:(NSString   *)code
+                       withDate:(NSDate *)date
+                       withCode:(NSString *)code
 {
     CRPFlight *flight = [[CRPFlight alloc] initWithAirplane:airplane
                                                  withOrigin:origin

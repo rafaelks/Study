@@ -29,8 +29,7 @@
 {
     [super viewDidLoad];
     
-    manager = [[CRPSystemManager alloc] init];
-    
+    manager = [CRPSystemManager sharedManager];
     
     CRPAirline *airlineGOL  = [manager addAirlineWithName:@"GOL"];
     CRPAirline *airlineAZUL = [manager addAirlineWithName:@"AZUL"];
@@ -85,7 +84,6 @@
                          withDestiny:airportPOA
                             withDate:[[NSDate alloc] init]
                             withCode:@"AZ123"];
-
     
     [manager createFlightWithAirline:airlineGOL
                         withAirplane:airplane747
@@ -114,7 +112,6 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     DetailsTableViewController *details = segue.destinationViewController;
-    [details setManager:manager];
     
     if ([[segue identifier] isEqualToString:@"showAirports"]) {
         [details loadData:[manager getAllAirports] withType:@"Airport"];

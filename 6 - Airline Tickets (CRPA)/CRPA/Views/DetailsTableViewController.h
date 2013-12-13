@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "CRPSystemManager.h"
 
-@interface DetailsTableViewController : UITableViewController <UITableViewDataSource>
+@interface DetailsTableViewController : UITableViewController <UITableViewDataSource> {
+    CRPSystemManager *manager;
+}
 
-@property (nonatomic, strong) CRPSystemManager *manager;
 @property (nonatomic, strong) NSMutableArray *data;
 @property (nonatomic, strong) NSString *type;
 

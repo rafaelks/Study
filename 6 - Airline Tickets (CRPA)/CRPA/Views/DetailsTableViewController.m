@@ -29,6 +29,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    manager = [CRPSystemManager sharedManager];
 }
 
 - (void)didReceiveMemoryWarning

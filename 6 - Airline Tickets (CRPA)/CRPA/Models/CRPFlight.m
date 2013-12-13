@@ -37,17 +37,16 @@
 
 - (void)setAirplane:(CRPAirplane *)airplane
 {
-    NSArray *sections = [airplane sections];
-    
+    _airplane = airplane;
     _classes = [[NSMutableDictionary alloc] init];
-    
+
+    NSArray *sections = [airplane sections];
     NSString *columns = @"ABCDEF";
     
     for (CRPSection *section in sections) {
-        
         NSMutableArray *seats = [[NSMutableArray alloc] init];
         
-        for (int i=0; i < section.rows; i++) {
+        for (int i = 0; i < section.rows; i++) {
             for (int j = 0 ; j < section.cols; j++) {
                 NSString *seatName = [NSString stringWithFormat:@"%d%c", i, [columns characterAtIndex:j]];
                 CRPSeat *seat = [[CRPSeat alloc] initWithId:seatName];

@@ -18,6 +18,7 @@
 		41309D1A185870B300D0A0BF /* CRPSystemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D19185870B300D0A0BF /* CRPSystemManager.m */; };
 		41309D1D185873C400D0A0BF /* CRPSeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D1C185873C400D0A0BF /* CRPSeat.m */; };
 		41309D21185875FB00D0A0BF /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41309D20185875FB00D0A0BF /* MenuTableViewController.m */; };
+		413C40E3185B22C6000A9967 /* Busy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 413C40E2185B22C6000A9967 /* Busy@2x.png */; };
 		41CB7B3D1859D30B004747AF /* azul@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41CB7B381859D30B004747AF /* azul@2x.jpg */; };
 		41CB7B3E1859D30B004747AF /* gol@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41CB7B391859D30B004747AF /* gol@2x.jpg */; };
 		41CB7B3F1859D30B004747AF /* tam@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41CB7B3A1859D30B004747AF /* tam@2x.jpg */; };
@@ -72,6 +73,7 @@
 		41309D1C185873C400D0A0BF /* CRPSeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRPSeat.m; path = Models/CRPSeat.m; sourceTree = "<group>"; };
 		41309D1F185875FB00D0A0BF /* MenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MenuTableViewController.h; path = Views/MenuTableViewController.h; sourceTree = "<group>"; };
 		41309D20185875FB00D0A0BF /* MenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MenuTableViewController.m; path = Views/MenuTableViewController.m; sourceTree = "<group>"; };
+		413C40E2185B22C6000A9967 /* Busy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Busy@2x.png"; sourceTree = "<group>"; };
 		41CB7B381859D30B004747AF /* azul@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "azul@2x.jpg"; sourceTree = "<group>"; };
 		41CB7B391859D30B004747AF /* gol@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gol@2x.jpg"; sourceTree = "<group>"; };
 		41CB7B3A1859D30B004747AF /* tam@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tam@2x.jpg"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 		41CB7B371859D2D0004747AF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				413C40E2185B22C6000A9967 /* Busy@2x.png */,
 				412A31C41859EC4900ACDF66 /* Free@2x.png */,
 				41CB7B381859D30B004747AF /* azul@2x.jpg */,
 				41CB7B391859D30B004747AF /* gol@2x.jpg */,
@@ -334,6 +337,7 @@
 				41CB7B3F1859D30B004747AF /* tam@2x.jpg in Resources */,
 				41CB7B3E1859D30B004747AF /* gol@2x.jpg in Resources */,
 				41F6BF64185741EA0025DF46 /* Main.storyboard in Resources */,
+				413C40E3185B22C6000A9967 /* Busy@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "CRPSystemManager.h"
 
-@interface DetailsAirlineTableViewController : UITableViewController
+@interface DetailsAirlineTableViewController : UITableViewController {
+    CRPSystemManager *manager;
+}
 
 @property (nonatomic, strong) CRPAirline *airline;
-@property (nonatomic, strong) CRPSystemManager *manager;
 
 @end

@@ -27,6 +27,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    manager = [CRPSystemManager sharedManager];
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,7 +50,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {    
-    CRPFlight *obj = (CRPFlight *) [[_manager getAllFlightsFromAirline:_airline] objectAtIndex:0];
+    CRPFlight *obj = (CRPFlight *) [[manager getAllFlightsFromAirline:_airline] objectAtIndex:0];
     FlightSeatsTableViewController *details = segue.destinationViewController;
     [details setFlight:obj];
 }
