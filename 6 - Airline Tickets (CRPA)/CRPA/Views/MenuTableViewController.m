@@ -99,6 +99,11 @@
         [details loadData:[manager getAllAirlines] withType:@"Airline"];
         return;
     }
+    
+    if ([[segue identifier] isEqualToString:@"showFlights"]) {
+        [details loadData:[manager getAllFlights] withType:@"Flight"];
+        return;
+    }
 }
 
 
