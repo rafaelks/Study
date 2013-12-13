@@ -44,7 +44,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[[_flight classes] objectForKey:@"first-class"] count];
+    return 1;
 }
 
 
