@@ -38,7 +38,7 @@
 
 # pragma Airplane
 
-- (CRPAirplane *)addAirplanetWithCode:(NSString *)code withSections:(NSMutableArray *)_sections andAirline:(CRPAirline *)airline {
+- (CRPAirplane *)addAirplanetWithCode:(NSString *)code withSections:(NSArray *)_sections andAirline:(CRPAirline *)airline {
     CRPAirplane *airplane = [[CRPAirplane alloc] initWithCode:code withSections:_sections andAirline:airline];
     
     if (airplane != nil) {
@@ -172,26 +172,29 @@
 
 - (void)displaySystemDetails
 {
-    NSLog(@"\n\nRelatório de Objetos do Sistema \n");
+    NSLog(@"Relatório de Objetos do Sistema");
+
     
-    
-    NSLog(@"\n\nAeroportos: \n");
+    NSLog(@" ");
+    NSLog(@"Aeroportos:");
     for (CRPAirport *item in airports) {
-        NSLog(@"%@ - %@", item.code, item.name);
+        NSLog(@"    %@ - %@", item.code, item.name);
     }
     
-    NSLog(@"\n\nCompanhias Aéreas: \n");
+    NSLog(@" ");
+    NSLog(@"Companhias Aéreas:");
     for (CRPAirline *item in airlines) {
-        NSLog(@"%@", item.name);
+        NSLog(@"    %@", item.name);
     }
     
-    NSLog(@"\n\nAeronaves");
+    NSLog(@" ");
+    NSLog(@"Aeronaves:");
     for (CRPAirplane *item in airplanes) {
-        NSLog(@"%@ - %@", item.code, item.airline.name);
+        NSLog(@"    %@ - %@", item.code, item.airline.name);
         
         // section
-        for (CRPSection *item in sections) {
-            NSLog(@"%@", item.seatClass);
+        for (CRPSection *section in item.sections) {
+            NSLog(@"        %@ - %d coluna(s) e %d linha(s) - %d assento(s)", [[CRPSeatClass getClasses] objectForKey:section.seatClass], section.cols, section.rows, section.cols * section.rows);
         }
     }
     

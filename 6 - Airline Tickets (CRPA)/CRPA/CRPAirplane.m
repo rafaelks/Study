@@ -12,7 +12,7 @@
 
 @synthesize sections=_sections;
 
-- (id)initWithCode:(NSString *)code withSections:(NSMutableArray *)sections andAirline:(CRPAirline *)airline
+- (id)initWithCode:(NSString *)code withSections:(NSArray *)sections andAirline:(CRPAirline *)airline
 {
     self = [super init];
     
@@ -25,15 +25,17 @@
 }
 
 //Only add CRPSection itens
-- (void)setSections:(NSMutableArray *)sections
+- (void)setSections:(NSArray *)sections
 {
-    _sections = [[NSMutableArray alloc] init];
+    NSMutableArray *__sections = [[NSMutableArray alloc] init];
     
-    for (int i = 0; [sections count]; i++) {
+    for (int i = 0; i < [sections count]; i++) {
         if ([[sections objectAtIndex:i] isKindOfClass:[CRPSection class]]) {
-            [_sections addObject:[sections objectAtIndex:i]];
+            [__sections addObject:[sections objectAtIndex:i]];
         }
     }
+    
+    _sections = [[NSMutableArray alloc] initWithArray:[__sections copy]];
 }
 
 @end

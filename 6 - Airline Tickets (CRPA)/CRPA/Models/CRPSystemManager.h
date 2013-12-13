@@ -16,7 +16,7 @@
 
 + (id)sharedManager;
 
-- (CRPAirplane *)addAirplanetWithCode:(NSString *)code withSections:(NSMutableArray *)_sections andAirline:(CRPAirline *)airline;
+- (CRPAirplane *)addAirplanetWithCode:(NSString *)code withSections:(NSArray *)_sections andAirline:(CRPAirline *)airline;
 
 - (NSMutableArray *)getAllAirplanes;
 

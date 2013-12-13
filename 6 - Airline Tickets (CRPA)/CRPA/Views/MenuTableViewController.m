@@ -34,17 +34,18 @@
     
     CRPAirline *airlineGOL  = [manager addAirlineWithName:@"GOL"];
     CRPAirline *airlineAZUL = [manager addAirlineWithName:@"AZUL"];
-    NSLog(@"Airlines: %@", manager.getAllAirlines);
-    
     
     
     CRPAirport *airportPOA = [manager addAirportWithCode:@"POA" andName:@"Porto Alegre"];
     CRPAirport *airportFLR = [manager addAirportWithCode:@"FLR" andName:@"Florianópolis"];
     [manager addAirportWithCode:@"FOOO" andName:@"Florianópolis"];
-    NSLog(@"Airports: %@", manager.getAllAirports);
     
-
-    CRPAirplane *airplane747 = [manager addAirplanetWithCode:@"747" withSections:[manager getAllSections] andAirline:airlineAZUL];
+    
+    CRPSection *section1Azul747 = [manager createSectionWithAirline:airlineAZUL withRows:10 withCols:4 andSeatClass:@"first-class"];
+    CRPSection *section2Azul747 = [manager createSectionWithAirline:airlineAZUL withRows:20 withCols:6 andSeatClass:@"executive"];
+    
+    
+    CRPAirplane *airplane747 = [manager addAirplanetWithCode:@"747" withSections:@[section1Azul747, section2Azul747] andAirline:airlineAZUL];
     
     
     [manager createFlightWithAirline:airlineAZUL
@@ -62,9 +63,6 @@
                          withDestiny:airportPOA
                             withDate:[[NSDate alloc] init]
                             withCode:@"GO812"];
-    
-    
-    NSLog(@"Flights: %@", manager.getAllFlights);
     
     
     
