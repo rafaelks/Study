@@ -26,8 +26,6 @@
 @property (nonatomic) NSString    *code;
 @property (nonatomic) NSMutableDictionary *classes;
 
-- (id)initWithSeatClasses:(NSArray *)seatClasses;
-
 - (id)initWithAirplane:(CRPAirplane *)airplane
             withOrigin:(CRPAirport *)origin
            withDestiny:(CRPAirport *)destiny

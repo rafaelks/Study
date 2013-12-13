@@ -10,22 +10,6 @@
 
 @implementation CRPFlight;
 
-- (id)initWithSeatClasses:(NSArray *)seatClasses
-{
-    self.seatClasses = [[NSMutableArray alloc] init];
-    
-    for (int i=0; i < [seatClasses count]; i++) {
-        NSString *seatClass = [[seatClasses objectAtIndex:i] stringValue];
-        id existsClass = [[CRPSeatClass getClasses] objectForKey:seatClass];
-        
-        if (existsClass != nil && [self.seatClasses indexOfObject:seatClass] == NSNotFound) {
-            [_seatClasses addObject:seatClass];
-        }
-    }
-    
-    return nil;
-}
-
 - (id)initWithAirplane:(CRPAirplane *)airplane
            withOrigin:(CRPAirport *)origin
           withDestiny:(CRPAirport *)destiny
