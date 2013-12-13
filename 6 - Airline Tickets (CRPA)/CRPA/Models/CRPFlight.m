@@ -63,14 +63,14 @@
         
         NSMutableArray *seats = [[NSMutableArray alloc] init];
         
-//        for (int i=0; i < section.rows; i++) {
-//            for (int j = 0 ; j < section.cols; j++) {
-//                NSString *seatName = [NSString stringWithFormat:@"%d%hu", i, [columns characterAtIndex:j]];
-//                CRPSeat *seat = [[CRPSeat alloc] initWithId:seatName];
-//                
-//                [seats addObject:seat];
-//            }
-//        }
+        for (int i=0; i < section.rows; i++) {
+            for (int j = 0 ; j < section.cols; j++) {
+                NSString *seatName = [NSString stringWithFormat:@"%d%c", i, [columns characterAtIndex:j]];
+                CRPSeat *seat = [[CRPSeat alloc] initWithId:seatName];
+                
+                [seats addObject:seat];
+            }
+        }
         
         [_classes setObject:seats forKey:[section seatClass]];
     }
