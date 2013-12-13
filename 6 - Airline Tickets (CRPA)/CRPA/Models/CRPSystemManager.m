@@ -174,36 +174,34 @@
 {
     NSLog(@"Relatório de Objetos do Sistema");
 
-    
-    NSLog(@" ");
-    NSLog(@"Aeroportos:");
+    NSLog(@"\nAeroportos:");
     for (CRPAirport *item in airports) {
         NSLog(@"    %@ - %@", item.code, item.name);
     }
     
-    NSLog(@" ");
-    NSLog(@"Companhias Aéreas:");
+
+    NSLog(@"\nCompanhias Aéreas:");
     for (CRPAirline *item in airlines) {
         NSLog(@"    %@", item.name);
     }
     
-    NSLog(@" ");
+
     NSLog(@"Aeronaves:");
     for (CRPAirplane *item in airplanes) {
         NSLog(@"    %@ - %@", item.code, item.airline.name);
         
         // section
         for (CRPSection *section in item.sections) {
-            NSLog(@"        %@ - %d coluna(s) e %d linha(s) - %d assento(s)", [[CRPSeatClass getClasses] objectForKey:section.seatClass], section.cols, section.rows, section.cols * section.rows);
+            NSLog(@"        %@ - %ld coluna(s) e %ld linha(s) - %ld assento(s)", [[CRPSeatClass getClasses] objectForKey:section.seatClass], section.cols, section.rows, section.cols * section.rows);
         }
     }
     
 }
 
-- (Boolean) bookSeatWithFlight:(CRPFlight *) flight withSeatClass:(NSString *) seatClass withRow:(NSInteger) row withCol:(char) col{
-    
+- (BOOL)bookSeatWithFlight:(CRPFlight *) flight withSeatClass:(NSString *) seatClass withRow:(NSInteger) row withCol:(char) col
+{
     for (CRPSeat *seat in flight.classes[seatClass]) {
-        if (seat.seatId == [NSString stringWithFormat:@"%d%c", row, col]) {
+        if (seat.seatId == [NSString stringWithFormat:@"%ld%c", row, col]) {
             if (seat.isFree){
                 seat.seatStatus = false;
                 return true;
@@ -214,7 +212,9 @@
             }
         }
     }
+    
     NSLog(@"O assento solicitado está indisponível!");
+
     return false;
 }
 
