@@ -35,7 +35,7 @@
     return self;
 }
 
-- (void) setAirplane:(CRPAirplane *)airplane
+- (void)setAirplane:(CRPAirplane *)airplane
 {
     NSArray *sections = [airplane sections];
     
@@ -60,15 +60,13 @@
     }
 }
 
-- (int) countOfAvailableSeats
+- (NSInteger)countOfAvailableSeats
 {
-    int count = 0;
+    NSInteger count = 0;
     
     for (NSString *class in self.classes) {
-        for (CRPSeat *seat in self.classes[class])
-        {
-            if (seat.isFree)
-            {
+        for (CRPSeat *seat in self.classes[class]) {
+            if (seat.isFree) {
                 count++;
             }
         }
@@ -77,9 +75,9 @@
     return count;
 }
 
-- (int) count
+- (NSInteger)countAllFlights
 {
-    int count = 0;
+    NSInteger count = 0;
     
     for (NSString *class in self.classes) {
         count = count + [self.classes[class] count];

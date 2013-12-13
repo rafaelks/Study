@@ -17,38 +17,18 @@
 + (id)sharedManager;
 
 - (CRPAirplane *)addAirplanetWithCode:(NSString *)code withSections:(NSArray *)_sections andAirline:(CRPAirline *)airline;
-
-- (NSMutableArray *)getAllAirplanes;
-
-- (NSMutableArray *)getAllAirplanesFromAirline:(CRPAirline *)airline;
-
-- (NSMutableArray *)getAllFlightsFromAirline:(CRPAirline *)airline;
-
-- (CRPAirport *)addAirportWithCode:(NSString *)code andName:(NSString *)name;
-
-- (NSMutableArray *)getAllAirports;
-
-
 - (CRPAirline *)addAirlineWithName:(NSString *)name;
-
-- (NSMutableArray *)getAllAirlines;
-
-
-- (void)createFlightWithAirline:(CRPAirline *)airline
-                   withAirplane:(CRPAirplane *)airplane
-                     withOrigin:(CRPAirport *)origin
-                    withDestiny:(CRPAirport *)destiny
-                       withDate:(NSDate     *)date
-                       withCode:(NSString   *)code;
-
-- (NSMutableArray *)getAllFlights;
-
+- (CRPAirport *)addAirportWithCode:(NSString *)code andName:(NSString *)name;
 - (CRPSection *)createSectionWithAirline:(CRPAirline *)airline withRows:(NSInteger)rows withCols:(NSInteger)cols andSeatClass:(NSString *)seatClass;
-
+- (NSMutableArray *)getAllAirplanes;
+- (NSMutableArray *)getAllAirplanesFromAirline:(CRPAirline *)airline;
+- (NSMutableArray *)getAllFlightsFromAirline:(CRPAirline *)airline;
+- (NSMutableArray *)getAllAirports;
+- (NSMutableArray *)getAllAirlines;
+- (NSMutableArray *)getAllFlights;
 - (NSMutableArray *)getAllSections;
-
-- (Boolean) bookSeatWithFlight:(CRPFlight *) flight withSeatClass:(CRPSeatClass *) seatClass withRow:(NSInteger) row withCol:(char) col;
-
 - (void) displaySystemDetails;
+- (BOOL) bookSeatWithFlight:(CRPFlight *) flight withSeatClass:(CRPSeatClass *) seatClass withRow:(NSInteger) row withCol:(char) col;
+- (void)createFlightWithAirline:(CRPAirline *)airline withAirplane:(CRPAirplane *)airplane withOrigin:(CRPAirport *)origin withDestiny:(CRPAirport *)destiny withDate:(NSDate *)date withCode:(NSString *)code;
 
 @end
