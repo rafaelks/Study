@@ -93,4 +93,15 @@
     return count;
 }
 
+- (int) count
+{
+    int count = 0;
+    
+    for (NSString *class in self.classes) {
+        count = count + [self.classes[class] count];
+    }
+    
+    return count;
+}
+
 @end

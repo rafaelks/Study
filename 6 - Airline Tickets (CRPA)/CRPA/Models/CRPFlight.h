@@ -36,4 +36,6 @@
 
 - (int) countOfAvailableSeats;
 
+- (int) count;
+
 @end
