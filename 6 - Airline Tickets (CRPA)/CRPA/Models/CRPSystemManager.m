@@ -197,13 +197,11 @@
             NSLog(@"        %@ - %d coluna(s) e %d linha(s) - %d assento(s)", [[CRPSeatClass getClasses] objectForKey:section.seatClass], section.cols, section.rows, section.cols * section.rows);
         }
         
-        
     }
     
     NSLog(@" ");
     NSLog(@"Flights:");
     for (CRPFlight *item in flights) {
-        // 20/12/2013 10:22 AZUL[ASD123] - POA -> FLP - 747 (Assentos livres 22 de 40)
         NSLog(@"%@ %@[%@] - %@ -> %@", item.date, item.airplane.airline.name, item.code, item.origin.code, item.destiny.code);
         NSLog(@" ");
     }
