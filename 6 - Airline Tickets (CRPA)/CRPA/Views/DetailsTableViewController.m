@@ -8,6 +8,7 @@
 
 #import "DetailsTableViewController.h"
 #import "DetailsAirlineTableViewController.h"
+#import "FlightSeatsTableViewController.h"
 
 @interface DetailsTableViewController ()
 
@@ -140,9 +141,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    CRPAirline *obj = [_data objectAtIndex:[[[self tableView] indexPathForSelectedRow] row]];
-    DetailsAirlineTableViewController *details = segue.destinationViewController;
-    [details setAirline:obj];
+    if ([[segue identifier] isEqualToString:@"showFlight"]) {
+        CRPFlight *obj = [_data objectAtIndex:[[[self tableView] indexPathForSelectedRow] row]];
+        FlightSeatsTableViewController *details = segue.destinationViewController;
+        [details setFlight:obj];
+    } else {
+        CRPAirline *obj = [_data objectAtIndex:[[[self tableView] indexPathForSelectedRow] row]];
+        DetailsAirlineTableViewController *details = segue.destinationViewController;
+        [details setAirline:obj];
+    }
 }
 
 @end

@@ -218,6 +218,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Lwh-rq-uib" kind="push" identifier="showFlight" id="5aE-UZ-hpA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -294,7 +297,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lq0-bq-rI0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1572" y="-319"/>
+            <point key="canvasLocation" x="1570" y="-505"/>
         </scene>
         <!--Flight Seats Table View Controller-->
         <scene sceneID="s4r-bD-oeB">
@@ -355,7 +358,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aA5-sX-GSq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2050" y="-321"/>
+            <point key="canvasLocation" x="1570" y="179"/>
         </scene>
     </scenes>
     <resources>
@@ -368,6 +371,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="5aE-UZ-hpA"/>
         <segue reference="XRc-68-8k0"/>
     </inferredMetricsTieBreakers>
 </document>

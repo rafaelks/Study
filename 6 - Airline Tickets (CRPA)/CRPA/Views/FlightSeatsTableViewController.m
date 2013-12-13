@@ -66,6 +66,7 @@
     }
     
     UILabel *labelCode = (UILabel *) [cell viewWithTag:100];
+    
     [labelCode setText:@"123A"];
 
     return cell;
