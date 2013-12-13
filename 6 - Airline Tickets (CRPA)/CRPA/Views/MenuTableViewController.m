@@ -34,10 +34,14 @@
     
     CRPAirline *airlineGOL  = [manager addAirlineWithName:@"GOL"];
     CRPAirline *airlineAZUL = [manager addAirlineWithName:@"AZUL"];
+    CRPAirline *airlineTAM  = [manager addAirlineWithName:@"TAM"];
     
     
     CRPAirport *airportPOA = [manager addAirportWithCode:@"POA" andName:@"Porto Alegre"];
     CRPAirport *airportFLR = [manager addAirportWithCode:@"FLR" andName:@"Florianópolis"];
+    CRPAirport *airportGAL = [manager addAirportWithCode:@"GAL" andName:@"Rio - Galeão"];
+    CRPAirport *airportREC = [manager addAirportWithCode:@"REC" andName:@"Recife"];
+    
     [manager addAirportWithCode:@"FOOO" andName:@"Florianópolis"];
     
     
