@@ -34,13 +34,16 @@
     CRPAirline *airlineGOL  = [manager addAirlineWithName:@"GOL"];
     CRPAirline *airlineAZUL = [manager addAirlineWithName:@"AZUL"];
     CRPAirline *airlineTAM  = [manager addAirlineWithName:@"TAM"];
+    CRPAirline *airlineAVIANCA  = [manager addAirlineWithName:@"AVIANCA"];
     
     
     // Airports
     CRPAirport *airportPOA = [manager addAirportWithCode:@"POA" andName:@"Porto Alegre"];
-    CRPAirport *airportFLR = [manager addAirportWithCode:@"FLR" andName:@"Florianópolis"];
-    CRPAirport *airportGAL = [manager addAirportWithCode:@"GAL" andName:@"Rio - Galeão"];
+    CRPAirport *airportFLN = [manager addAirportWithCode:@"FLN" andName:@"Florianópolis"];
+    CRPAirport *airportGIG = [manager addAirportWithCode:@"GIG" andName:@"Rio - Galeão"];
     CRPAirport *airportREC = [manager addAirportWithCode:@"REC" andName:@"Recife"];
+    CRPAirport *airportBSB = [manager addAirportWithCode:@"BSB" andName:@"Brasília"];
+    CRPAirport *airportEZE = [manager addAirportWithCode:@"EZE" andName:@"Buenos Aires"];
     
     
     // Sections
@@ -50,7 +53,7 @@
                                                        andSeatClass:@"first-class"];
 
     CRPSection *section2Azul747 = [manager createSectionWithAirline:airlineTAM
-                                                           withRows:20
+                                                           withRows:40
                                                            withCols:6
                                                        andSeatClass:@"executive"];
     
@@ -59,6 +62,15 @@
                                                          withCols:6
                                                      andSeatClass:@"executive"];
     
+    CRPSection *section1TAMAirbus = [manager createSectionWithAirline: airlineTAM
+                                                            withRows: 10
+                                                            withCols: 6
+                                                        andSeatClass:@"first-class"];
+    
+    CRPSection *section2TAMAirbus = [manager createSectionWithAirline:airlineTAM
+                                                             withRows:30
+                                                             withCols:6
+                                                         andSeatClass:@"executive"];
     
     // Airplanes
     CRPAirplane *airplane747 = [manager addAirplanetWithCode:@"747"
@@ -69,12 +81,15 @@
                                                 withSections:@[sectionGol737]
                                                   andAirline:airlineGOL];
     
+    CRPAirplane *airplaneAirbus = [manager addAirplanetWithCode:@"Airbus"
+                                               withSections:@[section1TAMAirbus, section2TAMAirbus]
+                                                    andAirline:airlineTAM];
     
     // Flights
     [manager createFlightWithAirline:airlineAZUL
                         withAirplane:airplane747
                           withOrigin:airportPOA
-                         withDestiny:airportFLR
+                         withDestiny:airportFLN
                             withDate:[[NSDate alloc] init]
                             withCode:@"AZ123"];
     
@@ -87,7 +102,7 @@
     
     [manager createFlightWithAirline:airlineGOL
                         withAirplane:airplane747
-                          withOrigin:airportFLR
+                          withOrigin:airportFLN
                          withDestiny:airportPOA
                             withDate:[[NSDate alloc] init]
                             withCode:@"GO812"];
@@ -95,9 +110,30 @@
     [manager createFlightWithAirline:airlineTAM
                         withAirplane:airplane737
                           withOrigin:airportPOA
-                         withDestiny:airportGAL
+                         withDestiny:airportGIG
                             withDate:[[NSDate alloc] init]
                             withCode:@"TA852"];
+
+    [manager createFlightWithAirline:airlineAZUL
+                        withAirplane:airplane737
+                          withOrigin:airportPOA
+                         withDestiny:airportBSB
+                            withDate:[[NSDate alloc] init]
+                            withCode:@"AZ852"];
+    
+    [manager createFlightWithAirline:airlineTAM
+                        withAirplane:airplaneAirbus
+                          withOrigin:airportGIG
+                         withDestiny:airportREC
+                            withDate:[[NSDate alloc] init]
+                            withCode:@"TA853"];
+    
+    [manager createFlightWithAirline:airlineTAM
+                        withAirplane:airplaneAirbus
+                          withOrigin:airportPOA
+                         withDestiny:airportEZE
+                            withDate:[[NSDate alloc] init]
+                            withCode:@"TA854"];
     
     [manager displaySystemDetails];
 }
@@ -120,6 +156,11 @@
     
     if ([[segue identifier] isEqualToString:@"showAirlines"]) {
         [details loadData:[manager getAllAirlines] withType:@"Airline"];
+        return;
+    }
+    
+    if ([[segue identifier] isEqualToString:@"showFlights"]) {
+        [details loadData:[manager getAllFlights] withType:@"Flight"];
         return;
     }
 }

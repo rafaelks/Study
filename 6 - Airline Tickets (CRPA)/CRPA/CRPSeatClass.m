@@ -12,7 +12,6 @@ static NSDictionary *classes;
 
 @implementation CRPSeatClass;
 
-
 + (NSDictionary *)getClasses {
     if (classes == nil) {
         classes = @{

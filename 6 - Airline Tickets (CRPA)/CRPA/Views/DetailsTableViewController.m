@@ -75,6 +75,38 @@
         
         UILabel *labelName = (UILabel *) [cell viewWithTag:100];
         [labelName setText:[obj name]];
+    
+    // Flights
+    } else if ([[self type] isEqualToString:@"Flight"]) {
+        CRPFlight *obj = [_data objectAtIndex:indexPath.row];
+        
+        UILabel *labelAirline = (UILabel *) [cell viewWithTag:100];
+        UILabel *labelCode = (UILabel *) [cell viewWithTag:200];
+        UILabel *labelOrigin = (UILabel *) [cell viewWithTag:300];
+        UILabel *labelDestiny = (UILabel *) [cell viewWithTag:400];
+        UILabel *labelDate = (UILabel *) [cell viewWithTag:500];
+        
+        NSString *airline = [[[obj airplane] airline] name];
+        NSString *airplaneCode = [[obj airplane] code];
+        
+        NSString *airportOriginCode = [[obj origin] code];
+        NSString *airportOriginName = [[obj origin] name];
+        
+        NSString *airportDestinyCode = [[obj destiny] code];
+        NSString *airportDestinyName = [[obj destiny] name];
+        
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"dd/mm/yyyy"];
+        
+        NSString *date = [[formatter stringFromDate:[obj date]] lowercaseString];
+
+        
+        [labelAirline setText:[[NSString alloc] initWithFormat:@"%@ - %@", airline, airplaneCode]];
+        [labelCode setText:[obj code]];
+        [labelOrigin setText:[[NSString alloc] initWithFormat:@"%@ - %@", airportOriginCode, airportOriginName]];
+        [labelDestiny setText:[[NSString alloc] initWithFormat:@"%@ - %@", airportDestinyCode, airportDestinyName]];
+        
+        [labelDate setText:date];
     }
     
     return cell;
@@ -95,6 +127,11 @@
     
     if ([[self type] isEqualToString:@"Airline"]) {
         [self setTitle:@"Companhias"];
+        return;
+    }
+    
+    if ([[self type] isEqualToString:@"Flight"]) {
+        [self setTitle:@"Voôs"];
         return;
     }
 }
