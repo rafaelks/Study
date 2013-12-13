@@ -153,6 +153,9 @@
     return sections;
 }
 
+
+# pragma mark Utils
+
 - (NSMutableArray *)findAvailableFlightFromAirport:(CRPAirport *)originAirport
                                          toAirport:(CRPAirport *)destinyAirport
                                            andDate:(NSDate *)flightDate
@@ -186,7 +189,7 @@
     }
     
 
-    NSLog(@"Aeronaves:");
+    NSLog(@"\nAeronaves:");
     for (CRPAirplane *item in airplanes) {
         NSLog(@"    %@ - %@", item.code, item.airline.name);
         
@@ -198,14 +201,11 @@
         
     }
     
-    NSLog(@" ");
-    NSLog(@"Flights:");
+    NSLog(@"\nFlights:");
     for (CRPFlight *item in flights) {
         // 20/12/2013 10:22 AZUL[ASD123] - POA -> FLP - 747 (Assentos livres 22 de 40)
-        NSLog(@"%@ %@[%@] - %@ -> %@", item.date, item.airplane.airline.name, item.code, item.origin.code, item.destiny.code);
-        NSLog(@" ");
+        NSLog(@"%@ %@ [%@] - %@ -> %@\n", item.date, item.airplane.airline.name, item.code, item.origin.code, item.destiny.code);
     }
-    
 }
 
 - (BOOL)bookSeatWithFlight:(CRPFlight *) flight withSeatClass:(NSString *) seatClass withRow:(NSInteger) row withCol:(char) col
