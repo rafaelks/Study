@@ -1,0 +1,33 @@
+Janeiro
+	01 - Réveillon
+Fevereiro
+	02 - Nossa Senhora dos Navegantes
+Março
+	04 - Carnaval
+Abril
+	17 - Quinta-Feira Santa
+	18 - Sexta-Feira Santa
+	19 - Sábado de Aleluia
+	20 - Páscoa
+	21 - Tiradentes
+Maio
+	01 - Dia do Trabalho
+Junho
+	12 - Copa do Mundo
+	17 - Copa do Mundo
+	18 - Copa do Mundo
+	19 - Corpus Christi
+	23 - Copa do Mundo
+	25 - Copa do Mundo
+	30 - Copa do Mundo
+Setembro
+	07 - Independência do Brasil
+	20 - Revolução Farroupilha
+Outubro
+	12 - Nossa Senhora Aparecida
+	15 - Dia do Professor
+Novembro
+	02 - Finados
+	15 - Proclamação da República
+Dezembro
+	25 - Natal

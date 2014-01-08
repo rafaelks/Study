@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1231DDD1860755A00AB8D81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1231DDC1860755A00AB8D81 /* Foundation.framework */; };
+		B1231DDF1860755A00AB8D81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1231DDE1860755A00AB8D81 /* CoreGraphics.framework */; };
+		B1231DE11860755A00AB8D81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1231DE01860755A00AB8D81 /* UIKit.framework */; };
+		B1231DE71860755A00AB8D81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1231DE51860755A00AB8D81 /* InfoPlist.strings */; };
+		B1231DE91860755A00AB8D81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1231DE81860755A00AB8D81 /* main.m */; };
+		B1231DED1860755A00AB8D81 /* GPAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1231DEC1860755A00AB8D81 /* GPAAppDelegate.m */; };
+		B1231DF01860755A00AB8D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1231DEE1860755A00AB8D81 /* Main.storyboard */; };
+		B1231DF31860755A00AB8D81 /* GPAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1231DF21860755A00AB8D81 /* GPAViewController.m */; };
+		B1231DF51860755A00AB8D81 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1231DF41860755A00AB8D81 /* Images.xcassets */; };
+		B1231DFC1860755A00AB8D81 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1231DFB1860755A00AB8D81 /* XCTest.framework */; };
+		B1231DFD1860755A00AB8D81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1231DDC1860755A00AB8D81 /* Foundation.framework */; };
+		B1231DFE1860755A00AB8D81 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1231DE01860755A00AB8D81 /* UIKit.framework */; };
+		B1231E061860755A00AB8D81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B1231E041860755A00AB8D81 /* InfoPlist.strings */; };
+		B1231E081860755A00AB8D81 /* GeradorPalavraAleatoriaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1231E071860755A00AB8D81 /* GeradorPalavraAleatoriaTests.m */; };
+		B1231E16186084AC00AB8D81 /* GPALexicontext.m in Sources */ = {isa = PBXBuildFile; fileRef = B1231E15186084AC00AB8D81 /* GPALexicontext.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1231DFF1860755A00AB8D81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1231DD11860755A00AB8D81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1231DD81860755A00AB8D81;
+			remoteInfo = GeradorPalavraAleatoria;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1231DD91860755A00AB8D81 /* GeradorPalavraAleatoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeradorPalavraAleatoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1231DDC1860755A00AB8D81 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1231DDE1860755A00AB8D81 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B1231DE01860755A00AB8D81 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B1231DE41860755A00AB8D81 /* GeradorPalavraAleatoria-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeradorPalavraAleatoria-Info.plist"; sourceTree = "<group>"; };
+		B1231DE61860755A00AB8D81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1231DE81860755A00AB8D81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1231DEA1860755A00AB8D81 /* GeradorPalavraAleatoria-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeradorPalavraAleatoria-Prefix.pch"; sourceTree = "<group>"; };
+		B1231DEB1860755A00AB8D81 /* GPAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPAAppDelegate.h; sourceTree = "<group>"; };
+		B1231DEC1860755A00AB8D81 /* GPAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPAAppDelegate.m; sourceTree = "<group>"; };
+		B1231DEF1860755A00AB8D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1231DF11860755A00AB8D81 /* GPAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPAViewController.h; sourceTree = "<group>"; };
+		B1231DF21860755A00AB8D81 /* GPAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPAViewController.m; sourceTree = "<group>"; };
+		B1231DF41860755A00AB8D81 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B1231DFA1860755A00AB8D81 /* GeradorPalavraAleatoriaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeradorPalavraAleatoriaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1231DFB1860755A00AB8D81 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B1231E031860755A00AB8D81 /* GeradorPalavraAleatoriaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeradorPalavraAleatoriaTests-Info.plist"; sourceTree = "<group>"; };
+		B1231E051860755A00AB8D81 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B1231E071860755A00AB8D81 /* GeradorPalavraAleatoriaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeradorPalavraAleatoriaTests.m; sourceTree = "<group>"; };
+		B1231E1318607F6600AB8D81 /* Lexicontext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Lexicontext.h; path = "../../../../../Downloads/lexicontext-1.2-trial/Lexicontext.h"; sourceTree = "<group>"; };
+		B1231E14186084AC00AB8D81 /* GPALexicontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPALexicontext.h; sourceTree = "<group>"; };
+		B1231E15186084AC00AB8D81 /* GPALexicontext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPALexicontext.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1231DD61860755A00AB8D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1231DDF1860755A00AB8D81 /* CoreGraphics.framework in Frameworks */,
+				B1231DE11860755A00AB8D81 /* UIKit.framework in Frameworks */,
+				B1231DDD1860755A00AB8D81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1231DF71860755A00AB8D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1231DFC1860755A00AB8D81 /* XCTest.framework in Frameworks */,
+				B1231DFE1860755A00AB8D81 /* UIKit.framework in Frameworks */,
+				B1231DFD1860755A00AB8D81 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1231DD01860755A00AB8D81 = {
+			isa = PBXGroup;
+			children = (
+				B1231DE21860755A00AB8D81 /* GeradorPalavraAleatoria */,
+				B1231E011860755A00AB8D81 /* GeradorPalavraAleatoriaTests */,
+				B1231DDB1860755A00AB8D81 /* Frameworks */,
+				B1231DDA1860755A00AB8D81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1231DDA1860755A00AB8D81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1231DD91860755A00AB8D81 /* GeradorPalavraAleatoria.app */,
+				B1231DFA1860755A00AB8D81 /* GeradorPalavraAleatoriaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1231DDB1860755A00AB8D81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1231DDC1860755A00AB8D81 /* Foundation.framework */,
+				B1231DDE1860755A00AB8D81 /* CoreGraphics.framework */,
+				B1231DE01860755A00AB8D81 /* UIKit.framework */,
+				B1231DFB1860755A00AB8D81 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B1231DE21860755A00AB8D81 /* GeradorPalavraAleatoria */ = {
+			isa = PBXGroup;
+			children = (
+				B1231E1318607F6600AB8D81 /* Lexicontext.h */,
+				B1231DEB1860755A00AB8D81 /* GPAAppDelegate.h */,
+				B1231DEC1860755A00AB8D81 /* GPAAppDelegate.m */,
+				B1231DEE1860755A00AB8D81 /* Main.storyboard */,
+				B1231DF11860755A00AB8D81 /* GPAViewController.h */,
+				B1231DF21860755A00AB8D81 /* GPAViewController.m */,
+				B1231DF41860755A00AB8D81 /* Images.xcassets */,
+				B1231DE31860755A00AB8D81 /* Supporting Files */,
+			);
+			path = GeradorPalavraAleatoria;
+			sourceTree = "<group>";
+		};
+		B1231DE31860755A00AB8D81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1231DE41860755A00AB8D81 /* GeradorPalavraAleatoria-Info.plist */,
+				B1231DE51860755A00AB8D81 /* InfoPlist.strings */,
+				B1231DE81860755A00AB8D81 /* main.m */,
+				B1231DEA1860755A00AB8D81 /* GeradorPalavraAleatoria-Prefix.pch */,
+				B1231E14186084AC00AB8D81 /* GPALexicontext.h */,
+				B1231E15186084AC00AB8D81 /* GPALexicontext.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1231E011860755A00AB8D81 /* GeradorPalavraAleatoriaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1231E071860755A00AB8D81 /* GeradorPalavraAleatoriaTests.m */,
+				B1231E021860755A00AB8D81 /* Supporting Files */,
+			);
+			path = GeradorPalavraAleatoriaTests;
+			sourceTree = "<group>";
+		};
+		B1231E021860755A00AB8D81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1231E031860755A00AB8D81 /* GeradorPalavraAleatoriaTests-Info.plist */,
+				B1231E041860755A00AB8D81 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1231DD81860755A00AB8D81 /* GeradorPalavraAleatoria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1231E0B1860755A00AB8D81 /* Build configuration list for PBXNativeTarget "GeradorPalavraAleatoria" */;
+			buildPhases = (
+				B1231DD51860755A00AB8D81 /* Sources */,
+				B1231DD61860755A00AB8D81 /* Frameworks */,
+				B1231DD71860755A00AB8D81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeradorPalavraAleatoria;
+			productName = GeradorPalavraAleatoria;
+			productReference = B1231DD91860755A00AB8D81 /* GeradorPalavraAleatoria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1231DF91860755A00AB8D81 /* GeradorPalavraAleatoriaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1231E0E1860755A00AB8D81 /* Build configuration list for PBXNativeTarget "GeradorPalavraAleatoriaTests" */;
+			buildPhases = (
+				B1231DF61860755A00AB8D81 /* Sources */,
+				B1231DF71860755A00AB8D81 /* Frameworks */,
+				B1231DF81860755A00AB8D81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1231E001860755A00AB8D81 /* PBXTargetDependency */,
+			);
+			name = GeradorPalavraAleatoriaTests;
+			productName = GeradorPalavraAleatoriaTests;
+			productReference = B1231DFA1860755A00AB8D81 /* GeradorPalavraAleatoriaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1231DD11860755A00AB8D81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GPA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = otondin;
+				TargetAttributes = {
+					B1231DF91860755A00AB8D81 = {
+						TestTargetID = B1231DD81860755A00AB8D81;
+					};
+				};
+			};
+			buildConfigurationList = B1231DD41860755A00AB8D81 /* Build configuration list for PBXProject "GeradorPalavraAleatoria" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1231DD01860755A00AB8D81;
+			productRefGroup = B1231DDA1860755A00AB8D81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1231DD81860755A00AB8D81 /* GeradorPalavraAleatoria */,
+				B1231DF91860755A00AB8D81 /* GeradorPalavraAleatoriaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1231DD71860755A00AB8D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1231DF51860755A00AB8D81 /* Images.xcassets in Resources */,
+				B1231DE71860755A00AB8D81 /* InfoPlist.strings in Resources */,
+				B1231DF01860755A00AB8D81 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1231DF81860755A00AB8D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1231E061860755A00AB8D81 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1231DD51860755A00AB8D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1231DF31860755A00AB8D81 /* GPAViewController.m in Sources */,
+				B1231DE91860755A00AB8D81 /* main.m in Sources */,
+				B1231E16186084AC00AB8D81 /* GPALexicontext.m in Sources */,
+				B1231DED1860755A00AB8D81 /* GPAAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1231DF61860755A00AB8D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1231E081860755A00AB8D81 /* GeradorPalavraAleatoriaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1231E001860755A00AB8D81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1231DD81860755A00AB8D81 /* GeradorPalavraAleatoria */;
+			targetProxy = B1231DFF1860755A00AB8D81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1231DE51860755A00AB8D81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1231DE61860755A00AB8D81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B1231DEE1860755A00AB8D81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1231DEF1860755A00AB8D81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1231E041860755A00AB8D81 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1231E051860755A00AB8D81 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1231E091860755A00AB8D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B1231E0A1860755A00AB8D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1231E0C1860755A00AB8D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeradorPalavraAleatoria/GeradorPalavraAleatoria-Prefix.pch";
+				INFOPLIST_FILE = "GeradorPalavraAleatoria/GeradorPalavraAleatoria-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B1231E0D1860755A00AB8D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeradorPalavraAleatoria/GeradorPalavraAleatoria-Prefix.pch";
+				INFOPLIST_FILE = "GeradorPalavraAleatoria/GeradorPalavraAleatoria-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B1231E0F1860755A00AB8D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeradorPalavraAleatoria.app/GeradorPalavraAleatoria";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeradorPalavraAleatoria/GeradorPalavraAleatoria-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GeradorPalavraAleatoriaTests/GeradorPalavraAleatoriaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B1231E101860755A00AB8D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GeradorPalavraAleatoria.app/GeradorPalavraAleatoria";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GeradorPalavraAleatoria/GeradorPalavraAleatoria-Prefix.pch";
+				INFOPLIST_FILE = "GeradorPalavraAleatoriaTests/GeradorPalavraAleatoriaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1231DD41860755A00AB8D81 /* Build configuration list for PBXProject "GeradorPalavraAleatoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1231E091860755A00AB8D81 /* Debug */,
+				B1231E0A1860755A00AB8D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1231E0B1860755A00AB8D81 /* Build configuration list for PBXNativeTarget "GeradorPalavraAleatoria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1231E0C1860755A00AB8D81 /* Debug */,
+				B1231E0D1860755A00AB8D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B1231E0E1860755A00AB8D81 /* Build configuration list for PBXNativeTarget "GeradorPalavraAleatoriaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1231E0F1860755A00AB8D81 /* Debug */,
+				B1231E101860755A00AB8D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1231DD11860755A00AB8D81 /* Project object */;
+}
