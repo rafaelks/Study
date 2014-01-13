@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2C4E2E57-19A9-41FB-B8CA-9609F9B52707</string>
+	<string>6AE5F7C3-2C71-445F-B7BD-D9F90B872EA4</string>
 	<key>IDESourceControlProjectName</key>
-	<string>EasyTaxi Diagram</string>
+	<string>LifeCycleViewController</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>05DD7BAA-F671-474A-A812-8031D4E2983D</key>
+		<key>4A573B98-3AAE-4165-B90C-4E3F19CDB10B</key>
 		<string>ssh://github.com/rafaelks/BEPiD.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>05 - EasyTaxi Diagram/EasyTaxi Diagram.xcodeproj/project.xcworkspace</string>
+	<string>LifeCycleViewController/LifeCycleViewController.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>05DD7BAA-F671-474A-A812-8031D4E2983D</key>
+		<key>4A573B98-3AAE-4165-B90C-4E3F19CDB10B</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>05DD7BAA-F671-474A-A812-8031D4E2983D</string>
+	<string>4A573B98-3AAE-4165-B90C-4E3F19CDB10B</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>05DD7BAA-F671-474A-A812-8031D4E2983D</string>
+			<string>4A573B98-3AAE-4165-B90C-4E3F19CDB10B</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BEPiD</string>
 		</dict>

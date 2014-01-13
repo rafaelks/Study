@@ -41,6 +41,14 @@
             [self.viewWrapper addSubview:label];
         }
     }
+    
+    if (topSpacing == 0) {
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, topSpacing, 280, 50)];
+        [label setTextColor:[UIColor blackColor]];
+        [label setText:@"Nenhum feriado neste dia."];
+        
+        [self.viewWrapper addSubview:label];
+    }
 }
 
 - (void)didReceiveMemoryWarning
