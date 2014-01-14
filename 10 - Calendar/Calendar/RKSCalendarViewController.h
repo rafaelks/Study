@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RKSCalendarViewController : UIViewController {
-    NSArray *months;
-}
+@interface RKSCalendarViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UIView *viewWrapper;
+@property (nonatomic, strong) NSArray *months;
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @end
