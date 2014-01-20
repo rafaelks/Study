@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8F2FB204-D4D4-41BD-B779-48AC7FC8BABD</string>
+	<string>217AA305-D116-4607-B854-C89ED4085551</string>
 	<key>IDESourceControlProjectName</key>
-	<string>LifeCycleViewController</string>
+	<string>ZoomImages</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>CE58D227-8D86-48E3-AE8F-717B43CD9F86</key>
 		<string>ssh://github.com/rafaelks/BEPiD.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>11 - LifeCycleViewController/LifeCycleViewController.xcodeproj/project.xcworkspace</string>
+	<string>ZoomImages/ZoomImages.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>CE58D227-8D86-48E3-AE8F-717B43CD9F86</key>

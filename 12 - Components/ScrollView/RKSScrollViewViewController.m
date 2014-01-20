@@ -22,7 +22,7 @@
     
     int currY = 0;
     
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 1000; i++) {
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, currY, 300, 44)];
         
         [label setTextAlignment:NSTextAlignmentCenter];
@@ -32,7 +32,7 @@
         currY += 54;
     }
     
-    [self.scrollView setContentSize:CGSizeMake(320, 54*100)];
+    [self.scrollView setContentSize:CGSizeMake(320, 54*1000)];
 }
 
 @end
