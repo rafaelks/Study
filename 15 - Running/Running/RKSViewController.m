@@ -7,6 +7,7 @@
 //
 
 #import "RKSViewController.h"
+#import "RKSMainScene.h"
 
 @implementation RKSViewController
 
@@ -20,7 +21,7 @@
     skView.showsDrawCount = YES;
     skView.showsPhysics = YES;
     
-    SKScene *scene = [SKScene sceneWithSize:skView.bounds.size];
+    SKScene *scene = [RKSMainScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     [skView presentScene:scene];

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		416C08DB18D8755A00E3C288 /* RKSMainScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 416C08DA18D8755A00E3C288 /* RKSMainScene.m */; };
 		41EC659218D8747E00F33BEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC659118D8747E00F33BEB /* Foundation.framework */; };
 		41EC659418D8747E00F33BEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC659318D8747E00F33BEB /* CoreGraphics.framework */; };
 		41EC659618D8747E00F33BEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EC659518D8747E00F33BEB /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		416C08D918D8755A00E3C288 /* RKSMainScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKSMainScene.h; sourceTree = "<group>"; };
+		416C08DA18D8755A00E3C288 /* RKSMainScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKSMainScene.m; sourceTree = "<group>"; };
 		41EC658E18D8747E00F33BEB /* Running.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Running.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EC659118D8747E00F33BEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41EC659318D8747E00F33BEB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -121,6 +124,8 @@
 				41EC65A518D8747E00F33BEB /* Main.storyboard */,
 				41EC65A818D8747E00F33BEB /* RKSViewController.h */,
 				41EC65A918D8747E00F33BEB /* RKSViewController.m */,
+				416C08D918D8755A00E3C288 /* RKSMainScene.h */,
+				416C08DA18D8755A00E3C288 /* RKSMainScene.m */,
 				41EC65B018D8747E00F33BEB /* Images.xcassets */,
 				41EC659A18D8747E00F33BEB /* Supporting Files */,
 			);
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				416C08DB18D8755A00E3C288 /* RKSMainScene.m in Sources */,
 				41EC65A018D8747E00F33BEB /* main.m in Sources */,
 				41EC65A418D8747E00F33BEB /* RKSAppDelegate.m in Sources */,
 				41EC65AA18D8747E00F33BEB /* RKSViewController.m in Sources */,
@@ -463,6 +469,7 @@
 				41EC65C918D8747E00F33BEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41EC65CA18D8747E00F33BEB /* Build configuration list for PBXNativeTarget "RunningTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +478,7 @@
 				41EC65CC18D8747E00F33BEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>31896A73-71EF-4E50-A59B-87D08A326A00</string>
+	<string>C6466F34-5E4E-4F42-89CC-F239C72DF84D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>SpriteKit Demo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>BA13D6B3-F189-4824-9FBC-84AD479169E9</key>
+		<key>B2BA9313-56C3-4B0E-A3A9-1324AF2AF166</key>
 		<string>ssh://github.com/rafaelks/BEPiD.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SpriteKit Demo/SpriteKit Demo.xcodeproj/project.xcworkspace</string>
+	<string>14 - SpriteKit Demo/SpriteKit Demo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>BA13D6B3-F189-4824-9FBC-84AD479169E9</key>
+		<key>B2BA9313-56C3-4B0E-A3A9-1324AF2AF166</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>BA13D6B3-F189-4824-9FBC-84AD479169E9</string>
+	<string>B2BA9313-56C3-4B0E-A3A9-1324AF2AF166</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>BA13D6B3-F189-4824-9FBC-84AD479169E9</string>
+			<string>B2BA9313-56C3-4B0E-A3A9-1324AF2AF166</string>
 			<key>IDESourceControlWCCName</key>
 			<string>BEPiD</string>
 		</dict>
