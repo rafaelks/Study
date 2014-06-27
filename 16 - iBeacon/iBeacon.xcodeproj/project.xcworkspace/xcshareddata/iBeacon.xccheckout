@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>106ADC2D-496E-4BB1-B8A5-FDC73F256469</string>
+	<string>D09F850B-DA38-4DCD-A792-F0F734F4422C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>iBeacon</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,7 +14,7 @@
 		<string>ssh://github.com/rafaelks/BEPiD.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iBeacon/iBeacon.xcodeproj/project.xcworkspace</string>
+	<string>16 - iBeacon/iBeacon.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>20BBC36D-14B8-4C21-BC19-3FB7B88CB58C</key>

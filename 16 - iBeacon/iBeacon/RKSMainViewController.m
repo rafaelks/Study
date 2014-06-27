@@ -10,9 +10,12 @@
 
 #import <CoreLocation/CoreLocation.h>
 
-@interface RKSMainViewController () <CLLocationManagerDelegate>
+@interface RKSMainViewController () <CLLocationManagerDelegate, UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, strong) NSMutableArray *beacons;
 @property (nonatomic, strong) CLLocationManager *locationManager;
+
+@property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @end
 
@@ -43,49 +46,63 @@
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
 {
-    
+    if (status != kCLAuthorizationStatusAuthorized) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Sem Permissão"
+                                                        message:@"Não é possível identificar Beacons ao seu redor. Vá em Configurações -> Localização e altere as preferências para este aplicativo."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Cancelar"
+                                              otherButtonTitles:@"OK", nil];
+        
+        [alert show];
+    }
 }
 
 - (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
 {
-    
+    [self setBeacons:[[NSMutableArray alloc] initWithArray:beacons]];
+    [self.tableView reloadData];
 }
 
-- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    
+    return self.beacons.count;
 }
 
-- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Beacon"];
+    CLBeacon *beacon = [self.beacons objectAtIndex:indexPath.row];
     
-}
-
-- (void)locationManager:(CLLocationManager *)manager didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region
-{
-    /*
-     A user can transition in or out of a region while the application is not running. When this happens CoreLocation will launch the application momentarily, call this delegate method and we will let the user know via a local notification.
-     */
-    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    UILabel *uuid = (UILabel *)[cell viewWithTag:100];
+    uuid.text = beacon.proximityUUID.UUIDString;
     
-    if(state == CLRegionStateInside)
-    {
-        notification.alertBody = NSLocalizedString(@"You're inside the region", @"");
-    }
-    else if(state == CLRegionStateOutside)
-    {
-        notification.alertBody = NSLocalizedString(@"You're outside the region", @"");
-    }
-    else
-    {
-        return;
+    UILabel *description = (UILabel *)[cell viewWithTag:400];
+    description.text = beacon.description;
+    
+    UILabel *minor = (UILabel *)[cell viewWithTag:200];
+    minor.text = [NSString stringWithFormat:@"%@", beacon.minor];
+    
+    UILabel *major = (UILabel *)[cell viewWithTag:300];
+    major.text = [NSString stringWithFormat:@"%@", beacon.major];
+    
+    UILabel *distance = (UILabel *)[cell viewWithTag:500];
+    
+    if (beacon.proximity == CLProximityUnknown) {
+        distance.text = @"Unknown Proximity";
+    } else if (beacon.proximity == CLProximityImmediate) {
+        distance.text = [NSString stringWithFormat:@"Immediate - %f", beacon.accuracy];
+    } else if (beacon.proximity == CLProximityNear) {
+        distance.text = [NSString stringWithFormat:@"Near - %f", beacon.accuracy];
+    } else if (beacon.proximity == CLProximityFar) {
+        distance.text = [NSString stringWithFormat:@"Far - %f", beacon.accuracy];
     }
     
-    /*
-     If the application is in the foreground, it will get a callback to application:didReceiveLocalNotification:.
-     If it's not, iOS will display the notification to the user.
-     */
-    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+    UILabel *rssi = (UILabel *)[cell viewWithTag:600];
+    rssi.text = [NSString stringWithFormat:@"%ld", (long)beacon.rssi];
+    
+    return cell;
 }
 
 @end
